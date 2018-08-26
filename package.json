@@ -1,0 +1,30 @@
+{
+  "name": "developshimo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimosaka-tatsuya/developShimo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimosaka-tatsuya/developShimo/issues"
+  },
+  "homepage": "https://github.com/shimosaka-tatsuya/developShimo#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "cssnano": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-import": "^12.0.0",
+    "postcss-nested": "^3.0.0"
+  }
+}
