@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var connect = require('gulp-connect');
 
 gulp.task('build', function () {
 	var postcss = require('gulp-postcss');
@@ -26,3 +27,21 @@ gulp.task('build', function () {
 		.pipe(rename('app.min.css'))
 		.pipe(gulp.dest('./dist'));
 });
+
+gulp.task('connect', function() {
+  connect.server({
+    root: './',
+    livereload: true
+  });
+});
+
+gulp.task('html', function () {
+  gulp.src('./*.html')
+    .pipe(connect.reload());
+});
+ 
+gulp.task('watch', function () {
+  gulp.watch(['./*.html'], ['html']);
+});
+ 
+gulp.task('default', ['connect', 'watch']);
