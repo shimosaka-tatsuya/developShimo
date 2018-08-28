@@ -1,0 +1,118 @@
+.box-header {
+	overflow: hidden;
+	padding: 26px 25px;
+	box-sizing: border-box;
+}
+
+.txt-siteNmae {
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: 6px;
+	display: block;
+	float: left;
+}
+
+.btn-hamburgerMenue {
+	float: right;
+	position: relative;
+	width: 35px;
+	height: 26px;
+}
+
+#inr-hamburgerMenueInput {
+	display:none;
+}
+
+.inr-hamburgerMenueOpen {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.inr-hamburgerMenueOpen span,
+.inr-hamburgerMenueOpen::before,
+.inr-hamburgerMenueOpen::after {
+	display: block;
+	height: 2px;
+	position: absolute;
+	background-color: #333;
+}
+
+.inr-hamburgerMenueOpen span {
+	width: 22px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow-x: hidden;
+	transition-property: opacity;
+	transition-duration: .3s;
+}
+
+.inr-hamburgerMenueOpen::before,
+.inr-hamburgerMenueOpen::after {
+	transition-property: transform, top, bottom, left, right;
+	transition-duration: .3s;
+}
+
+.inr-hamburgerMenueOpen::before {
+	content: "";
+	width: 35px;
+	right: 0;
+	top: 0;
+}
+
+.inr-hamburgerMenueOpen::after {
+	content: "";
+	width: 27px;
+	right: 0;
+	bottom: 0;
+}
+
+#inr-hamburgerMenueInput:checked + .inr-hamburgerMenueOpen span {
+	opacity: 0;
+}
+
+#inr-hamburgerMenueInput:checked + .inr-hamburgerMenueOpen::before,
+#inr-hamburgerMenueInput:checked + .inr-hamburgerMenueOpen::after {
+	width: 32px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#inr-hamburgerMenueInput:checked + .inr-hamburgerMenueOpen::before {
+	transform: rotate(45deg);
+}
+
+#inr-hamburgerMenueInput:checked + .inr-hamburgerMenueOpen::after {
+	transform: rotate(-45deg);
+}
+
+.box-hamburgerMenue {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  transition: .3s ease-in;
+  opacity: 0;
+}
+
+#inr-hamburgerMenueInput:checked + .inr-hamburgerMenueOpen + .box-hamburgerMenue {
+	opacity: 1;
+	z-index: 1;
+	background-color: #fff;
+}

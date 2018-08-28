@@ -7,18 +7,12 @@ var pageId = "sample";
 %>
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title><%= meta.pageTitle %></title>
-    <link rel="stylesheet" type="text/css" href="style.min.css">
-</head>
-
+<%- include(setLayered + "template/head") %>
 <body>
+
 <%- include(setLayered + "template/header", {
 	pageId: pageId
 }) %>
-<%- include(setLayered + "template/componentSample" ,{
-	txtComponentSample: 'ほげほげほげほげ'
-}) %>
+
 </body>
 </html>
