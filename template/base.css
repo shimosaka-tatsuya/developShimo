@@ -1,0 +1,15 @@
+a {
+	color: #333;
+	text-decoration: none;
+	
+	&:visited,
+	&:hover,
+	&:active {
+		color: #333;
+		text-decoration: none;
+	}
+}
+
+.txt-fontAlphabet {
+	font-family: 'Josefin Sans', sans-serif;
+}

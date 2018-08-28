@@ -1,3 +1,10 @@
-<header>
-	<h1><%= meta.pageTitle %></h1>
+<header class="box-header<%= " "+pageId %>">
+	<% if(pageId !== "top") { %>
+	<a class="txt-siteNmae txt-fontAlphabet" href="/">SHIMO</a>
+	<% }; %>
+	<div class="btn-hamburgerMenue">
+		<input id="inr-hamburgerMenueInput" type="checkbox">
+		<label class="inr-hamburgerMenueOpen" for="inr-hamburgerMenueInput"><span>メニュー</span></label>
+		<div class="box-hamburgerMenue">ここに中身を入れる</div>
+	</div><!-- /.btn-hamburgerMenue -->
 </header>
