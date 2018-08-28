@@ -7,11 +7,13 @@ var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("
 <head>
     <meta charset="UTF-8">
     <title><%= meta.pageTitle %></title>
-    <link rel="stylesheet" type="text/css" href="../common/base.min.css">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
 </head>
 
 <body>
 <%- include(setLayered + "template/header") %>
-    <p>これは<%= meta.pageTitle %>のサンプルです。</p>
+<%- include(setLayered + "template/componentSample" ,{
+	txtComponentSample: 'ほげほげほげほげ'
+}) %>
 </body>
 </html>

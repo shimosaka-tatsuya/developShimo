@@ -12,7 +12,7 @@ gulp.task('build-html', function(){
 	.pipe(data(file => {
 	return {
 		filename: file.path,
-		meta: require("./template/meta.json")
+		meta: require("./json/meta.json")
 	}
 	}))
 	.pipe(ejs({
@@ -42,7 +42,7 @@ gulp.task('build-css', function () {
 		cssnano
 	];
 	
-	return gulp.src(['./_src/**/*.css','!./_src/**/_*.css'])
+	return gulp.src(['./_src/**/*.css'])
 		.pipe(postcss(preprocessors))
 		.pipe(postcss(postprocessors))
 		.pipe(rename({extname: '.min.css'}))
@@ -57,12 +57,12 @@ gulp.task('connect', function() {
 });
 
 gulp.task('reload', function () {
-  gulp.src(['./_src/**/*.ejs', './_src/**/*.css'])
+  gulp.src(['./_view/**/*.ejs', './_view/**/*.css'])
     .pipe(connect.reload());
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css'], ['build-html', 'build-css']);  
+  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css'], ['build-html', 'build-css', 'reload']);  
 });
  
 gulp.task('default', ['connect', 'watch', 'reload', 'build-html', 'build-css']);
