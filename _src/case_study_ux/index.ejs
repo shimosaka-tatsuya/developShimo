@@ -1,0 +1,17 @@
+<%
+/* 相対パスを取得 */
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1);
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title><%= meta.pageTitle %></title>
+    <link rel="stylesheet" type="text/css" href="../common/base.min.css">
+</head>
+
+<body>
+<%- include(setLayered + "template/header") %>
+    <p>これは<%= meta.pageTitle %>のサンプルです。</p>
+</body>
+</html>
