@@ -12,7 +12,7 @@ gulp.task('build-html', function(){
 	.pipe(data(file => {
 	return {
 		filename: file.path,
-		meta: require("./" + file.path.slice(file.path.indexOf("_src")).slice("_src",file.path.lastIndexOf("/") - file.path.lastIndexOf("") + 1) + "meta.json")
+		meta: require("./template/meta.json")
 	}
 	}))
 	.pipe(ejs({
@@ -65,4 +65,4 @@ gulp.task('watch', function () {
   gulp.watch(['./_src/**/*.ejs', './_src/**/*.css'], ['build-html', 'build-css']);  
 });
  
-gulp.task('default', ['connect', 'watch', 'reload']);
+gulp.task('default', ['connect', 'watch', 'reload', 'build-html', 'build-css']);

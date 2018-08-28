@@ -1,16 +1,13 @@
 <%
 /* 相対パスを取得 */
-var sourcelayered = filename.indexOf("_src");
-var rootlayered = filename.slice(sourcelayered);
-var numLayered = rootlayered.split("/").length - 1;
-var pathLayered = "../";
-var setLayered = pathLayered.repeat(numLayered);
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1);
 %>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title><%= meta.pageTitle %></title>
+    <link rel="stylesheet" type="text/css" href="../common/base.min.css">
 </head>
 
 <body>
