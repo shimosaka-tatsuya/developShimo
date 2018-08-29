@@ -1,10 +1,45 @@
 var fs = require('fs');
 var gulp = require('gulp');
 var connect = require('gulp-connect');
+var browserSync = require('browser-sync');
 var rename = require("gulp-rename");
 var ejs = require("gulp-ejs");
 var merge = require('merge-stream');
 var data = require('gulp-data');
+var changed  = require('gulp-changed');
+var imagemin = require('gulp-imagemin');
+var imageminJpg = require('imagemin-jpeg-recompress');
+var imageminPng = require('imagemin-pngquant');
+var imageminGif = require('imagemin-gifsicle');
+var svgmin = require('gulp-svgmin');
+
+// jpg,png,gif画像の圧縮タスク
+gulp.task('imagemin', function(){
+    var srcGlob = './_src/**/*.+(jpg|jpeg|png|gif)';
+    var dstGlob = './_view/';
+    gulp.src( srcGlob )
+    .pipe(changed( dstGlob ))
+    .pipe(imagemin([
+        imageminPng(),
+        imageminJpg(),
+        imageminGif({
+            interlaced: false,
+            optimizationLevel: 3,
+            colors:180
+        })
+    ]
+    ))
+    .pipe(gulp.dest( dstGlob ));
+});
+// svg画像の圧縮タスク
+gulp.task('svgmin', function(){
+    var srcGlob = './_src/**/*.+(svg)';
+    var dstGlob = './_view/';
+    gulp.src( srcGlob )
+    .pipe(changed( dstGlob ))
+    .pipe(svgmin())
+    .pipe(gulp.dest( dstGlob ));
+});
 
 // htmlに関するタスク
 gulp.task('build-html', function(){
@@ -61,9 +96,22 @@ gulp.task('reload', function () {
     .pipe(connect.reload());
 });
  
-gulp.task('watch', function () {
-  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css'], ['build-html', 'build-css']);
-  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['reload']);
+ // Static server
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "./_view/"
+        }
+    });
+});
+
+gulp.task('bs-reload', function () {
+    browserSync.reload();
 });
  
-gulp.task('default', ['connect', 'watch', 'reload', 'build-html', 'build-css']);
+gulp.task('watch', function () {
+  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css', './_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)'], ['build-html', 'build-css', 'imagemin', 'svgmin']);
+  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['reload','bs-reload']);
+});
+ 
+gulp.task('default', ['connect', 'browser-sync', 'watch', 'reload', 'build-html', 'build-css', 'imagemin', 'svgmin']);
