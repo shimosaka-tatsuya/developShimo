@@ -1,5 +1,33 @@
 <head>
     <meta charset="UTF-8">
-    <title><%= meta.pageTitle %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SHIMO | <%= meta.title %></title>
+    <meta name="description" content="<%= meta.description %>">
+
+    <%# EJS ogタグ %>
+    <meta property="og:url" content="<%= meta.ogUrl %>" />
+    <meta property="og:title" content="<%= meta.ogTitle %>" />
+
+    <% if( pageId !== "top" ) { %>
+    <meta property="og:type" content="article">
+    <% } else { %>
+    <meta property="og:type" content="website">
+    <% }; %>
+
+    <meta property="og:description" content="<%= meta.ogDescription %>" />
+    <meta property="og:image" content="<%= meta.ogImage %>" />
+    <meta property="og:site_name" content="SHIMO" />
+    <meta property="fb:app_id" content="ダミーのfacebook IDダミーのfacebook ID">
+    <meta property="og:locale" content="ja_JP" />
+
+    <%# EJS Twitterカード %>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="ダミーのTwitter IDダミーのTwitter ID" />
+
+    <%# EJS サイトアイコン %>
+    <link rel="icon" href="ダミーの画像URLダミーの画像URLダミーの画像URL" sizes="16x16" type="image/png">
+    
+    <%# CSS ※個別のCSSはstyle.min.css内でインポートする %>
     <link rel="stylesheet" type="text/css" href="style.min.css">
 </head>

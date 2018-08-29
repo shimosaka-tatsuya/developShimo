@@ -1,10 +1,33 @@
-<header class="box-header<%= " "+pageId %>">
-	<% if(pageId !== "top") { %>
-	<a class="txt-siteNmae txt-fontAlphabet" href="/">SHIMO</a>
-	<% }; %>
-	<div class="btn-hamburgerMenue">
-		<input id="inr-hamburgerMenueInput" type="checkbox">
-		<label class="inr-hamburgerMenueOpen" for="inr-hamburgerMenueInput"><span></span></label>
-		<div class="box-hamburgerMenue">ここに中身を入れる</div>
-	</div><!-- /.btn-hamburgerMenue -->
+<header class="box-header">
+	<a class="txt-siteName<% if(pageId == "top") { %> txt-siteName--through<% } %> txt-fontAlphabet" href="/">SHIMO</a>
+	<div class="btn-hamburgerMenu">
+		<input id="inr-hamburgerMenuInput" type="checkbox">
+		<label class="inr-hamburgerMenuOpen<% if(pageId == "top") { %> inr-hamburgerMenuOpen--white<% } %>" for="inr-hamburgerMenuInput"><span></span></label>
+		
+        <div class="box-hamburgerMenu">
+            <ul class="list-hamburgerMenu">
+                <li class="txt-transition">
+                    <a href="" class="btn-transition txt-fontAlphabet">TOP<span class="txt-transitionSub">Top Page</span></a>
+                </li><!-- /.btn-hamburgerMenu -->
+
+                <li class="txt-transition">
+                    <a href="" class="btn-transition txt-fontAlphabet">UX<span class="txt-transitionSub">User Experience</span></a>
+                </li><!-- /.btn-hamburgerMenu -->
+
+                <li class="txt-transition">
+                    <a href="" class="btn-transition txt-fontAlphabet">UI<span class="txt-transitionSub">User Interface</span></a>
+                </li><!-- /.btn-hamburgerMenu -->
+
+                <li class="txt-transition">
+                    <a href="" class="btn-transition txt-fontAlphabet">FE<span class="txt-transitionSub">Front End</span></a>
+                </li><!-- /.btn-hamburgerMenu -->
+
+                <li class="txt-transition">
+                    <a href="" class="btn-transition txt-fontAlphabet">GD<span class="txt-transitionSub">Graphic Design</span></a>
+                </li><!-- /.btn-hamburgerMenu -->
+            </ul><!-- /.list-hamburgerMenu -->
+            
+            <div class="box-socialMedia">ソーシャルメディア</div><!-- /.box-socialMedia -->
+        </div><!-- /.box-hamburgerMenu -->
+	</div><!-- /.btn-hamburgerMenu -->
 </header>
