@@ -173,3 +173,8 @@
 	z-index: 1;
 	background-color: #e5e5e5;
 }
+
+.list-hamburgerMenu {
+	width: calc(100% - 100px);
+	margin: 0 auto;
+}
