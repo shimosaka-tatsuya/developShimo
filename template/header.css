@@ -88,9 +88,6 @@
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	white-space: nowrap;
-	text-indent: 100%;
-	overflow-x: hidden;
 	transition-property: opacity, width;
 	transition-duration: .3s;
 }
@@ -262,7 +259,7 @@
 	
 	&::before {
 		display: block;
-		font-size: 55px;
+		font-size: 50px;
 		letter-spacing: .08em;
 		color: #EDE3D5;
 		opacity: .5;
