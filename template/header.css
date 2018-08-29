@@ -4,12 +4,21 @@
 	box-sizing: border-box;
 }
 
-.txt-siteNmae {
+.txt-siteName {
 	font-size: 32px;
 	line-height: 1;
 	letter-spacing: 6px;
 	display: block;
 	float: left;
+	position: relative;
+	transition-property: opacity, z-index;
+	transition-duration: .3s;
+	z-index: 1;
+
+	&--through {
+		opacity: 0;
+		z-index: -10;
+	}
 }
 
 .btn-hamburgerMenu {
@@ -42,6 +51,12 @@
 	height: 2px;
 	position: absolute;
 	background-color: #333;
+}
+
+.inr-hamburgerMenuOpen--white span,
+.inr-hamburgerMenuOpen--white::before,
+.inr-hamburgerMenuOpen--white::after {
+	background-color: #fff;
 }
 
 .inr-hamburgerMenuOpen span {

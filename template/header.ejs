@@ -1,10 +1,9 @@
 <header class="box-header<%= " "+pageId %>">
-	<% if(pageId !== "top") { %>
-	<a class="txt-siteNmae txt-fontAlphabet" href="/">SHIMO</a>
-	<% }; %>
+	
+	<a class="txt-siteName<% if(pageId == "top") { %> txt-siteName--through<% } %> txt-fontAlphabet" href="/">SHIMO</a>
 	<div class="btn-hamburgerMenu">
 		<input id="inr-hamburgerMenuInput" type="checkbox">
-		<label class="inr-hamburgerMenuOpen" for="inr-hamburgerMenuInput"><span></span></label>
+		<label class="inr-hamburgerMenuOpen<% if(pageId == "top") { %> inr-hamburgerMenuOpen--white<% } %>" for="inr-hamburgerMenuInput"><span></span></label>
 		<div class="box-hamburgerMenu">ここに中身を入れる</div>
 	</div><!-- /.btn-hamburgerMenu -->
 </header>
