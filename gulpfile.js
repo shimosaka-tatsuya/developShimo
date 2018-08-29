@@ -12,8 +12,8 @@ gulp.task('build-html', function(){
 	.pipe(data(file => {
 	return {
 		filename: file.path,
-		meta: require("./json/meta.json")
-	}
+		meta: require(("./" + file.path.slice(file.path.indexOf("_src")).slice("_src",file.path.lastIndexOf("/") - file.path.lastIndexOf("") + 1) + "/meta.json")), //各ejsテンプレートごとのjsonファイルを相対パスで読み込む
+    }
 	}))
 	.pipe(ejs({
 		fileKind: 'view'
