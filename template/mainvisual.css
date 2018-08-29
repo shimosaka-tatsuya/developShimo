@@ -1,5 +1,6 @@
 .box-mainVisual {
 	width: 100vw;
 	height: 100vh;
-	background-color: #ccc;
+	background: url("/common/img/bg-mainVisual.jpg") center center no-repeat;
+	background-size: cover;
 }
