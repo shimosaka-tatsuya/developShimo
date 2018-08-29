@@ -3,14 +3,14 @@
 var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1);
 
 /* ページID */
-var pageId = "sample";
+var pageId = "top";
 %>
 <!DOCTYPE html>
 <html lang="ja">
 <%- include(setLayered + "template/head", { pageId: pageId }) %>
 <body>
-
 <%- include(setLayered + "template/header", { pageId: pageId }) %>
+<%- include(setLayered + "template/mainvisual") %>
 
 </body>
 </html>
