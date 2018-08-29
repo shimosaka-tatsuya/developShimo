@@ -57,12 +57,13 @@ gulp.task('connect', function() {
 });
 
 gulp.task('reload', function () {
-  gulp.src(['./_view/**/*.ejs', './_view/**/*.css'])
+  gulp.src(['./**/*.ejs', './**/*.css'])
     .pipe(connect.reload());
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css'], ['build-html', 'build-css', 'reload']);  
+  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css'], ['build-html', 'build-css']);
+  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['reload']);
 });
  
 gulp.task('default', ['connect', 'watch', 'reload', 'build-html', 'build-css']);
