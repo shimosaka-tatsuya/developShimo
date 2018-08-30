@@ -19,14 +19,24 @@
 	line-height: 1;
 	letter-spacing: 6px;
 	display: block;
-	float: left;
-	position: relative;
-	transition-property: opacity, z-index;
-	transition-duration: .3s;
-
+	
 	&--through {
 		opacity: 0;
 		z-index: -10;
+	}
+
+	&--default {
+		float: left;
+		position: relative;
+		transition-property: opacity, z-index;
+		transition-duration: .3s;
+	}
+
+	&--hamburger {
+		position: fixed;
+		top: 26px;
+		left: 25px;
+		z-index: 1;
 	}
 }
 
@@ -34,6 +44,13 @@
     .txt-siteName {
 		font-size: 20px;
 		margin-top: 5px;
+
+	    &--hamburger {
+			position: fixed;
+			top: 12px;
+			left: 12px;
+			z-index: 1;
+		}
     }
 }
 
@@ -323,6 +340,12 @@
 		right: 31px;
 	}
 
+	@media screen and (max-width:480px) {
+	    &:hover::after {
+			right: 14px;
+		}
+	}
+
 	&:hover {
 		background-color: rgba(255, 255, 255, .2);
 	}
@@ -360,12 +383,12 @@
 .txt-categoryName {
 	font-size: 36px;
 	display: table-cell;
-	width: 126px;
+	width: 98px;
 	padding-left: 28px;
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
-	transition-property: padding-left, width, font-size;
+	transition-property: padding-left, font-size;
 	transition-duration: .5s;
 }
 
@@ -379,7 +402,13 @@
 
 .btn-transition:hover .txt-categoryName {
 	padding-left: 38px;
-	width: 136px;
+}
+
+@media screen and (max-width:480px) {
+	.btn-transition:hover .txt-categoryName {
+		padding-left: 14px;
+		width: 72px;
+	}
 }
 
 .txt-categoryNameSub {
