@@ -19,12 +19,10 @@
 	line-height: 1;
 	letter-spacing: 6px;
 	display: block;
-	transition-property: font-size;
-	transition-duration: .5s;
 	float: left;
 	position: relative;
-	transition-property: opacity, z-index;
-	transition-duration: .3s;
+	transition-property: opacity, z-index, font-size;
+	transition-duration: .5s;
 	z-index: 2;
 }
 
@@ -41,14 +39,7 @@
 @media screen and (max-width:480px) {
     .txt-siteName {
 		font-size: 20px;
-		margin-top: 5px;
-
-	    &--hamburger {
-			position: fixed;
-			top: 12px;
-			left: 12px;
-			z-index: 1;
-		}
+		margin-top: 3px;
     }
 }
 
@@ -56,46 +47,47 @@
 	display:none;
 }
 
-.btn-hamburgerMenuOpen {
+.btn-hamburgerMenu {
 	display: block;
 	width: 35px;
 	height: 26px;
 	float: right;
 	position: relative;
 	z-index: 2;
-	transition-property: width, height;
+	transition-property: width, height, transform;
 	transition-duration: .5s;
 	
 	&:hover {
 		cursor: pointer;
+		transform: scale(1.08);
 	}
 }
 
 @media screen and (max-width:480px) {
-    .btn-hamburgerMenuOpen {
+    .btn-hamburgerMenu {
         width: 25px;
 		height: 20px;
     }
 }
 
-.btn-hamburgerMenuOpen span,
-.btn-hamburgerMenuOpen::before,
-.btn-hamburgerMenuOpen::after {
+.btn-hamburgerMenu span,
+.btn-hamburgerMenu::before,
+.btn-hamburgerMenu::after {
 	display: block;
 	height: 2px;
 	position: absolute;
 	background-color: #333;
+	right: 0;
 }
 
-.btn-hamburgerMenuOpen--white span,
-.btn-hamburgerMenuOpen--white::before,
-.btn-hamburgerMenuOpen--white::after {
+.btn-hamburgerMenu--white span,
+.btn-hamburgerMenu--white::before,
+.btn-hamburgerMenu--white::after {
 	background-color: #fff;
 }
 
-.btn-hamburgerMenuOpen span {
+.btn-hamburgerMenu span {
 	width: 22px;
-	right: 0;
 	top: 0;
 	bottom: 0;
 	margin: auto;
@@ -104,49 +96,47 @@
 }
 
 @media screen and (max-width:480px) {
-	.btn-hamburgerMenuOpen span {
+	.btn-hamburgerMenu span {
 		width: 15px;
 	}
 }
 
-.btn-hamburgerMenuOpen::before,
-.btn-hamburgerMenuOpen::after {
+.btn-hamburgerMenu::before,
+.btn-hamburgerMenu::after {
 	transition-property: transform, width, color;
 	transition-duration: .3s;
 }
 
-.btn-hamburgerMenuOpen::before {
+.btn-hamburgerMenu::before {
 	content: "";
 	width: 35px;
-	right: 0;
 	top: 0;
 }
 
 @media screen and (max-width:480px) {
-	.btn-hamburgerMenuOpen::before {
+	.btn-hamburgerMenu::before {
 		width: 25px;
 	}
 }
 
-.btn-hamburgerMenuOpen::after {
+.btn-hamburgerMenu::after {
 	content: "";
 	width: 27px;
-	right: 0;
 	bottom: 0;
 }
 
 @media screen and (max-width:480px) {
-	.btn-hamburgerMenuOpen::after {
+	.btn-hamburgerMenu::after {
 		width: 18px;
 	}
 }
 
-#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen span {
+#hamburgerMenuInput:checked ~ .btn-hamburgerMenu span {
 	opacity: 0;
 }
 
-#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen::before,
-#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen::after {
+#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before,
+#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
 	width: 32px;
 	margin: auto;
 	top: 0;
@@ -157,17 +147,17 @@
 }
 
 @media screen and (max-width:480px) {
-	#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen::before,
-	#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen::after {
+	#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before,
+	#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
 		width: 24px;
 	}
 }
 
-#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen::before {
+#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before {
 	transform: rotate(45deg);
 }
 
-#hamburgerMenuInput:checked ~ .btn-hamburgerMenuOpen::after {
+#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
 	transform: rotate(-45deg);
 }
 
@@ -178,7 +168,6 @@
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	z-index: -1;
 	transition-property: opacity;
 	transition: .3s ease-in-out;
 	opacity: 0;
@@ -189,8 +178,6 @@
 
 #hamburgerMenuInput:checked ~ .box-hamburgerMenu {
 	opacity: 1;
-	z-index: 1;
-	transform: translateX(0);
 	pointer-events: auto;
 }
 
@@ -466,7 +453,8 @@
 
 @media screen and (max-width:480px) {
 	.box-socialMedia {
-
+		font-size: 23px;
+		
 		.btn-socialMedia {
 			padding-right: 14px;
 
@@ -482,27 +470,6 @@
 		.txt-socialMedia {
 			font-size: 22px;
 			padding-top: 10px;
-		}
-	}
-}
-
-@media screen and (max-width:480px) {
-	.box-socialMedia {
-		font-size: 23px;
-		margin-top: 24px;
-		
-		a {
-			display: inline-block;
-			margin-right: 12px;
-			
-			&:nth-last-child(1) {
-				margin-right: 14px;
-			}
-		}
-		
-		img {
-			vertical-align: text-bottom;
-			width: 40px;
 		}
 	}
 }
