@@ -2,4 +2,7 @@
 node_modules/
 
 # _view/img 配下のファイルはgit管理しない
-_view/img/
+**/*.jpg
+**/*.png
+**/*.gif
+**/*.svg
