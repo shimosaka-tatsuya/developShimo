@@ -1,52 +1,49 @@
 <header class="box-header">
+	<input id="hamburgerMenuInput" type="checkbox">
 	<a class="txt-siteName txt-siteName--default<% if(pageId == "top") { %> txt-siteName--through<% } %> txt-fontAlphabet" href="/">SHIMO</a>
-	<div class="btn-hamburgerMenu">
-		<input id="inr-hamburgerMenuInput" type="checkbox">
-		<label class="inr-hamburgerMenuOpen<% if(pageId == "top") { %> inr-hamburgerMenuOpen--white<% } %>" for="inr-hamburgerMenuInput"><span></span></label>
+	<label class="btn-hamburgerMenuOpen<% if(pageId == "top") { %> btn-hamburgerMenuOpen--white<% } %>" for="hamburgerMenuInput"><span></span></label>
 
-		<div class="box-hamburgerMenu">
-				<a href="/" class="txt-siteName txt-siteName--hamburger txt-fontAlphabet">SHIMO</a>
+	<div class="box-hamburgerMenu">
+			<div class="wp-hamburgerMenuInr">
+				<div class="box-hamburgerMenuInr">
 
-				<div class="wp-hamburgerMenuInr">
-					<div class="box-hamburgerMenuInr">
+					<ul class="list-hamburgerMenu">
+						<li class="txt-transition">
+							<a href="#" class="btn-transition btn-transition--top<% if(pageId == 'top') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">TOP</span><span class="txt-categoryNameSub">Top Page</span></a>
+						</li><!-- /.btn-hamburgerMenu -->
 
-						<ul class="list-hamburgerMenu">
-							<li class="txt-transition">
-								<a href="#" class="btn-transition btn-transition--top<% if(pageId == 'top') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">TOP</span><span class="txt-categoryNameSub">Top Page</span></a>
-							</li><!-- /.btn-hamburgerMenu -->
+						<li class="txt-transition">
+							<a href="#" class="btn-transition btn-transition--ux<% if(pageId == 'skill-ux') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">UX</span><span class="txt-categoryNameSub">User Experience</span></a>
+						</li><!-- /.btn-hamburgerMenu -->
 
-							<li class="txt-transition">
-								<a href="#" class="btn-transition btn-transition--ux<% if(pageId == 'skill-ux') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">UX</span><span class="txt-categoryNameSub">User Experience</span></a>
-							</li><!-- /.btn-hamburgerMenu -->
+						<li class="txt-transition">
+							<a href="#" class="btn-transition btn-transition--ui<% if(pageId == 'skill-ui') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">UI</span><span class="txt-categoryNameSub">User Interface</span></a>
+						</li><!-- /.btn-hamburgerMenu -->
 
-							<li class="txt-transition">
-								<a href="#" class="btn-transition btn-transition--ui<% if(pageId == 'skill-ui') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">UI</span><span class="txt-categoryNameSub">User Interface</span></a>
-							</li><!-- /.btn-hamburgerMenu -->
+						<li class="txt-transition">
+							<a href="#" class="btn-transition btn-transition--fe<% if(pageId == 'skill-fe') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">FE</span><span class="txt-categoryNameSub">Front End</span></a>
+						</li><!-- /.btn-hamburgerMenu -->
 
-							<li class="txt-transition">
-								<a href="#" class="btn-transition btn-transition--fe<% if(pageId == 'skill-fe') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">FE</span><span class="txt-categoryNameSub">Front End</span></a>
-							</li><!-- /.btn-hamburgerMenu -->
+						<li class="txt-transition">
+							<a href="#" class="btn-transition btn-transition--gd<% if(pageId == 'skill-gd') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">GD</span><span class="txt-categoryNameSub">Graphic Design</span></a>
+						</li><!-- /.btn-hamburgerMenu -->
+					</ul><!-- /.list-hamburgerMenu -->
 
-							<li class="txt-transition">
-								<a href="#" class="btn-transition btn-transition--gd<% if(pageId == 'skill-gd') { %> btn-transition--current<% } %> txt-fontAlphabet"><span class="txt-categoryName">GD</span><span class="txt-categoryNameSub">Graphic Design</span></a>
-							</li><!-- /.btn-hamburgerMenu -->
-						</ul><!-- /.list-hamburgerMenu -->
+					<div class="box-socialMedia">
+						<div class="btn-socialMedia">
+							<a href="ダミーのフェイスブックペーURL"><img src="/common/img/ico-followFacebook.svg" align="アイコン フェイスブック フォロー" width="50" height=""></a>
+						</div>
 
-						<div class="box-socialMedia">
-							<div class="btn-socialMedia">
-								<a href="ダミーのフェイスブックペーURL"><img src="/common/img/ico-followFacebook.svg" align="アイコン フェイスブック フォロー" width="50" height=""></a>
-							</div>
+						<div class="btn-socialMedia">
+							<a href="ダミーのフェイスブックペーURL"><img src="/common/img/ico-followInstagram.svg" align="アイコン インスタグラム フォロー" width="50" height=""></a>
+						</div>
 
-							<div class="btn-socialMedia">
-								<a href="ダミーのフェイスブックペーURL"><img src="/common/img/ico-followInstagram.svg" align="アイコン インスタグラム フォロー" width="50" height=""></a>
-							</div>
+						<span class="txt-socialMedia txt-fontAlphabet">Follow</span>
+					</div><!-- /.box-socialMedia -->
 
-							<span class="txt-socialMedia txt-fontAlphabet">Follow</span>
-						</div><!-- /.box-socialMedia -->
+				</div><!-- /.box-hamburgerMenuInr -->
+			</div><!-- /.wp-hamburgerMenuInr -->
 
-					</div><!-- /.box-hamburgerMenuInr -->
-				</div><!-- /.wp-hamburgerMenuInr -->
+	</div><!-- /.box-hamburgerMenu -->
 
-		</div><!-- /.box-hamburgerMenu -->
-	</div><!-- /.btn-hamburgerMenu -->
 </header>
