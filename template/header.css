@@ -107,9 +107,6 @@
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	white-space: nowrap;
-	text-indent: 100%;
-	overflow-x: hidden;
 	transition-property: opacity, width;
 	transition-duration: .3s;
 }
@@ -295,7 +292,7 @@
 
 	&::before {
 		display: block;
-		font-size: 55px;
+		font-size: 50px;
 		letter-spacing: .08em;
 		color: #EDE3D5;
 		opacity: .5;
@@ -491,6 +488,27 @@
 		.txt-socialMedia {
 			font-size: 22px;
 			padding-top: 10px;
+		}
+	}
+}
+
+@media screen and (max-width:480px) {
+	.box-socialMedia {
+		font-size: 23px;
+		margin-top: 24px;
+		
+		a {
+			display: inline-block;
+			margin-right: 12px;
+			
+			&:nth-last-child(1) {
+				margin-right: 14px;
+			}
+		}
+		
+		img {
+			vertical-align: text-bottom;
+			width: 40px;
 		}
 	}
 }
