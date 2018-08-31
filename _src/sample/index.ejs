@@ -7,10 +7,10 @@ var pageId = "top";
 %>
 <!DOCTYPE html>
 <html lang="ja">
-<%- include(setLayered + "head", { pageId: pageId }) %>
+<%- include(setLayered + "base/head", { pageId: pageId }) %>
 <body>
-<%- include(setLayered + "header", { pageId: pageId }) %>
-<%- include(setLayered + "mainvisual") %>
+<%- include(setLayered + "base/header", { pageId: pageId }) %>
+<%- include(setLayered + "main-visual/main-visual") %>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import "./../../template/reset";
-@import "./../../template/base";
-@import "./../../template/header";
-@import "./../../template/mainvisual";
+@import "./../../template/base/reset";
+@import "./../../template/base/base";
+@import "./../../template/base/header";
+@import "./../../template/main-visual/main-visual";
