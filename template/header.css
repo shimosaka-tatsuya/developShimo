@@ -284,7 +284,7 @@
 		font-family: 'Meddon', cursive;
 		white-space: nowrap;
 		transform: rotate(-7deg);
-		transition-property: left, font-size;
+		transition-property: top, left, font-size;
 		transition-duration: .5s;
 	}
 
@@ -453,7 +453,7 @@
 @media screen and (max-width:480px) {
 	.box-socialMedia {
 		font-size: 23px;
-		
+
 		.btn-socialMedia {
 			padding-right: 14px;
 
