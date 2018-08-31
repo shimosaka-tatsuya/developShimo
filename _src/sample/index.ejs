@@ -1,16 +1,16 @@
 <%
 /* 相対パスを取得 */
-var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1);
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1)+"template/";
 
 /* ページID */
 var pageId = "top";
 %>
 <!DOCTYPE html>
 <html lang="ja">
-<%- include(setLayered + "template/head", { pageId: pageId }) %>
+<%- include(setLayered + "head", { pageId: pageId }) %>
 <body>
-<%- include(setLayered + "template/header", { pageId: pageId }) %>
-<%- include(setLayered + "template/mainvisual") %>
+<%- include(setLayered + "header", { pageId: pageId }) %>
+<%- include(setLayered + "mainvisual") %>
 
 </body>
 </html>
