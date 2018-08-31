@@ -1,7 +1,6 @@
-# node_modules 配下のファイルはgit管理しない
+# 以下ははgit管理しない
+_view/
 node_modules/
-
-# _view/img 配下のファイルはgit管理しない
 **/*.jpg
 **/*.png
 **/*.gif
