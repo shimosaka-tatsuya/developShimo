@@ -1,6 +1,5 @@
 var fs = require('fs');
 var gulp = require('gulp');
-var connect = require('gulp-connect');
 var browserSync = require('browser-sync');
 var rename = require("gulp-rename");
 var ejs = require("gulp-ejs");
@@ -93,19 +92,7 @@ gulp.task('build-css', function () {
 		.pipe(gulp.dest('./_view/'));
 });
 
-gulp.task('connect', function() {
-  connect.server({
-    root: './_view/',
-    livereload: true
-  });
-});
-
-gulp.task('reload', function () {
-  gulp.src(['./**/*.ejs', './**/*.css'])
-    .pipe(connect.reload());
-});
- 
- // Static server
+// Static server
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
@@ -120,7 +107,7 @@ gulp.task('bs-reload', function () {
  
 gulp.task('watch', function () {
   gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css', './_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)', './**/*.js'], ['build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
-  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['reload','bs-reload']);
+  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['bs-reload']);
 });
  
-gulp.task('default', ['connect', 'browser-sync', 'watch', 'reload', 'build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
+gulp.task('default', ['browser-sync', 'bs-reload', 'watch', 'build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
