@@ -106,8 +106,10 @@ gulp.task('bs-reload', function () {
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css', './_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)', './**/*.js'], ['build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
-  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['bs-reload']);
+  gulp.watch(['./_src/**/*.ejs', './template/**/*.ejs'], ['build-html']);
+  gulp.watch(['./_src/**/*.css', './template/**/*.css'], ['build-css']);
+  gulp.watch(['./_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)'], ['imagemin', 'svgmin']);
+  gulp.watch(['./_src/**/*.js'], ['build-js']);
+  gulp.watch(['./_view/**/*'], ['bs-reload']);
 });
- 
 gulp.task('default', ['browser-sync', 'bs-reload', 'watch', 'build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
