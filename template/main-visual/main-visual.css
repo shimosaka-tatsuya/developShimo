@@ -12,6 +12,43 @@
 	}    
 }
 
+.ttl-siteName {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 5;
+	text-align: center;
+	color: #fff;
+	height: min-content;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.txt-sitenameSub,
+.txt-sitenameMain,
+txt-myName {
+	display: block;
+	line-height: 1;
+}
+
+.txt-sitenameSub {
+	font-size: 16px;
+	letter-spacing: .3em;
+	margin-bottom: 28px;
+}
+
+.txt-sitenameMain {
+	font-size: 78px;
+	font-weight: normal;
+}
+
+.txt-myName {
+	font-size: 20px;
+	transform: rotate(-6deg);
+}
+
 .box-mainVisualSlide {
 	width: 100%;
 	height: 100%;
