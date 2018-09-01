@@ -92,6 +92,7 @@
 	margin: auto;
 	transition-property: opacity, width;
 	transition-duration: .3s;
+	transform-origin: center left;
 }
 
 @media screen and (max-width:480px) {
@@ -102,7 +103,7 @@
 
 .btn-hamburgerMenu::before,
 .btn-hamburgerMenu::after {
-	transition-property: transform, width, color;
+	transition-property: transform, width, color, top, left, right, bottom;
 	transition-duration: .3s;
 }
 
@@ -110,6 +111,7 @@
 	content: "";
 	width: 35px;
 	top: 0;
+	transform-origin: top right;
 }
 
 @media screen and (max-width:480px) {
@@ -122,6 +124,7 @@
 	content: "";
 	width: 27px;
 	bottom: 0;
+	transform-origin: bottom right;
 }
 
 @media screen and (max-width:480px) {
@@ -132,14 +135,13 @@
 
 #hamburgerMenuInput:checked ~ .btn-hamburgerMenu span {
 	opacity: 0;
+	width: 0;
 }
 
 #hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before,
 #hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
-	width: 32px;
+	width: 35px;
 	margin: auto;
-	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
 	background-color: #333;
@@ -148,16 +150,18 @@
 @media screen and (max-width:480px) {
 	#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before,
 	#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
-		width: 24px;
+		width: 26px;
 	}
 }
 
 #hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before {
-	transform: rotate(45deg);
+	top: 0;
+    transform: rotate(-45deg);
 }
 
 #hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
-	transform: rotate(-45deg);
+    bottom: 0;
+    transform: rotate(45deg);
 }
 
 .box-hamburgerMenu {
