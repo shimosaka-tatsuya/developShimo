@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 4;
 }
 
 @media screen and (max-width:480px) {
@@ -204,7 +205,7 @@
 	}
 
 	&:before {
-		background: url("/common/img/bg-mainVisual.jpg") center center no-repeat;
+		background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
 		background-size: cover;
 		filter: blur(8px);
 	}
