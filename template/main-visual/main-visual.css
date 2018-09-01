@@ -1,6 +1,137 @@
 .box-mainVisual {
 	width: 100vw;
 	height: 100vh;
-	background: url("/common/img/bg-mainVisual.jpg") center center no-repeat;
+	position: relative;
+	transition-property: height;
+	transition-duration: .5s;
+}
+
+@media screen and (max-width:480px) {
+	.box-mainVisual {
+		height: calc(100vh - 80px);
+	}    
+}
+
+.img-mainVisual {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	&::after {
+		content: "";
+		display: block;
+		height: 4px;
+		background-color: #CCC2B4;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	
+	@media screen and (max-width:480px) {
+		&::after {
+			height: 3px;
+		}    
+	}
+}
+
+.img-mainVisualInr {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes fadeInSlide {
+	0% {
+		opacity: 1;
+	}
+	96% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeInSlideGauge {
+	0% {
+		opacity: 1;
+		width: 0;
+	}
+	99% {
+		opacity: 1;
+		width: 100%;
+	}
+	100% {
+		opacity: 0;
+		width: 100%;
+	}
+}
+
+.box-mainVisualActive .img-mainVisual {
+	.img-mainVisualInr {
+		animation-name: fadeInSlide;
+	}
+	
+	&::after {
+		animation-name: fadeInSlideGauge;
+	}
+	
+	.img-mainVisualInr,
+	&::after {
+		animation-duration: 15s;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
+	}
+}
+
+/* スライドの指定は以下を編集 */
+/* 画像の指定はbackgroundで */
+/* スライドが1つ追加されるごとに15sずつanimation-delayを追加。初期値は0。 */
+/* 1枚目のスライドのみ、.box-mainVisualにも画像指定する。 */
+.box-mainVisual {
+	background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
 	background-size: cover;
+}
+
+.img-mainVisual:nth-child(1) {
+	z-index: 3;
+	
+	.img-mainVisualInr {
+		background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
+		background-size: cover;
+	}
+	
+	.img-mainVisualInr,
+	&::after {
+		animation-delay: 0;
+	}
+}
+
+.img-mainVisual:nth-child(2) {
+	z-index: 2;
+	
+	.img-mainVisualInr {
+		background: url("/common/img/bg-mainVisual02.jpg") center center no-repeat;
+		background-size: cover;
+	}
+	
+	.img-mainVisualInr,
+	&::after {
+		animation-delay: 15s;
+	}
+}
+
+.img-mainVisual:nth-child(3) {
+	z-index: 1;
+	
+	.img-mainVisualInr {
+		background: url("/common/img/bg-mainVisual03.jpg") center center no-repeat;
+		background-size: cover;
+	}
+	
+	.img-mainVisualInr,
+	&::after {
+		animation-delay: 30s;
+	}
 }

@@ -1,9 +1,9 @@
 var fs = require('fs');
 var gulp = require('gulp');
-var connect = require('gulp-connect');
 var browserSync = require('browser-sync');
 var rename = require("gulp-rename");
 var ejs = require("gulp-ejs");
+var uglify = require('gulp-uglify');
 var merge = require('merge-stream');
 var data = require('gulp-data');
 var changed  = require('gulp-changed');
@@ -39,6 +39,14 @@ gulp.task('svgmin', function(){
     .pipe(changed( dstGlob ))
     .pipe(svgmin())
     .pipe(gulp.dest( dstGlob ));
+});
+
+// JSに関するタスク
+gulp.task('build-js', function() {
+    return gulp.src("_src/**/*.js")
+        .pipe(uglify())
+        .pipe(rename({extname: '.min.js'}))
+        .pipe(gulp.dest('_view/'));
 });
 
 // htmlに関するタスク
@@ -84,19 +92,7 @@ gulp.task('build-css', function () {
 		.pipe(gulp.dest('./_view/'));
 });
 
-gulp.task('connect', function() {
-  connect.server({
-    root: './_view/',
-    livereload: true
-  });
-});
-
-gulp.task('reload', function () {
-  gulp.src(['./**/*.ejs', './**/*.css'])
-    .pipe(connect.reload());
-});
- 
- // Static server
+// Static server
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
@@ -110,8 +106,10 @@ gulp.task('bs-reload', function () {
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./_src/**/*.ejs', './_src/**/*.css', './template/**/*.ejs', './template/**/*.css', './_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)'], ['build-html', 'build-css', 'imagemin', 'svgmin']);
-  gulp.watch(['./_view/**/*.ejs', './_view/**/*.css'], ['reload','bs-reload']);
+  gulp.watch(['./_src/**/*.ejs', './template/**/*.ejs'], ['build-html']);
+  gulp.watch(['./_src/**/*.css', './template/**/*.css'], ['build-css']);
+  gulp.watch(['./_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)'], ['imagemin', 'svgmin']);
+  gulp.watch(['./_src/**/*.js'], ['build-js']);
+  gulp.watch(['./_view/**/*'], ['bs-reload']);
 });
- 
-gulp.task('default', ['connect', 'browser-sync', 'watch', 'reload', 'build-html', 'build-css', 'imagemin', 'svgmin']);
+gulp.task('default', ['browser-sync', 'bs-reload', 'watch', 'build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
