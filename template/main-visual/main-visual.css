@@ -39,7 +39,6 @@
 .img-mainVisualInr {
 	width: 100%;
 	height: 100%;
-	opacity: 0;
 }
 
 @keyframes fadeInSlide {
@@ -56,8 +55,8 @@
 
 @keyframes fadeInSlideGauge {
 	0% {
-		width: 0;
 		opacity: 1;
+		width: 0;
 	}
 	99% {
 		opacity: 1;
