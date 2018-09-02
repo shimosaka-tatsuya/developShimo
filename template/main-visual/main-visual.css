@@ -367,11 +367,21 @@ txt-myName {
 		opacity: .6;
 	}
 	
-	&:active
+	&:active,
 	&:hover,
 	&:visited {
 		color: #fff;
 	}
+	
+	@media screen and (max-width:480px) {
+		&:active,
+		&:hover,
+		&:visited {
+			opacity: 1;
+		}   
+	}
+	
+	
 }
 
 .box-mainVisualSlide {
