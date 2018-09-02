@@ -21,10 +21,10 @@
 	left: 0;
 	right: 0;
 	margin: auto;
+	height: 153px;
 	z-index: 5;
 	text-align: center;
 	color: #fff;
-	height: min-content;
 	text-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
@@ -184,7 +184,7 @@ txt-myName {
 	font-size: 17px;
 	transform: rotate(-6deg);
 	letter-spacing: .12em;
-	margin-left: 5px;
+	margin-left: 1px;
 	opacity: .8;
 	animation-name: fadeInMyName;
 	animation-delay: 4.7s;
@@ -194,6 +194,10 @@ txt-myName {
 }
 
 @media screen and (max-width:480px) {
+	.ttl-siteName {
+		height: 118px
+	}
+	
 	@keyframes fadeInSiteNameSub--sp {
 		0% {
 			opacity: 0;
