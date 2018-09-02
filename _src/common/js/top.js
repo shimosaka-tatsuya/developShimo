@@ -1,11 +1,11 @@
 $(window).load(function() {
-	$(".box-mainVisual").addClass("box-mainVisualActive");
+	$(".box-mainVisualSlide").addClass("box-mainVisualSlideActive");
 	$(function(){
 	    setInterval(function(){
-	    	$(".box-mainVisual").removeClass("box-mainVisualActive");
+	    	$(".box-mainVisualSlide").removeClass("box-mainVisualSlideActive");
 			$(function(){
 			setTimeout(function(){
-				$(".box-mainVisual").addClass("box-mainVisualActive");
+				$(".box-mainVisualSlide").addClass("box-mainVisualSlideActive");
 				},100);
 			});
 	    },45000);

@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 4;
+	z-index: 6;
 }
 
 @media screen and (max-width:480px) {
@@ -39,7 +39,7 @@
 @media screen and (max-width:480px) {
     .txt-siteName {
 		font-size: 20px;
-		margin-top: 3px;
+		margin-top: 5px;
     }
 }
 
@@ -324,7 +324,7 @@
 		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
 		background-size: 9px;
 		transform: rotate(180deg);
-		transition-property: right;
+		transition-property: right, background-color;
 		transition-duration: .5s;
 	}
 

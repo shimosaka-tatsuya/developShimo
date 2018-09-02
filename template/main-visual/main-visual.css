@@ -4,12 +4,316 @@
 	position: relative;
 	transition-property: height;
 	transition-duration: .5s;
+	margin-bottom: 1000px;
 }
 
 @media screen and (max-width:480px) {
 	.box-mainVisual {
 		height: calc(100vh - 80px);
 	}    
+}
+
+.ttl-siteName {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 5;
+	text-align: center;
+	color: #fff;
+	height: min-content;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.txt-sitenameSub,
+.txt-sitenameMain,
+txt-myName {
+	display: block;
+	line-height: 1;
+}
+
+@keyframes fadeInSiteNameSub {
+	0% {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.txt-siteNameSub {
+	font-size: 16px;
+	letter-spacing: .3em;
+	margin-bottom: 21px;
+	animation-name: fadeInSiteNameSub;
+	animation-delay: 3.9s;
+	animation-duration: .3s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+.txt-siteNameMain {
+	font-size: 78px;
+	font-weight: normal;
+	position: relative;
+	height: 1em;
+	margin-bottom: 10px;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+@keyframes fadeInCharacter-s {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+	70% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-149px);
+	}
+}
+
+@keyframes slideCharacter-h {
+	0% {
+		transform: translateX(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(-75px);
+		opacity: 1;
+	}
+}
+
+@keyframes slideCharacter-i {
+	0% {
+		transform: translateX(-11px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(-11px);
+		opacity: 1;
+	}
+}
+
+@keyframes slideCharacter-m {
+	0% {
+		transform: translateX(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(57px);
+		opacity: 1;
+	}
+}
+
+@keyframes slideCharacter-o {
+	0% {
+		transform: translateX(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(143px);
+		opacity: 1;
+	}
+}
+
+.txt-siteNameCharacter {
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+.txt-siteNameCharacter-s {
+	z-index: 5;
+	animation-name: fadeInCharacter-s;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+}
+
+.txt-siteNameCharacter-h {
+	z-index: 4;
+	animation-name: slideCharacter-h;
+}
+
+.txt-siteNameCharacter-i {
+	z-index: 3;
+	animation-name: slideCharacter-i;
+}
+
+.txt-siteNameCharacter-m {
+	z-index: 2;
+	animation-name: slideCharacter-m;
+}
+
+.txt-siteNameCharacter-o {
+	z-index: 1;
+	animation-name: slideCharacter-o;
+}
+
+.txt-siteNameCharacter-h,
+.txt-siteNameCharacter-i,
+.txt-siteNameCharacter-m,
+.txt-siteNameCharacter-o {
+	animation-delay: 3.2s;
+	animation-duration: .3s;
+}
+
+@keyframes fadeInMyName {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.txt-myName {
+	font-size: 17px;
+	transform: rotate(-6deg);
+	letter-spacing: .12em;
+	margin-left: 5px;
+	opacity: .8;
+	animation-name: fadeInMyName;
+	animation-delay: 4.7s;
+	animation-duration: .3s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+@media screen and (max-width:480px) {
+	@keyframes fadeInSiteNameSub--sp {
+		0% {
+			opacity: 0;
+			transform: translateY(12px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	
+	.txt-siteNameSub {
+		font-size: 12px;
+		margin-bottom: 18px;
+		animation-name: fadeInSiteNameSub--sp;
+	}
+	
+	.txt-siteNameMain {
+		font-size: 65px;
+		margin-bottom: 8px;
+	}
+	
+	@keyframes fadeInCharacter-s--sp {
+		0% {
+			opacity: 0;
+			transform: translateX(0);
+		}
+		70% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(-111px);
+		}
+	}
+	
+	@keyframes slideCharacter-h--sp {
+		0% {
+			transform: translateX(0);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(-55px);
+			opacity: 1;
+		}
+	}
+	
+	@keyframes slideCharacter-i--sp {
+		0% {
+			transform: translateX(-7px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(-7px);
+			opacity: 1;
+		}
+	}
+	
+	@keyframes slideCharacter-m--sp {
+		0% {
+			transform: translateX(0);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(42px);
+			opacity: 1;
+		}
+	}
+	
+	@keyframes slideCharacter-o--sp {
+		0% {
+			transform: translateX(0);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(105px);
+			opacity: 1;
+		}
+	}
+	
+	.txt-siteNameCharacter-s {
+		animation-name: fadeInCharacter-s--sp;
+	}
+	
+	.txt-siteNameCharacter-h {
+		animation-name: slideCharacter-h--sp;
+	}
+	
+	.txt-siteNameCharacter-i {
+		animation-name: slideCharacter-i--sp;
+	}
+	
+	.txt-siteNameCharacter-m {
+		animation-name: slideCharacter-m--sp;
+	}
+	
+	.txt-siteNameCharacter-o {
+		animation-name: slideCharacter-o--sp;
+	}
+	
+	@keyframes fadeInMyName--sp {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	.txt-myName {
+		animation-name: fadeInMyName--sp;
+	}
+}
+
+.box-mainVisualSlide {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .img-mainVisual {
@@ -68,7 +372,7 @@
 	}
 }
 
-.box-mainVisualActive .img-mainVisual {
+.box-mainVisualSlideActive .img-mainVisual {
 	.img-mainVisualInr {
 		animation-name: fadeInSlide;
 	}
@@ -88,8 +392,8 @@
 /* スライドの指定は以下を編集 */
 /* 画像の指定はbackgroundで */
 /* スライドが1つ追加されるごとに15sずつanimation-delayを追加。初期値は0。 */
-/* 1枚目のスライドのみ、.box-mainVisualにも画像指定する。 */
-.box-mainVisual {
+/* 1枚目のスライドのみ、.box-mainVisualSlideにも画像指定する。 */
+.box-mainVisualSlide {
 	background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
 	background-size: cover;
 }
