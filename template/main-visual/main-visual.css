@@ -62,6 +62,8 @@ txt-myName {
 	position: relative;
 	height: 1em;
 	margin-bottom: 10px;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 @keyframes fadeInCharacter-s {
@@ -193,7 +195,7 @@ txt-myName {
 }
 
 @media screen and (max-width:480px) {
-	@keyframes fadeInSiteNameSub {
+	@keyframes fadeInSiteNameSub--sp {
 		0% {
 			opacity: 0;
 			transform: translateY(12px);
@@ -205,20 +207,20 @@ txt-myName {
 	}
 	
 	.txt-siteNameSub {
-		font-size: 11px;
+		font-size: 12px;
 		margin-bottom: 21px;
 		animation-name: fadeInSiteNameSub--sp;
 	}
 	
 	.txt-siteNameMain {
-		font-size: 78px;
+		font-size: 65px;
 		font-weight: normal;
 		position: relative;
 		height: 1em;
 		margin-bottom: 10px;
 	}
 	
-	@keyframes fadeInCharacter-s {
+	@keyframes fadeInCharacter-s--sp {
 		0% {
 			opacity: 0;
 			transform: translateX(0);
@@ -229,50 +231,50 @@ txt-myName {
 		}
 		100% {
 			opacity: 1;
-			transform: translateX(-149px);
+			transform: translateX(-111px);
 		}
 	}
 	
-	@keyframes slideCharacter-h {
+	@keyframes slideCharacter-h--sp {
 		0% {
 			transform: translateX(0);
 			opacity: 0;
 		}
 		100% {
-			transform: translateX(-75px);
+			transform: translateX(-55px);
 			opacity: 1;
 		}
 	}
 	
-	@keyframes slideCharacter-i {
+	@keyframes slideCharacter-i--sp {
 		0% {
-			transform: translateX(-11px);
+			transform: translateX(-7px);
 			opacity: 0;
 		}
 		100% {
-			transform: translateX(-11px);
+			transform: translateX(-7px);
 			opacity: 1;
 		}
 	}
 	
-	@keyframes slideCharacter-m {
-		0% {
-			transform: translateX(0);
-			opacity: 0;
-		}
-		100% {
-			transform: translateX(57px);
-			opacity: 1;
-		}
-	}
-	
-	@keyframes slideCharacter-o {
+	@keyframes slideCharacter-m--sp {
 		0% {
 			transform: translateX(0);
 			opacity: 0;
 		}
 		100% {
-			transform: translateX(143px);
+			transform: translateX(42px);
+			opacity: 1;
+		}
+	}
+	
+	@keyframes slideCharacter-o--sp {
+		0% {
+			transform: translateX(0);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(105px);
 			opacity: 1;
 		}
 	}
@@ -290,30 +292,29 @@ txt-myName {
 	}
 	
 	.txt-siteNameCharacter-s {
-		z-index: 5;
-		animation-name: fadeInCharacter-s;
+		animation-name: fadeInCharacter-s--sp;
 		animation-duration: 1s;
 		animation-delay: 2.5s;
 	}
 	
 	.txt-siteNameCharacter-h {
 		z-index: 4;
-		animation-name: slideCharacter-h;
+		animation-name: slideCharacter-h--sp;
 	}
 	
 	.txt-siteNameCharacter-i {
 		z-index: 3;
-		animation-name: slideCharacter-i;
+		animation-name: slideCharacter-i--sp;
 	}
 	
 	.txt-siteNameCharacter-m {
 		z-index: 2;
-		animation-name: slideCharacter-m;
+		animation-name: slideCharacter-m--sp;
 	}
 	
 	.txt-siteNameCharacter-o {
 		z-index: 1;
-		animation-name: slideCharacter-o;
+		animation-name: slideCharacter-o--sp;
 	}
 	
 	.txt-siteNameCharacter-h,
@@ -324,7 +325,7 @@ txt-myName {
 		animation-duration: .3s;
 	}
 	
-	@keyframes fadeInMyName {
+	@keyframes fadeInMyName--sp {
 		0% {
 			opacity: 0;
 		}
@@ -334,12 +335,12 @@ txt-myName {
 	}
 	
 	.txt-myName {
-		font-size: 17px;
+		font-size: 15px;
 		transform: rotate(-6deg);
 		letter-spacing: .12em;
 		margin-left: 5px;
 		opacity: .8;
-		animation-name: fadeInMyName;
+		animation-name: fadeInMyName--sp;
 		animation-delay: 4.7s;
 		animation-duration: .3s;
 		animation-timing-function: ease;
