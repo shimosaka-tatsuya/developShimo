@@ -42,11 +42,23 @@ txt-myName {
 .txt-sitenameMain {
 	font-size: 78px;
 	font-weight: normal;
+	position: relative;
+}
+
+.txt-siteNameCharacter {
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .txt-myName {
-	font-size: 20px;
+	font-size: 17px;
 	transform: rotate(-6deg);
+	letter-spacing: .12em;
 }
 
 .box-mainVisualSlide {
