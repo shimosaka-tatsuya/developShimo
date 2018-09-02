@@ -208,16 +208,13 @@ txt-myName {
 	
 	.txt-siteNameSub {
 		font-size: 12px;
-		margin-bottom: 21px;
+		margin-bottom: 18px;
 		animation-name: fadeInSiteNameSub--sp;
 	}
 	
 	.txt-siteNameMain {
 		font-size: 65px;
-		font-weight: normal;
-		position: relative;
-		height: 1em;
-		margin-bottom: 10px;
+		margin-bottom: 8px;
 	}
 	
 	@keyframes fadeInCharacter-s--sp {
@@ -279,50 +276,24 @@ txt-myName {
 		}
 	}
 	
-	.txt-siteNameCharacter {
-		display: inline-block;
-		position: absolute;
-		margin: auto;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		animation-timing-function: ease;
-		animation-fill-mode: both;
-	}
-	
 	.txt-siteNameCharacter-s {
 		animation-name: fadeInCharacter-s--sp;
-		animation-duration: 1s;
-		animation-delay: 2.5s;
 	}
 	
 	.txt-siteNameCharacter-h {
-		z-index: 4;
 		animation-name: slideCharacter-h--sp;
 	}
 	
 	.txt-siteNameCharacter-i {
-		z-index: 3;
 		animation-name: slideCharacter-i--sp;
 	}
 	
 	.txt-siteNameCharacter-m {
-		z-index: 2;
 		animation-name: slideCharacter-m--sp;
 	}
 	
 	.txt-siteNameCharacter-o {
-		z-index: 1;
 		animation-name: slideCharacter-o--sp;
-	}
-	
-	.txt-siteNameCharacter-h,
-	.txt-siteNameCharacter-i,
-	.txt-siteNameCharacter-m,
-	.txt-siteNameCharacter-o {
-		animation-delay: 3.2s;
-		animation-duration: .3s;
 	}
 	
 	@keyframes fadeInMyName--sp {
@@ -335,16 +306,7 @@ txt-myName {
 	}
 	
 	.txt-myName {
-		font-size: 15px;
-		transform: rotate(-6deg);
-		letter-spacing: .12em;
-		margin-left: 5px;
-		opacity: .8;
 		animation-name: fadeInMyName--sp;
-		animation-delay: 4.7s;
-		animation-duration: .3s;
-		animation-timing-function: ease;
-		animation-fill-mode: both;
 	}
 }
 
