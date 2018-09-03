@@ -234,7 +234,7 @@
 	}
 	
 	.wp-profileThumbnail {
-		width: calc(100vw - 18px);
+		width: calc(100vw - 21px);
 		z-index: -3;
 		position: absolute;
 		right: 0;
