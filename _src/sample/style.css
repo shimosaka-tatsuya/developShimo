@@ -3,3 +3,11 @@
 @import "./../../template/base/header";
 @import "./../../template/main-visual/main-visual";
 @import "./../../template/profile/profile";
+
+.box-mainVisual {
+	margin-bottom: 98px;
+}
+
+#box-profile {
+	margin-bottom: 140px;
+}
