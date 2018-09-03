@@ -1,0 +1,25 @@
+.box-profile {
+	overflow: hidden;
+}
+
+.box-profileInr {
+	float: left;
+	width: 534px;
+	color: #333;
+	padding: 100px 0;
+}
+
+.ttl-profile {
+	text-align: center;
+}
+
+.txt-profileCategory {
+	font-size: 50px;
+	line-height: 1;
+	
+}
+
+.img-profile {
+	float: right;
+	width: calc(100vw - 534px);
+}
