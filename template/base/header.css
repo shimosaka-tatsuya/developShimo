@@ -170,8 +170,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	transition-property: opacity;
 	transition: .3s ease-in-out;
 	opacity: 0;
