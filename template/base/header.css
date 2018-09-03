@@ -288,9 +288,11 @@
 		margin: auto;
 		font-family: 'Meddon', cursive;
 		white-space: nowrap;
-		transform: rotate(-7deg);
+		transform: rotate(-7deg) translateX(-26px);
 		transition-property: top, left, font-size;
 		transition-duration: .5s;
+		padding-left: 26px;
+		box-sizing: border-box;
 	}
 
 	@media screen and (max-width:800px) {
