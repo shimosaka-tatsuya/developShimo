@@ -6,7 +6,8 @@
 	float: left;
 	width: 534px;
 	color: #333;
-	padding: 100px 0;
+	padding: 100px 56px;
+	box-sizing: border-box;
 }
 
 .ttl-profile {
@@ -16,10 +17,35 @@
 .txt-profileCategory {
 	font-size: 50px;
 	line-height: 1;
-	
+	margin-bottom: 40px;
+}
+
+.txt-profileMain {
+	font-size: 70px;
+	font-weight: normal;
+	margin-bottom: 60px;
+}
+
+.txt-profileLast,
+.txt-profileFirst {
+	display: inline-block;
+	position: relative;
+	line-height: 1;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: #333;
+	}
+}
+
+.txt-profileLast {
+	margin-bottom: 20px;
 }
 
 .img-profile {
 	float: right;
-	width: calc(100vw - 534px);
+	width: calc(100% - 534px);
 }
