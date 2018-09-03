@@ -1,0 +1,51 @@
+/* スライドの指定は以下を編集 */
+/* 画像の指定はbackgroundで */
+/* スライドが1つ追加されるごとに15sずつanimation-delayを追加。初期値は0。 */
+/* 1枚目のスライドのみ、.box-mainVisualSlideにも画像指定する。 */
+/* 画像を1枚追加するたびにtop.jsの秒数も1500ずつ追加する。 */
+.box-mainVisualSlide {
+    background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.img-mainVisual:nth-child(1) {
+    z-index: 3;
+    
+    .img-mainVisualInr {
+        background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    
+    .img-mainVisualInr,
+    &::after {
+        animation-delay: 0;
+    }
+}
+
+.img-mainVisual:nth-child(2) {
+    z-index: 2;
+    
+    .img-mainVisualInr {
+        background: url("/common/img/bg-mainVisual02.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    
+    .img-mainVisualInr,
+    &::after {
+        animation-delay: 15s;
+    }
+}
+
+.img-mainVisual:nth-child(3) {
+    z-index: 1;
+    
+    .img-mainVisualInr {
+        background: url("/common/img/bg-mainVisual03.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    
+    .img-mainVisualInr,
+    &::after {
+        animation-delay: 30s;
+    }
+}
