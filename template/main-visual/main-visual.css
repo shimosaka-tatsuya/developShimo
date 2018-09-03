@@ -9,10 +9,23 @@
 	overflow-x: hidden;
 }
 
+@media screen and (max-width:1280px) {
+	.box-mainVisual {
+		min-width: 960px;
+	}
+}
+
 @media screen and (max-width:480px) {
 	.box-mainVisual {
 		height: calc(100vh - 80px);
+		min-width: auto;
 	}    
+}
+
+@media screen and (orientation:landscape) {
+	.box-mainVisual {
+		height: 140vh;
+	}
 }
 
 .ttl-siteName {
@@ -382,8 +395,6 @@ txt-myName {
 			opacity: 1;
 		}   
 	}
-	
-	
 }
 
 .box-mainVisualSlide {
