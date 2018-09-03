@@ -189,7 +189,7 @@
 	
 	.txt-profileMain {
 		font-size: 56px;
-		margin-bottom: 48px;
+		margin-bottom: 34px;
 	}
 	
 	.txt-profileLast {
@@ -202,7 +202,7 @@
 	
 	.txt-profileProfession {
 		font-size: 18px;
-		margin-bottom: calc(100vw + 42px);
+		margin-bottom: calc(100vw + 60px);
 		transition-property: font-size, margin-bottom;
 		transition-duration: .5s;
 	}
@@ -229,16 +229,16 @@
 	
 	.txt-profileOutline {
 		font-size: 14px;
-		width: calc(100vw - 35px);
+		width: calc(100vw - 28px);
 		margin: 16px auto 0;
 	}
 	
 	.wp-profileThumbnail {
-		width: calc(100vw - 21px);
+		width: calc(100vw - 18px);
 		z-index: -3;
 		position: absolute;
 		right: 0;
-		top: 276px;
+		top: 284px;
 	}
 	
 	.img-profileThumbnail {
