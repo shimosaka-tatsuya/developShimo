@@ -9,17 +9,11 @@
 	overflow-x: hidden;
 }
 
-@media screen and (max-width:1280px) {
-	.box-mainVisual {
-		min-width: 960px;
-	}
-}
-
 @media screen and (max-width:480px) {
 	.box-mainVisual {
 		height: calc(100vh - 80px);
 		min-width: auto;
-	}    
+	}
 }
 
 .ttl-siteName {

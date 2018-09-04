@@ -110,14 +110,10 @@
 
 .img-profileThumbnail {
 	position: sticky;
-    top: 0;	
+    top: 0;
 }
 
 @media screen and (max-width:1280px) {
-	#box-profile {
-		min-width: 960px;
-	}	
-	
 	.box-profileInr {
 		width: 440px;
 		padding: 120px 38px 50px;
@@ -153,6 +149,44 @@
 	
 	.wp-profileThumbnail {
 		width: calc(100% - 440px);
+	}
+}
+
+@media screen and (max-width:960px) {
+	#box-profile {
+		display: block;
+		position: relative;
+	}
+
+	.box-profileInr {
+		width: 100%;
+		display: block;
+		padding: 0;
+	}
+
+	.ttl-profile {
+		width: 298px;
+	}
+
+	.txt-profileCategory {
+		font-size: 36px;
+
+		&::after {
+			font-size: 40px;
+			margin: auto;
+			top: 14px;
+			left: -20px;
+			right: 0;
+			bottom: 3px;
+		}
+	}
+
+	.wp-profileThumbnail {
+		display: block;
+		width: calc(100% - 384px);
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }
 
