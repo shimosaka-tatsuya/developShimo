@@ -172,13 +172,30 @@
 		font-size: 36px;
 
 		&::after {
-			font-size: 40px;
+			font-size: 42px;
 			margin: auto;
 			top: 14px;
-			left: -20px;
+			left: -21px;
 			right: 0;
 			bottom: 3px;
 		}
+	}
+
+	.txt-profileMain {
+		font-size: 55px;
+	}
+
+	.txt-profileProfession {
+		margin-bottom: 80px;
+	}
+
+	.data-profileOutline {
+		width: calc(100% - 28px);
+		margin: 0 auto;
+	}
+
+	.ttl-profileOutlineNewLine {
+		display: none;
 	}
 
 	.wp-profileThumbnail {
@@ -205,6 +222,7 @@
 	
 	.ttl-profile {
 		overflow-x: hidden;
+		width: 100%;
 	}
 	
 	.txt-profileCategory {
@@ -215,7 +233,7 @@
 		&::after {
 			bottom: -28px;
 		    font-size: 48px;
-		    left: 0;
+		    left: -20px;
 		    right: 0;
 		    margin: auto;
 		}
