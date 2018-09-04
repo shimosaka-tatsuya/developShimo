@@ -22,12 +22,6 @@
 	}    
 }
 
-@media screen and (orientation:landscape) {
-	.box-mainVisual {
-		height: 140vh;
-	}
-}
-
 .ttl-siteName {
 	position: absolute;
 	top: 0;
