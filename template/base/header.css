@@ -6,6 +6,8 @@
 	left: 0;
 	width: 100%;
 	z-index: 7;
+	transition-property: padding;
+	transition-duration: .3s;
 }
 
 .txt-siteName {
@@ -344,18 +346,18 @@
 	}
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:780px) {
     .btn-transition::before {
 		font-size: 42px;
+	}
+	
+	.box-header {
+		padding: 12px;
 	}
 }
 
 @media screen and (max-width:480px) {
-    .box-header {
-		padding: 12px;
-	}
-	
-	.txt-siteName {
+    .txt-siteName {
 		font-size: 20px;
 		margin-top: 5px;
     }
