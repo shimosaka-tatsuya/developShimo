@@ -233,7 +233,7 @@
 		&::after {
 			bottom: -28px;
 		    font-size: 48px;
-		    left: -20px;
+		    left: -10px;
 		    right: 0;
 		    margin: auto;
 		}
@@ -313,6 +313,7 @@
 		&::after {
 		    font-size: 39px;
 		    bottom: -16px;
+		    left: 0;
 		}
 	}
 }

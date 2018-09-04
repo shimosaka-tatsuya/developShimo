@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Meddon|Sawarabi+Gothic');
 
+body {
+	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3",Osaka,"ＭＳ Ｐゴシック",sans-serif;
+	
+	.txt-fontAlphabet {
+		font-family: 'Josefin Sans', sans-serif;
+	}
+	
+	.txt-fontAlphabetSub {
+		font-family: 'Meddon', cursive;
+	}
+	
+	.txt-fontJapanese {
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+}
+
 a {
 	color: #333;
 	text-decoration: none;
@@ -10,16 +26,4 @@ a {
 		color: #333;
 		text-decoration: none;
 	}
-}
-
-.txt-fontAlphabet {
-	font-family: 'Josefin Sans', sans-serif;
-}
-
-.txt-fontAlphabetSub {
-	font-family: 'Meddon', cursive;
-}
-
-.txt-fontJapanese {
-	font-family: 'Sawarabi Gothic', sans-serif;
 }
