@@ -2,6 +2,8 @@
 
 body {
 	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3",Osaka,"ＭＳ Ｐゴシック",sans-serif;
+	color: #333;
+	font-size: 16px;
 	
 	.txt-fontAlphabet {
 		font-family: 'Josefin Sans', sans-serif;
@@ -26,4 +28,15 @@ a {
 		color: #333;
 		text-decoration: none;
 	}
+}
+
+.txt-newLine {
+	display: none;
+}
+
+@media screen and (max-width:420px) {
+	.area-content {
+		overflow: hidden;
+		width: 100vw;
+	}	
 }
