@@ -4,10 +4,6 @@
 @import "./../../template/main-visual/main-visual";
 @import "./../../template/profile/profile";
 
-.box-mainVisual {
-	margin-bottom: 98px;
-}
-
-#box-profile {
+#wp-profile {
 	margin-bottom: 140px;
 }
