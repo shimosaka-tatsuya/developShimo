@@ -7,7 +7,6 @@
 	transition-property: height;
 	transition-duration: .5s;
 	overflow-x: hidden;
-	min-width: 600px;
 }
 
 @media screen and (max-width:480px) {
