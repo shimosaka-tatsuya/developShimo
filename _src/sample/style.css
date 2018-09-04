@@ -3,7 +3,20 @@
 @import "./../../template/base/header";
 @import "./../../template/main-visual/main-visual";
 @import "./../../template/profile/profile";
+@import "./../../template/title-section/title-section";
+@import "./../../template/skill-set/skill-set";
 
 #wp-profile {
+	margin-bottom: 140px;
+}
+
+@media screen and (max-width: 780px){
+	.txt-sectionSymbolSub {
+	    font-size: 45px;
+	    left: -20px;
+	}	
+}
+
+.wp-skliisetChart {
 	margin-bottom: 140px;
 }

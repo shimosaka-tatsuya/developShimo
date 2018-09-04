@@ -1,0 +1,73 @@
+.box-sectionTop {
+	text-align: center;
+	position: relative;
+}
+
+.txt-sectionSymbol {
+	font-size: 50px;
+	line-height: 1.2;
+	font-weight: normal;
+	letter-spacing: .04em;
+	display: block;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.txt-sectionSymbolSub {
+	font-size: 70px;
+	line-height: 1;
+	color: #EDE3D5;
+	position: absolute;
+	top: 20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: -1;
+	transform: rotate(-7deg);
+	transition-property: font-size;
+	transition-duration: .5s;
+	
+	.txt-space + .txt-space {
+		margin-left: 40px;
+	}
+}
+
+.ttl-sectionTop {
+	margin-top: 48px;
+	font-weight: bold;
+	font-size: 38px;
+	letter-spacing: .04em;
+	line-height: 1.5;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+@media screen and (max-width:780px) {
+	.txt-sectionSymbol {
+		font-size: 30px;
+	}
+	
+	.txt-sectionSymbolSub {
+		font-size: 48px;
+		
+		.txt-space + .txt-space {
+			margin-left: 20px;
+		}
+	}
+	
+	.ttl-sectionTop {
+		margin-top: 25px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.ttl-sectionTop {
+		margin-top: 15px;
+		
+		.txt-newLine {
+			display: block;
+		}
+	}
+}

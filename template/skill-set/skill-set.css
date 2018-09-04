@@ -1,0 +1,135 @@
+.txt-skillsetOutline {
+	text-align: center;
+	line-height: 2.4;
+	margin: 36px 0 26px;
+	
+	.txt-newLine {
+		display: block;
+	}
+}
+
+.wp-skliisetChart {
+	overflow: hidden;
+	width: 985px;
+	margin: 0 auto;
+}
+
+.list-skliisetChart {
+	overflow: hidden;
+	float: left;
+	width: 760px;
+	position: relative;
+	padding-left: 28px;
+	margin-top: 18px;
+	
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 84px;
+		background: url("/top/img/img-skillset-allow.svg") left top no-repeat;
+		background-size: 100%;
+		position: absolute;
+		top: 36px;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.box-skliisetChart {
+    float: left;
+    margin-right: 30px;
+    width: 153px;
+}
+
+.data-skliisetChart {
+	margin-top: 14px;
+	padding-left: 4px;
+}
+
+.ttl-skliisetChart {
+	line-height: 1;
+	margin-bottom: 14px;
+	font-size: 28px;
+	letter-spacing: .03em;
+	position: relative;
+	
+	&::before {
+		display: inline-block;
+		font-family: Meddon,cursive;
+		font-size: 14px;
+		letter-spacing: 0;
+		color: #ede3d5;
+		transform: rotate(-7deg);
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		z-index: -1;
+	}
+	
+	&-ux::before {
+		content: "User Experiense";
+	}
+	
+	&-ui::before {
+		content: "User Interface";
+	}
+	
+	&-fe::before {
+		content: "Front End";
+	}
+	
+	&-gd::before {
+		content: "Graphic Design";
+	}
+}
+
+.txt-skliisetChart {
+	line-height: 1.6;
+	font-size: 14px;
+	
+	&::before {
+		content: "・";
+		display: inline-block;
+	}
+}
+
+.box-serviceChart {
+	float: right;
+	width: 189px;
+	text-align: center;
+}
+
+.txt-serviceChart {
+	font-size: 44px;
+	letter-spacing: .03em;
+	position: relative;
+	
+	&::before {
+		content: "Business Strategy";
+		display: inline-block;
+		font-family: Meddon,cursive;
+		font-size: 15px;
+		letter-spacing: 0;
+		color: #ede3d5;
+		transform: rotate(-7deg);
+		position: absolute;
+		bottom: -6px;
+		right: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+@media screen and (max-width:780px) {
+	.txt-skillsetOutline {
+		margin: 16px auto 0;
+		text-align: left;
+		width: calc(100% - 28px);
+		line-height: 1.8;
+
+		.txt-newLine {
+			display: none;
+		}
+	}
+}
