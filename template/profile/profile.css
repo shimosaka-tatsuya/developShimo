@@ -280,7 +280,6 @@
 	
 	.ttl-profileOutline {
 		text-align: center;
-		font-size: 24px;
 		line-height: 1.7;
 		letter-spacing: -.06em;
 		margin-bottom: 16px;
@@ -317,16 +316,17 @@
 	
 	.txt-profileCategory {
 		font-size: 30px;
-	}
-}
-
-@media screen and (max-width:320px) {
-	.txt-profileCategory {
 		
 		&::after {
 		    font-size: 39px;
 		    bottom: -16px;
 		    left: 0;
 		}
+	}
+}
+
+@media screen and (max-width:320px) {
+	.txt-profileMain {
+		font-size: 48px;
 	}
 }

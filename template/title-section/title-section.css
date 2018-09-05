@@ -1,6 +1,8 @@
 .box-sectionTop {
 	text-align: center;
 	position: relative;
+	width: 780px;
+	margin: 0 auto;
 }
 
 .txt-sectionSymbol {
@@ -44,12 +46,16 @@
 }
 
 @media screen and (max-width:780px) {
+	.box-sectionTop {
+		width: 90%;
+	}
+	
 	.txt-sectionSymbol {
 		font-size: 30px;
 	}
 	
 	.txt-sectionSymbolSub {
-		font-size: 48px;
+		font-size: 39px;
 		
 		.txt-space + .txt-space {
 			margin-left: 20px;
