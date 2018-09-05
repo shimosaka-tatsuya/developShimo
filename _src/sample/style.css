@@ -10,13 +10,6 @@
 	margin-bottom: 140px;
 }
 
-@media screen and (max-width: 780px){
-	.txt-sectionSymbolSub {
-	    font-size: 45px;
-	    left: -20px;
-	}	
-}
-
 .wp-skliisetChart {
 	margin-bottom: 140px;
 }

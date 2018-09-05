@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Meddon|Sawarabi+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Meddon|Noto+Sans+JP');
 
 body {
 	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3",Osaka,"ＭＳ Ｐゴシック",sans-serif;
@@ -14,7 +14,7 @@ body {
 	}
 	
 	.txt-fontJapanese {
-		font-family: 'Sawarabi Gothic', sans-serif;
+		font-family: 'Noto Sans JP', sans-serif;
 	}
 }
 
