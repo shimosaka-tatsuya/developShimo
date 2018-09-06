@@ -26,6 +26,7 @@
 	padding-left: 16px;
 	box-sizing: border-box;
 	margin-top: 18px;
+	box-sizing: border-box;
 	transition-property: width, padding, margin;
 	transition-duration: .5s;
 	
@@ -191,11 +192,19 @@
 		overflow: unset;
 		float: none;
 		width: 100%;
-		padding-left: 0;
-		margin-top: 18px;
+		padding: 26px 0 44px 30px;
+		margin: 18px 0 18px;
 		
 		&::before {
-			display: none;
+			width: 106px;
+			height: 100%;
+			background: url("/top/img/img-skillset-allow-sp.svg") 0 0 no-repeat;
+			background-size: 106px;
+			top: 0;
+			left: -200px;
+			right: 0;
+			bottom: 0;
+			margin: auto;
 		}
 	}
 
@@ -215,8 +224,9 @@
 	.data-skliisetChart {
 		display: inline-block;
 		text-align: left;
-		margin: 0 0 0 4px;
+		margin: 0 0 0 10px;
 		vertical-align: middle;
+		width: 180px;
 	}
 
 	.ttl-skliisetChart {
@@ -233,9 +243,23 @@
 	
 	.box-serviceChart {
 		float: none;
-		width: 260px;
+		overflow: hidden;
 		margin: 0 auto;
 		text-align: center;
+		width: 100%;
+	}
+	
+	.img-serviceChart {
+		width: 260px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: -36px;
+	}
+	
+	.txt-serviceChart {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
 	}
 }
 
