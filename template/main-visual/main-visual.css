@@ -136,6 +136,7 @@ txt-myName {
 	right: 0;
 	animation-timing-function: ease;
 	animation-fill-mode: both;
+	width: 1em;
 }
 
 .txt-siteNameCharacter-s {
