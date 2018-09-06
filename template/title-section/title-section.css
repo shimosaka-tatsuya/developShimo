@@ -45,6 +45,26 @@
 	transition-duration: .5s;
 }
 
+@media screen and (max-width:960px) {
+	.txt-sectionSymbol {
+		font-size: 40px;
+	}
+	
+	.txt-sectionSymbolSub {
+		font-size: 60px;
+		top: 10px;
+		
+		.txt-space + .txt-space {
+			margin-left: 30px;
+		}
+	}
+	
+	.ttl-sectionTop {
+		margin-top: 38px;
+		font-size: 28px;
+	}
+}
+
 @media screen and (max-width:780px) {
 	.box-sectionTop {
 		width: 90%;

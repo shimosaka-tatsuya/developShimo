@@ -70,7 +70,7 @@
 	font-size: 28px;
 	letter-spacing: .03em;
 	position: relative;
-	transition-property: font-size;
+	transition-property: font-size, margin;
 	transition-duration: .5s;
 	
 	&::before {
@@ -118,6 +118,31 @@
 	}
 }
 
+.txt-skliisetChartLink {
+	line-height: 1.2;
+	font-size: 16px;
+	display: inline-block;
+	margin-left: 4px;
+	transition-property: opacity, font-size;
+	transition-duration: .3s;
+	
+	
+	&::before {
+		content: "";
+		display: inline-block;
+		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
+		width: 8px;
+		height: 11.3px;
+		background-size: 8px;
+		margin: 12px 5px 0 0;
+		transform: rotate(180deg);
+	}
+	
+	&:hover {
+		opacity: .5;
+	}
+}
+
 .box-serviceChart {
 	float: right;
 	width: 189px;
@@ -128,6 +153,8 @@
 	font-size: 44px;
 	letter-spacing: .03em;
 	position: relative;
+	transition-property: font-size width;
+	transition-duration: .5s;
 	
 	&::before {
 		content: "Business Strategy";
@@ -142,12 +169,18 @@
 		right: 0;
 		left: 0;
 		z-index: -1;
+		transition-property: font-size;
+		transition-duration: .5s;
 	}
 }
 
 @media screen and (max-width:960px) {
 	.wp-skliisetChart {
 		width: 800px;
+	}
+	
+	.txt-skillsetOutline {
+		margin-top: 20px;
 	}
 	
 	.list-skliisetChart {
@@ -173,14 +206,11 @@
 
 @media screen and (max-width:780px) {
 	.txt-skillsetOutline {
-		text-align: justify;
+		text-align: center;
 		font-size: 14px;
-		padding: 14px;
-		margin: 10px auto 13px;
-		
-		.txt-newLine {
-			display: none;
-		}
+		padding: 0 14px;
+		box-sizing: border-box;
+		margin: 10px auto 40px;
 	}
 	
 	.wp-skliisetChart {
@@ -192,16 +222,16 @@
 		overflow: unset;
 		float: none;
 		width: 100%;
-		padding: 26px 0 44px 30px;
-		margin: 18px 0 18px;
+		padding: 20px 0 26px 30px;
+		margin: 18px 0;
 		
 		&::before {
-			width: 106px;
+			width: 90px;
 			height: 100%;
 			background: url("/top/img/img-skillset-allow-sp.svg") 0 0 no-repeat;
-			background-size: 106px;
+			background-size: 90px;
 			top: 0;
-			left: -200px;
+			left: -170px;
 			right: 0;
 			bottom: 0;
 			margin: auto;
@@ -217,7 +247,7 @@
 
 	.img-skliisetChart {
 		display: inline-block;
-		width: 200px;
+		width: 170px;
 		vertical-align: middle;
 	}
 	
@@ -243,40 +273,90 @@
 	
 	.box-serviceChart {
 		float: none;
-		overflow: hidden;
 		margin: 0 auto;
 		text-align: center;
 		width: 100%;
 	}
 	
 	.img-serviceChart {
-		width: 260px;
+		width: 240px;
 		display: inline-block;
 		vertical-align: middle;
-		margin-left: -36px;
+		margin: 0 -37px 0 0;
 	}
 	
 	.txt-serviceChart {
 		display: inline-block;
 		vertical-align: middle;
 		margin-left: 5px;
+		font-size: 54px;
+		width: 294px;
+		
+		&::before {
+			font-size: 23px;
+		}
 	}
 }
 
 @media screen and (max-width:480px) {
+	.list-skliisetChart {
+		padding: 18px 0 28px 10px;
+		margin-bottom: -4px;
+		
+		&::before {
+			width: 73px;
+			background-size: 73px;
+			left: -132px;
+		}
+	}
+	
+	.txt-skillsetOutline {
+		text-align: left;
+		margin-bottom: 20px;
+				
+		.txt-newLine {
+			display: none;
+		}	
+	}
+	
 	.img-skliisetChart {
-		width: 142px;
+		width: 132px;
+	}
+	
+	.data-skliisetChart {
+		width: 132px;
+		margin: 0 0 0 2px;
 	}
 	
 	.ttl-skliisetChart {
 		font-size: 28px;
+		margin-bottom: 10px;
 		
 		&::before {
-			font-size: 14px;
+			font-size: 12px;
 		}
 	}
 	
 	.txt-skliisetChart {
+		font-size: 12px;
+	}
+	
+	.txt-skliisetChartLink {
 		font-size: 14px;
+		
+		&::before {
+			width: 6px;
+			height: 8px;
+			background-size: 6px;
+			margin-right: 3px;
+		}
+	}
+	
+	.box-serviceChart {
+		overflow: unset;
+	}
+	
+	.img-serviceChart {
+		margin: 0px;
 	}
 }

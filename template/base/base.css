@@ -21,12 +21,18 @@ body {
 a {
 	color: #333;
 	text-decoration: none;
+	transition-property: opacity;
+	transition-duration: .5s;
 	
 	&:visited,
 	&:hover,
 	&:active {
 		color: #333;
 		text-decoration: none;
+	}
+	
+	&:focus {
+		opacity: .6;
 	}
 }
 
