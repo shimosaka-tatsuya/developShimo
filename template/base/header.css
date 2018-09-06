@@ -358,8 +358,8 @@
 
 @media screen and (max-width:480px) {
     .txt-siteName {
-		font-size: 20px;
-		margin-top: 5px;
+		font-size: 21px;
+		margin-top: 3px;
     }
     
     .btn-hamburgerMenu {
