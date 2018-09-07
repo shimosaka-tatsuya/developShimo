@@ -135,9 +135,9 @@
 		content: "";
 		display: inline-block;
 		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
-		width: 8px;
-		height: 11.3px;
-		background-size: 8px;
+		width: 7px;
+		height: 11px;
+		background-size: 7px;
 		margin: 12px 0 0 6px;
 		transform: rotate(180deg);
 	}
@@ -358,7 +358,7 @@
 	
 	.box-serviceChart {
 		margin-top: 14px;
-		padding-left: 10px;
+		padding-left: 6px;
 		box-sizing: border-box;
 	}
 	
@@ -372,7 +372,7 @@
 		width: 164px;
 		
 		&::before {
-			font-size: 14px;
+			font-size: 10px;
 		}
 	}
 }
