@@ -122,19 +122,23 @@
 	line-height: 1.2;
 	font-size: 16px;
 	display: inline-block;
-	margin-left: 4px;
+	margin-left: 2px;
 	transition-property: opacity, font-size;
 	transition-duration: .3s;
 	
+	.txt-skliisetChartLine {
+		display: inline-block;
+		border-bottom: solid 1px #888;
+	}
 	
-	&::before {
+	&::after {
 		content: "";
 		display: inline-block;
 		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
 		width: 8px;
 		height: 11.3px;
 		background-size: 8px;
-		margin: 12px 5px 0 0;
+		margin: 12px 0 0 6px;
 		transform: rotate(180deg);
 	}
 	
@@ -344,19 +348,31 @@
 	.txt-skliisetChartLink {
 		font-size: 14px;
 		
-		&::before {
+		&::after {
 			width: 6px;
 			height: 8px;
 			background-size: 6px;
-			margin-right: 3px;
+			margin-left: 4px;
 		}
 	}
 	
 	.box-serviceChart {
-		overflow: unset;
+		margin-top: 14px;
+		padding-left: 10px;
+		box-sizing: border-box;
 	}
 	
 	.img-serviceChart {
-		margin: 0px;
+		width: 162px;
+	}
+	
+	.txt-serviceChart {
+		margin-left: 5px;
+		font-size: 30px;
+		width: 164px;
+		
+		&::before {
+			font-size: 14px;
+		}
 	}
 }

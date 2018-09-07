@@ -33,18 +33,19 @@ txt-myName {
 @keyframes fadeInSiteNameSub {
 	0% {
 		opacity: 0;
-		transform: translateY(12px);
+		transform: translateY(12px) translateX(2px);
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0);
+		transform: translateY(0) translateX(2px);
 	}
 }
 
 .txt-siteNameSub {
-	font-size: 16px;
-	letter-spacing: .3em;
+	font-size: 14px;
+	letter-spacing: .29em;
 	margin-bottom: 21px;
+	padding-left: 1px;
 	animation-name: fadeInSiteNameSub;
 	animation-delay: 3.9s;
 	animation-duration: .3s;
@@ -349,8 +350,9 @@ txt-myName {
 	}
 	
 	.txt-siteNameSub {
-		font-size: 12px;
+		font-size: 11px;
 		margin-bottom: 18px;
+		letter-spacing: .25em;
 		animation-name: fadeInSiteNameSub--sp;
 	}
 	
