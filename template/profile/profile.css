@@ -1,6 +1,8 @@
 #wp-profile {
 	padding-top: 98px;
 	width: 100%;
+	max-width: 1560px;
+	margin: 0 auto;
 }
 
 .box-profile {
@@ -13,7 +15,7 @@
 	vertical-align: middle;
 	width: 534px;
 	color: #333;
-	padding: 140px 40px 70px;
+	padding: 180px 40px 50px;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 1;

@@ -179,6 +179,14 @@
 		bottom: 0;
 		right: 12px;
 		transform: rotate(180deg);
+		transition-property: transform;
+		transition-duration: .4s;
+	}
+}
+
+.btn-linkToSkill:hover {
+	.ico-linkToSkill::after {
+		transform: translateX(-3px) rotate(180deg);
 	}
 }
 
