@@ -9,17 +9,28 @@ var pageId = "top";
 <html lang="ja">
 <%- include(setLayered + "base/head", { pageId: pageId }) %>
 <body>
-<div class="area-content">
-
 <%- include(setLayered + "base/header", { pageId: pageId }) %>
+
+<div class="area-content">
 <%- include(setLayered + "main-visual/main-visual") %>
+
 <%- include(setLayered + "profile/profile") %>
+
 <%- include(setLayered + "title-section/title-section", {
 	txtSectionSymbol: 'Skill Set',
 	txtSectionSymbolSub: '<span class="txt-space">Grouth</span><span class="txt-space">Hack</span>',
 	ttlSectionTop: '4つのデザインスキルで<br class="txt-newLine">サービスをグロース'
 }) %>
+
 <%- include(setLayered + "skill-set/skill-set") %>
+
+<%- include(setLayered + "title-section/title-section", {
+	txtSectionSymbol: 'Case Study',
+	txtSectionSymbolSub: '<span class="txt-space">Creative</span><span class="txt-space">Works</span>',
+	ttlSectionTop: 'スキル・過去の実例紹介'
+}) %>
+
+<p class="txt-caseStudyOutline">UX・UI・FE・GDのスキルを、過去の実例とともにご紹介します。</p>
 
 <ul class="list-linkToSkill">
 <%- include(setLayered + "link-to-skill/link-to-skill", {

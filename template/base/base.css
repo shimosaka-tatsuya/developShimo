@@ -18,6 +18,11 @@ body {
 	}
 }
 
+.area-content--inactive {
+	height: 100vh;
+	overflow-y: hidden;
+}
+
 a {
 	color: #333;
 	text-decoration: none;

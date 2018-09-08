@@ -42,6 +42,7 @@
 	line-height: 1;
 	display: block;
 	margin: 28px 0 12px;
+	letter-spacing: .05em;
 	transition-property: padding;
 	transition-duration: .5s;
 }
@@ -155,11 +156,6 @@
 		transform-origin: bottom right;
 		left: -2px;
 	}
-	
-	&:hover::before,
-	&:hover::after {
-		transform: scaleY(1);
-	}
 }
 
 .ico-linkToSkill{
@@ -179,6 +175,19 @@
 		bottom: 0;
 		right: 12px;
 		transform: rotate(180deg);
+		transition-property: transform;
+		transition-duration: .4s;
+	}
+}
+
+.btn-linkToSkill:hover {
+	.ico-linkToSkill::after {
+		transform: translateX(-3px) rotate(180deg);
+	}
+	
+	.btn-linkToSkillInr::before,
+	.btn-linkToSkillInr::after {
+		transform: scaleY(1);
 	}
 }
 
