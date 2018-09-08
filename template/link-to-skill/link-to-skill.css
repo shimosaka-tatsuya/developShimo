@@ -1,0 +1,314 @@
+.box-linkToSkill {
+	width: 100%;
+	margin-bottom: 84px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ttl-linkToSkill {
+	width: 534px;
+	padding: 0 0 0 40px;
+	box-sizing: border-box;
+	transition-property: padding, width;
+	transition-duration: .5s;
+}
+
+.wp-skillName {
+	font-size: 50px;
+	line-height: 1.2;
+	letter-spacing: .05em;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.txt-skillName {
+	position: relative;
+	z-index: 1;
+}
+
+.txt-skillNameSub {
+	position: relative;
+	z-index: 1;
+	font-size: 18px;
+	line-height: 1;
+	display: block;
+	margin: 28px 0 12px;
+}
+
+.txt-skillNameScript {
+	font-size: 68px;
+	color: #EDE3D5;
+	transform: rotate(-7deg);
+	line-height: 1.2;
+	letter-spacing: .02em;
+	display: block;
+	width: 90vw;
+	position: absolute;
+	margin: auto;
+	transition-property: font-size, top, left, right, bottom;
+	transition-duration: .5s;
+}
+
+.txt-skillCatchCopy {
+	font-weight: bold;
+	line-height: 1.6;
+	font-size: 37px;
+	position: relative;
+	z-index: 1;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.btn-linkToSkill {
+	display: block;
+	line-height: 74px;
+	text-align: center;
+	width: 264px;
+	border: solid 2px #ccc;
+	font-size: 23px;
+	letter-spacing: .22em;
+	margin-top: 58px;
+	background-color: #FCFCFC;
+	transition-property: letter-spacing, line-height, width, font-size, margin, box-shadow;
+	transition-duration: .4s;
+	position: relative;
+	
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #888;
+		position: absolute;
+		left: 0;
+		right: 0;
+		transform: scaleX(0);
+		transition-property: transform;
+		transition-duration: .4s;
+	}
+	
+	&::before {
+		top: -2px;
+		transform-origin: top left;
+	}
+	
+	&::after {
+		bottom: -2px;
+		transform-origin: bottom right;
+	}
+	
+	&:hover {
+		letter-spacing: .32em;
+		box-shadow: 0 0 14px 1px rgba(51, 51, 51, .4);
+		
+		&::before,
+		&::after {
+			transform: scaleX(1);
+		}	
+	}
+}
+
+.btn-linkToSkillInr {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 3px;
+	box-sizing: border-box;
+	position: relative;
+	
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		width: 2px;
+		height: calc(100% + 4px);
+		background-color: #888;
+		transform: scaleY(0);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		transition-property: transform;
+		transition-duration: .4s;
+	}
+	
+	&::before {
+		transform-origin: top left;
+		right: -2px;
+	}
+	
+	&::after {
+		transform-origin: bottom right;
+		left: -2px;
+	}
+	
+	&:hover::before,
+	&:hover::after {
+		transform: scaleY(1);
+	}
+}
+
+.ico-linkToSkill{
+	width: 100%;
+	height: 100%;
+	
+	&::after {
+		content: "";
+		display: block;
+		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
+		width: 9px;
+		height: 13px;
+		background-size: 9px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12px;
+		transform: rotate(180deg);
+	}
+}
+
+.img-skillThumbnail {
+	width: calc(100% - 534px);
+	transition-property: width;
+	transition-duration: .5s;
+}
+
+.box-linkToSkill:nth-child(2n-1) {
+	.txt-skillNameScript {
+		top: -46px;
+		left: -30px;
+	}
+}
+
+.box-linkToSkill:nth-child(2n) {
+	flex-direction: row-reverse;
+	
+	.ttl-linkToSkill {
+		padding: 0 40px 0 0;
+	}
+	
+	.wp-skillName {
+		text-align: right;
+	}
+	
+	.txt-skillNameScript {
+		transform: rotate(7deg);
+		top: -62px;
+		right: 0;
+	}
+	
+	.txt-skillCatchCopy {
+		text-align: right;
+	}
+	
+	.btn-linkToSkill {
+		margin-left: 226px;
+	}
+}
+
+@media screen and (max-width:1280px) {
+	.ttl-linkToSkill {
+		width: 440px;
+		padding: 0 0 0 38px;
+	}
+	
+	.txt-skillNameScript {
+		font-size: 50px;
+	}
+	
+	.txt-skillCatchCopy {
+		font-size: 30px;
+	}
+	
+	.btn-linkToSkill {
+		line-height: 66px;
+		width: 240px;
+		font-size: 19px;
+	}
+	
+	.img-skillThumbnail {
+		width: calc(100% - 440px);
+	}
+	
+	.box-linkToSkill:nth-child(2n-1) {
+		.txt-skillNameScript {
+			top: -38px;
+			left: -30px;
+		}
+	}
+	
+	.box-linkToSkill:nth-child(2n) {
+		
+		.ttl-linkToSkill {
+			padding: 0 38px 0 0;
+		}
+		
+		.txt-skillNameScript {
+			top: -50px;
+			right: 0;
+		}
+		
+		.btn-linkToSkill {
+			margin-left: 158px;
+		}
+	}
+}
+
+@media screen and (max-width:960px) {
+	.ttl-linkToSkill {
+		width: 380px;
+	}
+	
+	.txt-skillNameScript {
+		font-size: 46px;
+	}
+	
+	.txt-skillCatchCopy {
+		font-size: 26px;
+	}
+	
+	.btn-linkToSkill {
+		line-height: 62px;
+		width: 230px;
+		font-size: 16px;
+	}
+	
+	.img-skillThumbnail {
+		width: calc(100% - 380px);
+	}
+	
+	.box-linkToSkill:nth-child(2n-1) {
+		.txt-skillNameScript {
+			top: -38px;
+			left: -18px;
+		}
+	}
+	
+	.box-linkToSkill:nth-child(2n) {
+		
+		.txt-skillNameScript {
+			top: -30px;
+			right: 0;
+		}
+		
+		.btn-linkToSkill {
+			margin-left: 108px;
+		}
+	}
+}
+
+@media screen and (max-width:780px) {
+	
+}
+
+@media screen and (max-width:480px) {
+	
+}

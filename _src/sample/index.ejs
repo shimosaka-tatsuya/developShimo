@@ -21,6 +21,37 @@ var pageId = "top";
 }) %>
 <%- include(setLayered + "skill-set/skill-set") %>
 
+<ul class="list-linkToSkill">
+<%- include(setLayered + "link-to-skill/link-to-skill", {
+	txtSkillName: "UX",
+	txtSkillNameSub: "User Experience",
+	txtSkillOutline: "100年後も愛される<br>コンテンツを科学する",
+	imgSkillThumbnail: "img_skillThumbnailUX.jpg",
+	pageId: "skill-ux"
+}) %>
+<%- include(setLayered + "link-to-skill/link-to-skill", {
+	txtSkillName: "UI",
+	txtSkillNameSub: "User Interface",
+	txtSkillOutline: "デザインは、使われて<br>はじめて完成する",
+	imgSkillThumbnail: "img_skillThumbnailUi.jpg",
+	pageId: "skill-ui"
+}) %>
+<%- include(setLayered + "link-to-skill/link-to-skill", {
+	txtSkillName: "FE",
+	txtSkillNameSub: "Front End",
+	txtSkillOutline: "精密な設計が<br>デザインの品質を高める",
+	imgSkillThumbnail: "img_skillThumbnailFe.jpg",
+	pageId: "skill-fe"
+}) %>
+<%- include(setLayered + "link-to-skill/link-to-skill", {
+	txtSkillName: "GD",
+	txtSkillNameSub: "Graphic Design",
+	txtSkillOutline: "本質的な思いを<br>デザインで表現する",
+	imgSkillThumbnail: "img_skillThumbnailGd.jpg",
+	pageId: "skill-gd"
+}) %>
+</ul><!-- /.list-linkToSkill -->
+
 </div><!-- /.area-content -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -351,7 +351,7 @@ txt-myName {
 	
 	.txt-siteNameSub {
 		font-size: 11px;
-		margin-bottom: 18px;
+		margin-bottom: 16px;
 		letter-spacing: .25em;
 		animation-name: fadeInSiteNameSub--sp;
 	}
