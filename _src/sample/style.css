@@ -6,6 +6,7 @@
 @import "./../../template/title-section/title-section";
 @import "./../../template/skill-set/skill-set";
 @import "./../../template/link-to-skill/link-to-skill";
+@import "./../../template/base/footer";
 
 #wp-profile {
 	margin-bottom: 140px;
@@ -14,3 +15,8 @@
 .wp-skliisetChart {
 	margin-bottom: 140px;
 }
+
+.list-linkToSkill {
+	margin-bottom: 70px;
+}
+

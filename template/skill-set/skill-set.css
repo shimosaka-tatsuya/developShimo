@@ -140,10 +140,16 @@
 		background-size: 7px;
 		margin: 12px 0 0 6px;
 		transform: rotate(180deg);
+		transition-property: margin;
+		transition-duration: .5s;
 	}
 	
 	&:hover {
 		opacity: .5;
+	}
+	
+	&:hover::after {
+		margin-left: 3px;
 	}
 }
 
