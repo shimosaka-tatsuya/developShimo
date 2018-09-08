@@ -11,8 +11,6 @@
 	margin-bottom: 0;
 }
 
-
-
 .ttl-linkToSkill {
 	width: 534px;
 	padding: 0 0 0 40px;
@@ -65,7 +63,8 @@
 .txt-skillCatchCopy {
 	font-weight: bold;
 	line-height: 1.6;
-	font-size: 37px;
+	font-size: 36px;
+	letter-spacing: .07em;
 	position: relative;
 	z-index: 1;
 	transition-property: font-size;
@@ -343,6 +342,7 @@
 	.txt-skillNameSub {
 		padding: calc((100vw - 125px) * .7) 14px 0;
 		margin: 0 0 9px;
+		z-index: -1;
 	}
 	
 	.txt-skillCatchCopy {
@@ -413,7 +413,7 @@
 	}
 	
 	.txt-skillNameSub {
-		padding: calc((100vw - 50px) * .7) 14px 0;
+		padding: calc((100vw - 60px) * .7) 14px 0;
 		margin: 0 0 7px;
 		font-size: 16px;
 	}

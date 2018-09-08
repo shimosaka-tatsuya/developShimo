@@ -18,6 +18,7 @@ gulp.task('imagemin', function(){
     var srcGlob = './_src/**/*.+(jpg|jpeg|png|gif)';
     var dstGlob = './_view/';
     gulp.src( srcGlob )
+/*
     .pipe(changed( dstGlob ))
     .pipe(imagemin([
         imageminPng(),
@@ -29,6 +30,7 @@ gulp.task('imagemin', function(){
         })
     ]
     ))
+*/
     .pipe(gulp.dest( dstGlob ));
 });
 // svg画像の圧縮タスク
@@ -36,8 +38,10 @@ gulp.task('svgmin', function(){
     var srcGlob = './_src/**/*.+(svg)';
     var dstGlob = './_view/';
     gulp.src( srcGlob )
+/*
     .pipe(changed( dstGlob ))
     .pipe(svgmin())
+*/
     .pipe(gulp.dest( dstGlob ));
 });
 

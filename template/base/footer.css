@@ -1,0 +1,36 @@
+.box-footer {
+	border-top: solid 1px #ccc;
+	padding: 38px 38px;
+	overflow: hidden;
+}
+
+.box-socialMedia--footer {
+	margin: 0;
+	float: left;
+}
+
+.txt-siteCopyright {
+	float: right;
+	font-size: 14px;
+	line-height: 1;
+	margin-top: 20px;
+}
+
+@media screen and (max-width:780px) {
+	.box-footer {
+		border-top: solid 1px #ccc;
+		padding: 38px 0;
+		text-align: center;
+	}
+	
+	.box-socialMedia--footer {
+		float: none;
+		display: inline-block;
+	}
+	
+	.txt-siteCopyright {
+		float: none;
+		font-size: 12px;
+		margin-top: 32px;
+	}
+}
