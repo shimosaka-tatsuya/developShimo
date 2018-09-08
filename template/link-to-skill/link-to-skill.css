@@ -28,7 +28,7 @@
 	width: 100%;
 	position: relative;
 	z-index: 1;
-	transition-property: font-size;
+	transition-property: font-size, top, left, right, bottom;
 	transition-duration: .5s;
 }
 
@@ -44,6 +44,8 @@
 	line-height: 1;
 	display: block;
 	margin: 28px 0 12px;
+	transition-property: padding;
+	transition-duration: .5s;
 }
 
 .txt-skillNameScript {
@@ -211,6 +213,10 @@
 		right: 0;
 	}
 	
+	.txt-skillNameSub {
+		text-align: right;
+	}
+	
 	.txt-skillCatchCopy {
 		text-align: right;
 	}
@@ -312,9 +318,185 @@
 }
 
 @media screen and (max-width:780px) {
+	.box-linkToSkill {
+		display: block;
+		position: relative;
+	}
 	
+	.ttl-linkToSkill {
+		width: 100%;
+		padding: 0!important;
+		position: relative;
+	}
+	
+	.wp-skillName {
+		position: absolute;
+		top: 41px;
+		width: 90vw;
+	}
+	
+	.txt-skillNameScript {
+		top: 2px!important;
+		font-size: 38px!important;
+	}
+	
+	.txt-skillNameSub {
+		padding: calc((100vw - 125px) * .7) 14px 0;
+		margin: 0 0 9px;
+	}
+	
+	.txt-skillCatchCopy {
+		padding: 0 14px 0;
+	}
+	
+	.img-skillThumbnail {
+		position: absolute;
+		top: 0;
+		width: calc(100vw - 147px);
+	}
+	
+	.box-linkToSkill:nth-child(2n-1) {
+		.wp-skillName {
+			left: 41px;
+		}
+		
+		.txt-skillNameSub {
+			text-align: right;
+		}
+		
+		.txt-skillCatchCopy {
+			text-align: right;
+		}
+		
+		.img-skillThumbnail {
+			right: 0;
+		}
+	}
+	
+	.box-linkToSkill:nth-child(2n) {
+		.wp-skillName {
+			right: 41px;
+		}
+		
+		.txt-skillNameSub {
+			text-align: left;
+		}
+		
+		.txt-skillCatchCopy {
+			text-align: left;
+		}
+		
+		.img-skillThumbnail {
+			left: 0;
+		}
+	}
+	
+	.btn-linkToSkill {
+		margin: 26px auto 0!important;
+		width: calc(100% - 82px)!important;
+	}
 }
 
 @media screen and (max-width:480px) {
+	.box-linkToSkill {
+		margin-bottom: 65px;
+	}
 	
+	.wp-skillName {
+		top: 14px;
+		font-size: 35px;
+	}
+	
+	.txt-skillNameScript {
+		top: 12px!important;
+		font-size: 22px!important;
+	}
+	
+	.txt-skillNameSub {
+		padding: calc((100vw - 50px) * .7) 14px 0;
+		margin: 0 0 7px;
+		font-size: 16px;
+	}
+	
+	.txt-skillCatchCopy {
+		font-size: 22px;
+	}
+	
+	.img-skillThumbnail {
+		position: absolute;
+		top: 0;
+		width: calc(100vw - 78px);
+	}
+	
+	.box-linkToSkill:nth-child(2n-1) {
+		.wp-skillName {
+			left: 14px;
+		}
+		
+		.txt-skillNameSub {
+			text-align: right;
+		}
+		
+		.txt-skillCatchCopy {
+			text-align: right;
+		}
+		
+		.img-skillThumbnail {
+			right: 0;
+		}
+	}
+	
+	.box-linkToSkill:nth-child(2n) {
+		.wp-skillName {
+			right: 14px;
+		}
+		
+		.txt-skillNameSub {
+			text-align: left;
+		}
+		
+		.txt-skillCatchCopy {
+			text-align: left;
+		}
+		
+		.img-skillThumbnail {
+			left: 0;
+		}
+	}
+	
+	.btn-linkToSkill {
+		border: solid 1px #ccc;
+		margin: 22px auto 0!important;
+		width: calc(100% - 28px)!important;
+		font-size: 19px;
+	
+		&::before,
+		&::after {
+			height: 2px;
+		}
+		
+		&::before {
+			top: -1px;
+		}
+		
+		&::after {
+			bottom: -1px;
+		}
+	}
+	
+	.btn-linkToSkillInr {
+		
+		&::before,
+		&::after {
+			width: 2px;
+		}
+		
+		&::before {
+			right: -1px;
+		}
+		
+		&::after {
+			left: -1px;
+		}
+	}
 }
