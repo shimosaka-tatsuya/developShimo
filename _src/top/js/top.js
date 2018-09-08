@@ -1,4 +1,21 @@
 $(window).load(function() {	
+	$(function(){
+		var state = false;
+		var scrollpos;
+		
+		$('.btn-hamburgerMenu').on('click', function(){
+			if(state == false) {
+			scrollpos = $(window).scrollTop();
+			$('.area-content').addClass('area-content--inactive').css({'top': -scrollpos});
+			state = true;
+		} else {
+			$('.area-content').removeClass('area-content--inactive').css({'top': 0});
+				window.scrollTo( 0 , scrollpos );
+				state = false;
+			}
+		});
+	});
+	
 	// スライドショーの挙動を制御するためのjs
 	$(".box-mainVisualSlide").addClass("box-mainVisualSlideActive");
 	$(function(){
