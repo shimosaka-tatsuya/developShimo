@@ -5,6 +5,7 @@
 @import "./../../template/profile/profile";
 @import "./../../template/title-section/title-section";
 @import "./../../template/skill-set/skill-set";
+@import "./../../template/link-to-skill/link-to-skill";
 
 #wp-profile {
 	margin-bottom: 140px;
