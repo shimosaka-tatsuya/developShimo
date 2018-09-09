@@ -1,0 +1,27 @@
+<%
+/* 相対パスを取得 */
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1)+"template/";
+
+/* ページID */
+var pageId = "skill-gd";
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(setLayered + "base/head", { pageId: pageId }) %>
+<body>
+<%- include(setLayered + "base/header", { pageId: pageId }) %>
+
+<div class="area-content-skill">
+	<div class="area-content-skillInr">
+		<%- include(setLayered + "skill-outline/skill-outline") %>
+	</div><!-- /.area-content-skillInr -->
+</div><!-- /.area-content-skill -->
+
+<%- include(setLayered + "base/footer") %>
+
+</div><!-- /.area-content -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/common/js/base.min.js"></script>
+</body>
+</html>

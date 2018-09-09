@@ -481,7 +481,7 @@
 	
 		&::before,
 		&::after {
-			height: 2px;
+			height: 1px;
 		}
 		
 		&::before {
@@ -494,10 +494,12 @@
 	}
 	
 	.btn-linkToSkillInr {
+		height: calc(100% + 2px);
 		
 		&::before,
 		&::after {
-			width: 2px;
+			width: 1px;
+			height: 100%;
 		}
 		
 		&::before {

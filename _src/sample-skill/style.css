@@ -1,0 +1,6 @@
+@import "./../../template/base/reset";
+@import "./../../template/base/base";
+@import "./../../template/base/header";
+@import "./../../template/skill-outline/skill-outline";
+@import "./../../template/base/skill";
+@import "./../../template/base/footer";
