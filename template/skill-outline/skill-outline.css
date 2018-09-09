@@ -21,7 +21,7 @@
 	position: absolute;
 	top: -36px;
 	left: -46px;
-	width: 80vw;
+	width: 90vw;
 	transition-property: font-size, top, left;
 	transition-duration: .5s;
 }
@@ -158,26 +158,26 @@
 @media screen and (max-width:480px) {
 	.box-skillOUtlineName {
 		position: absolute;
-		top: 10px;
+		top: 6px;
 		left: 15px;
 	}
 	
 	.img-skillOUtlineMain {
-		width: calc(100% - 81px);
+		width: calc(100% - 68px);
 	}
 	
 	.txt-skillOUtlineName {
-		font-size: 35px;
+		font-size: 28px;
 	}
 	
 	.txt-skillOUtlineNameSub {
-		font-size: 24px;
-		top: 11px;
-		left: -4px;
+		font-size: 22px;
+		top: -1px;
+		left: -8px;
 	}
 	
 	.ttl-skillOUtlineOtr {
-		margin-top: calc(37% - 38px + 42px);
+		margin-top: calc(37% - 25px + 38px);
 	}
 	
 	.ttl-skillOUtlineSub {
