@@ -1,0 +1,199 @@
+.box-skillOUtlineName {
+	position: fixed;
+	top: 80px;
+	left: 40px;
+}
+
+.txt-skillOUtlineName {
+	font-size: 50px;
+	line-height: 1;
+	position: relative;
+	z-index: 1;
+	transition-property: font-size, top, left;
+	transition-duration: .5s;
+}
+
+.txt-skillOUtlineNameSub {
+	font-size: 72px;
+	line-height: 1;
+	color: #EDE3D5;
+	transform: rotate(-7deg);
+	position: absolute;
+	top: -36px;
+	left: -46px;
+	width: 80vw;
+	transition-property: font-size, top, left;
+	transition-duration: .5s;
+}
+
+.ttl-skillOUtlineOtr {
+	position: fixed;
+	top: 160px;
+	left: 40px;
+	transition-property: top, left, width, padding;
+	transition-duration: .5s;
+}
+
+.ttl-skillOUtlineSub {
+	line-height: 1;
+	font-size: 16px;
+	margin-bottom: 14px;
+	display: block;
+	transition-property: font-size, margin;
+	transition-duration: .5s;
+}
+
+.ttl-skillOUtline {
+	line-height: 1.7;
+	font-size: 24px;
+	font-weight: bold;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.txt-skillOUtline {
+	line-height: 1.8;
+	margin: 21px 0 70px;
+	text-align: justify;
+	transition-property: margin;
+	transition-duration: .5s;
+}
+
+@media screen and (max-width:1280px) {
+	.txt-skillOUtlineName {
+		font-size: 45px;
+	}
+	
+	.txt-skillOUtlineNameSub {
+		font-size: 62px;
+		top: -34px;
+	}
+	
+	.ttl-skillOUtlineOtr {
+		top: 154px;
+	}
+	
+	.ttl-skillOUtlineSub {
+		font-size: 15px;
+		margin-bottom: 12px;
+	}
+	
+	.ttl-skillOUtline {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width:960px) {
+	.txt-skillOUtlineName {
+		font-size: 40px;
+	}
+	
+	.txt-skillOUtlineNameSub {
+		font-size: 52px;
+		top: -26px;
+	}
+	
+	.ttl-skillOUtlineOtr {
+		top: 144px;
+	}
+	
+	.ttl-skillOUtlineSub {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.ttl-skillOUtline {
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width:780px) {
+	.box-skillOUtlineName {
+		position: absolute;
+		top: 20px;
+		left: 18px;
+	}
+	
+	.img-skillOUtlineMain {
+		width: calc(100% - 104px);
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+	
+	.txt-skillOUtlineName {
+		font-size: 45px;
+	}
+	
+	.txt-skillOUtlineNameSub {
+		font-size: 42px;
+		top: 4px;
+		left: -8px;
+	}
+	
+	.ttl-skillOUtlineOtr {
+		position: relative;
+		text-align: right;
+		width: 100%;
+		top: auto;
+		left: auto;
+		margin-top: calc(37% - 38px + 42px);
+	}
+	
+	.ttl-skillOUtlineSub {
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+	
+	.ttl-skillOUtline {
+		font-size: 26px;
+	}
+	
+	.txt-skillOUtline {
+		margin-top: 24px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.box-skillOUtlineName {
+		position: absolute;
+		top: 10px;
+		left: 15px;
+	}
+	
+	.img-skillOUtlineMain {
+		width: calc(100% - 81px);
+	}
+	
+	.txt-skillOUtlineName {
+		font-size: 35px;
+	}
+	
+	.txt-skillOUtlineNameSub {
+		font-size: 24px;
+		top: 11px;
+		left: -4px;
+	}
+	
+	.ttl-skillOUtlineOtr {
+		margin-top: calc(37% - 38px + 42px);
+	}
+	
+	.ttl-skillOUtlineSub {
+		font-size: 15px;
+		margin-bottom: 6px;
+	}
+	
+	.ttl-skillOUtline {
+		font-size: 22px;
+	}
+	
+	.txt-skillOUtline {
+		margin-top: 18px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	
+}

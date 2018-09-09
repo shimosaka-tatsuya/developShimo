@@ -51,6 +51,7 @@
 		transform: scale(1.08);
 	}
 }
+
 .btn-hamburgerMenu span,
 .btn-hamburgerMenu::before,
 .btn-hamburgerMenu::after {
@@ -382,6 +383,10 @@
 	#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::before,
 	#hamburgerMenuInput:checked ~ .btn-hamburgerMenu::after {
 		width: 26px;
+	}
+	
+	.box-hamburgerMenu {
+		height: calc(100% + 60px);
 	}
 	
 	.wp-hamburgerMenuInr {
