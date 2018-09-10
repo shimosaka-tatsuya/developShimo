@@ -2,6 +2,7 @@
 	text-align: center;
 	line-height: 2.4;
 	margin: 36px auto 26px;
+	max-width: 1560px;
 	transition-property: margin, padding, font-size;
 	transition-duration: .5s;
 	

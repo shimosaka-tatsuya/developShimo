@@ -1,5 +1,6 @@
 .box-linkToSkill {
 	width: 100%;
+	max-width: 1560px;
 	margin-bottom: 84px;
 	display: flex;
 	flex-wrap: wrap;
