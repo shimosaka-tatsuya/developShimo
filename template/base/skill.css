@@ -8,11 +8,23 @@
 	position: relative;
 	width: calc(100% - 314px);
 	float: right;
-	border-left: solid 1px #ccc;
 	padding: 0 40px 0;
 	box-sizing: border-box;
 	transition-property: width, padding, border;
 	transition-duration: .5s;
+	
+	&::before {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 100%;
+		background-color: #ccc;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition-property: opacity;
+		transition-duration: .5s;
+	}
 }
 
 @media screen and (max-width:1280px) {
@@ -35,7 +47,10 @@
 	.area-content-skillInr {
 		width: 100%;
 		padding: 0 14px 0;
-		border: none;
+		
+		&::before {
+			opacity: 0;
+		}
 	}
 }
 

@@ -1,6 +1,11 @@
 @import "./../../template/base/reset";
 @import "./../../template/base/base";
 @import "./../../template/base/header";
-@import "./../../template/skill-outline/skill-outline";
 @import "./../../template/base/skill";
+@import "./../../template/skill-outline/skill-outline";
+@import "./../../template/skill-title-section/skill-title-section";
 @import "./../../template/base/footer";
+
+.txt-skillOUtline {
+	margin-bottom: 70px;
+}

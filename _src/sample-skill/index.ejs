@@ -13,7 +13,20 @@ var pageId = "skill-gd";
 
 <div class="area-content-skill">
 	<div class="area-content-skillInr">
-		<%- include(setLayered + "skill-outline/skill-outline") %>
+		<%- include(setLayered + "skill-outline/skill-outline", {
+			"txtSkillOUtlineName": "GD",
+			"txtSkillOUtlineNameSub": "Graphic Design",
+			"ttlSkillOUtline": "本質的な思いを<br>デザインで表現する",
+			"imgSkillOUtlineMain": "/skill/img_mainGd.jpg",
+			"txtSkillOUtline": "レコードのジャケットには、ミュージシャンが楽曲に込めた思いが1枚の絵となって表現されています。WEBデザイナーは、クライアントが抱いている本質的な思いをデザインで表現する必要があると思います。"
+		}) %>
+		
+		<%- include(setLayered + "skill-title-section/skill-title-section", {
+			txtSectionSymbol: 'Works',
+			txtSectionSymbolSub: 'Performance',
+			ttlSectionTop: 'パシフィック不動産',
+			txtSectionTop: 'WEBサイト / サインボード'
+		}) %>
 	</div><!-- /.area-content-skillInr -->
 </div><!-- /.area-content-skill -->
 
