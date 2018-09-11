@@ -28,7 +28,10 @@ var pageId = "skill-gd";
 			txtSectionTop: 'WEBサイト / サインボード'
 		}) %>
 		
-		<%- include(setLayered + "skill-section/skill-section") %>
+		<%- include(setLayered + "skill-section/skill-section", {
+			"imgSkillSection": ["/skill/img/img_pacific01.jpg","/skill/img/img_pacific02.jpg"],
+			"txtSkillSection": "金沢で不動産業を展開する『パシフィック不動産』のプロモーションの事例です。"
+		}) %>
 	</div><!-- /.area-content-skillInr -->
 </div><!-- /.area-content-skill -->
 
