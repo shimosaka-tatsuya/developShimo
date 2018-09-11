@@ -5,6 +5,7 @@
 @import "./../../template/skill-outline/skill-outline";
 @import "./../../template/skill-title-section/skill-title-section";
 @import "./../../template/skill-section/skill-section";
+@import "./../../template/skill-subtitle-section/skill-subtitle-section";
 @import "./../../template/base/footer";
 
 .txt-skillOUtline {
