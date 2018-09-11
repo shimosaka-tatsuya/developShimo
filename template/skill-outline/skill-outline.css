@@ -1,7 +1,9 @@
 .box-skillOUtlineName {
 	position: fixed;
 	top: 80px;
-	left: 40px;
+	transform: translateX(-316px);
+	transition-property: transform;
+	transition-duration: .5s;
 }
 
 .txt-skillOUtlineName {
@@ -9,7 +11,7 @@
 	line-height: 1;
 	position: relative;
 	z-index: 1;
-	transition-property: font-size, top, left;
+	transition-property: font-size, top, left, transform;
 	transition-duration: .5s;
 }
 
@@ -18,19 +20,26 @@
 	line-height: 1;
 	color: #EDE3D5;
 	transform: rotate(-7deg);
+	transform-origin: left bottom;
 	position: absolute;
-	top: -36px;
-	left: -46px;
+	top: 30px;
+	left: -32px;
 	width: 90vw;
 	transition-property: font-size, top, left;
 	transition-duration: .5s;
 }
 
+.txt-skillOUtlineNameSub.txt-skillOUtlineNameSub--small {
+	font-size: 34px;
+	top: 34px;
+	left: -23px;
+}
+
 .ttl-skillOUtlineOtr {
 	position: fixed;
 	top: 160px;
-	left: 40px;
-	transition-property: top, left, width, padding;
+	transform: translateX(-316px);
+	transition-property: top, left, width, padding, transform;
 	transition-duration: .5s;
 }
 
@@ -60,17 +69,26 @@
 }
 
 @media screen and (max-width:1280px) {
+	.box-skillOUtlineName {
+		transform: translateX(-286px);
+	}
+	
 	.txt-skillOUtlineName {
 		font-size: 45px;
 	}
 	
 	.txt-skillOUtlineNameSub {
 		font-size: 62px;
-		top: -34px;
+		top: 26px;
+	}
+
+	.txt-skillOUtlineNameSub.txt-skillOUtlineNameSub--small {
+		font-size: 31px;
 	}
 	
 	.ttl-skillOUtlineOtr {
 		top: 154px;
+		transform: translateX(-286px);
 	}
 	
 	.ttl-skillOUtlineSub {
@@ -84,17 +102,26 @@
 }
 
 @media screen and (max-width:960px) {
+	.box-skillOUtlineName {
+		transform: translateX(-254px);
+	}
+	
 	.txt-skillOUtlineName {
 		font-size: 40px;
 	}
 	
 	.txt-skillOUtlineNameSub {
 		font-size: 52px;
-		top: -26px;
+		top: 26px;
+	}
+	
+	.txt-skillOUtlineNameSub.txt-skillOUtlineNameSub--small {
+		font-size: 27px;
 	}
 	
 	.ttl-skillOUtlineOtr {
 		top: 144px;
+		transform: translateX(-254px);
 	}
 	
 	.ttl-skillOUtlineSub {
@@ -110,6 +137,7 @@
 @media screen and (max-width:780px) {
 	.box-skillOUtlineName {
 		position: absolute;
+		transform: translateX(0);
 		top: 20px;
 		left: 18px;
 	}
@@ -128,7 +156,7 @@
 	
 	.txt-skillOUtlineNameSub {
 		font-size: 42px;
-		top: 4px;
+		top: 30px;
 		left: -8px;
 	}
 	
@@ -136,6 +164,7 @@
 		position: relative;
 		text-align: right;
 		width: 100%;
+		transform: translateX(0);
 		top: auto;
 		left: auto;
 		margin-top: calc(37% - 38px + 42px);
@@ -172,7 +201,7 @@
 	
 	.txt-skillOUtlineNameSub {
 		font-size: 26px;
-		top: -3px;
+		top: 18px;
 		left: -8px;
 	}
 	
