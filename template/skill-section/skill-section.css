@@ -1,0 +1,12 @@
+.img-skillSection {
+	margin-bottom: 14px;
+}
+
+.box-skillSection .img-skillSection:last-of-type {
+	margin-bottom: 0;
+}
+
+.txt-skillSection {
+	line-height: 1.5;
+	margin-top: 10px;
+}
