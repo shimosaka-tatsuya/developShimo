@@ -6,6 +6,7 @@
 @import "./../../template/skill-title-section/skill-title-section";
 @import "./../../template/skill-section/skill-section";
 @import "./../../template/skill-subtitle-section/skill-subtitle-section";
+@import "./../../template/skill-section-parallel/skill-section-parallel";
 @import "./../../template/base/footer";
 
 .txt-skillOUtline {
@@ -14,4 +15,33 @@
 
 .box-sectionTop {
 	margin-bottom: 45px;
+}
+
+.box-sectionAgendaSymbol {
+	margin-bottom: 98px;
+}
+
+.box-sectionAgendaSymbol + .box-sectionAgendaSymbol {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width:1280px) {
+	.txt-imageEstablishment {
+		.txt-newLine {
+			display: block;
+		}
+		
+		.txt-imageEstablishmentLine01 {
+			text-indent: .9em;
+			display: inline-block;
+		}
+	}
+}
+
+@media screen and (max-width:420px) {
+	.txt-imageEstablishment {
+		.txt-imageEstablishmentLine01 {
+			text-indent: 0;
+		}
+	}
 }
