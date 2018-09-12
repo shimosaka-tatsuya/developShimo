@@ -46,6 +46,10 @@ a {
 }
 
 @media screen and (max-width:420px) {
+	body {
+		font-size: 14px;
+	}
+	
 	.area-content {
 		overflow: hidden;
 		width: 100vw;
