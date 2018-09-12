@@ -18,10 +18,10 @@ $(function(){
 	$('.btn-hamburgerMenu').on('click', function(){
 		if(state == false) {
 			scrollpos = $(window).scrollTop();
-			$('.area-content').addClass('area-content--inactive').css({'top': -scrollpos});
+			$('body').addClass('contentScroll-inactive').css({'top': -scrollpos});
 			state = true;
 		} else {
-			$('.area-content').removeClass('area-content--inactive').css({'top': 0});
+			$('body').removeClass('contentScroll-inactive').css({'top': 0});
 			window.scrollTo( 0 , scrollpos );
 			state = false;
 		}
