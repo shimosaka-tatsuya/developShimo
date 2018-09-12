@@ -22,7 +22,7 @@
 }
 
 .box-sectionAgendaSymbol + .box-sectionAgendaSymbol {
-	margin-bottom: 0;
+	margin-bottom: 63px;
 }
 
 @media screen and (max-width:1280px) {

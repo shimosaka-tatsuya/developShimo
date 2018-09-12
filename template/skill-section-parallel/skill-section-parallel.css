@@ -1,0 +1,59 @@
+.wp-sectionShumbnail {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	width: 100%;
+	transition-property: flex-flow, align-items;
+	transition-duration: .5s;
+}
+
+.box-sectionShumbnail {
+	width: calc((100% - 21px) / 2);
+}
+
+.box-sectionShumbnail:nth-child(1) {
+	margin-right: 21px;
+}
+
+.ttl-sectionShumbnail {
+	font-size: 16px;
+	line-height: 1;
+	margin-bottom: 18px;
+	transition-property: font-size, margin;
+	transition-duration: .5s;
+}
+
+.txt-sectionShumbnail {
+	margin-top: 21px;
+	line-height: 1.8;
+	transition-property: font-size, margin;
+	transition-duration: .5s;
+}
+
+@media screen and (max-width:780px) {
+	.wp-sectionShumbnail {
+		display: flex;
+		flex-flow: column;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+	}
+	
+	.box-sectionShumbnail {
+		width: 100%;
+	}
+	
+	.box-sectionShumbnail:nth-child(1) {
+		margin: 0 0 30px 0;
+	}
+	
+	.ttl-sectionShumbnail {
+		font-size: 15px;
+		margin-bottom: 16px;
+	}
+	
+	.txt-sectionShumbnail {
+		margin-top: 12px;
+	}
+}
