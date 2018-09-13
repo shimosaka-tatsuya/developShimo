@@ -1,5 +1,19 @@
 <div class="box-sectionColumn">
-	<h3 class="ttl-sectionShumbnail">WEBサイト</h3>
-	<img class="img-sectionShumbnail" src="/skill/img/img_pacific_web.jpg" alt="サムネイル WEBサイト" width="100%" height="" />
-	<p class="txt-sectionShumbnail">本件では、イメージビジュアル・WEB・サインボードの制作を担当しました。</p>
+	<div class="wp-sectionColumnThumbnail">
+		<div class="box-sectionColumnThumbnail">
+			<h3 class="ttl-sectionColumnThumbnail"><%= ttlSectionColumn01 %></h3>
+			<img src="<%= sectionColumnThumbnail01 %>" alt="<%= ttlSectionColumn01 %> サムネイル01" width="100%" height="" />
+		</div><!-- /.box-sectionColumnThumbnail -->
+		
+		<% if (sectionColumnThumbnail02 !== "") { %>
+		<div class="box-sectionColumnThumbnail">
+			<% if (ttlSectionColumn02 !== "") { %>
+			<h3 class="ttl-sectionColumnThumbnail"><%= ttlSectionColumn02 %></h3>
+			<% }; %>
+			<img src="<%= sectionColumnThumbnail02 %>" alt="<%= ttlSectionColumn02 %> サムネイル02" width="100%" height="" />
+		</div><!-- /.box-sectionColumnThumbnail -->
+		<% }; %>
+	</div><!-- /.wp-sectionColumnThumbnail -->
+	
+	<p class="txt-sectionColumn"><%= txtSectionColumn %></p>
 </div><!-- /.box-sectionColumn -->
