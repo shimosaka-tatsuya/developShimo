@@ -44,4 +44,8 @@
 			text-indent: 0;
 		}
 	}
+	
+	.box-sectionAgendaSymbol {
+		margin-bottom: 60px;
+	}
 }
