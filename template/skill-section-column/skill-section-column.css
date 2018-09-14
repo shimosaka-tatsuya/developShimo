@@ -6,22 +6,14 @@
 .box-sectionColumn {
 	width: 100%;
 	margin-bottom: 56px;
-	
-	&--half {
-		width: calc((100% - 18px) / 2);
-		
-		& + & {
-			margin-left: 18px;
-		}
-	}
 }
 
-.ttl-sectionColumnThumbnail {
-	line-height: 1;
-	font-size: 16px;
-	margin-bottom: 14px;
-	transition-property: margin;
-	transition-duration: .5s;
+.box-sectionColumn--half {
+	width: calc((100% - 18px) / 2);
+	
+	& + & {
+		margin-left: 18px;
+	}
 }
 
 .wp-sectionColumnThumbnail {
@@ -37,6 +29,14 @@
 	& + & {
 		margin-left: 18px;
 	}
+}
+
+.ttl-sectionColumnThumbnail {
+	line-height: 1;
+	font-size: 16px;
+	margin-bottom: 14px;
+	transition-property: margin;
+	transition-duration: .5s;
 }
 
 .txt-sectionColumn {
@@ -56,14 +56,11 @@
 		}
 	}
 	
-	.box-sectionColumn {
+	.box-sectionColumn--half {
+		width: 100%;
 		
-		&--half {
-			width: 100%;
-			
-			& + & {
-				margin: 30px 0 56px 0;
-			}
+		& + & {
+			margin: 30px 0 56px 0;
 		}
 	}
 	
