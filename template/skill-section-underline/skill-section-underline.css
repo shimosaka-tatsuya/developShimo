@@ -1,0 +1,11 @@
+.list-result {
+    margin-top: -60px;
+    text-align: center;
+}
+
+.txt-result {
+    line-height: 1.8;
+    font-size: 18px;
+    display: inline-block;
+    background:linear-gradient(transparent 70%, #FFFF00 0%);
+}

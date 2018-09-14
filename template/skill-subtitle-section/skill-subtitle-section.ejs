@@ -1,6 +1,10 @@
 <div class="box-sectionAgendaSymbol">
 	<p class="txt-sectionAgendaSymbol txt-fontJapanese"><%= txtSectionAgendaSymbol %></p>
 	<p class="txt-sectionAgendaSymbolSub txt-fontAlphabetSub"><%= txtSectionAgendaSymbolSub %></p>
+    <% if (ttlSectionAgenda !== "") { %>
 	<h2 class="ttl-sectionAgenda txt-fontJapanese"><%- ttlSectionAgenda %></h2>
-	<p class="txt-sectionAgenda"><%= txtSectionAgenda %></p>
+    <% }; %>
+	<% if (txtSectionAgenda !== "") { %>
+    <p class="txt-sectionAgenda"><%= txtSectionAgenda %></p>
+    <% }; %>
 </div><!-- /.box-sectionAgendaSymbol -->
