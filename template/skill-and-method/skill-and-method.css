@@ -1,0 +1,21 @@
+.box-skillAndMethod {
+	background-color: #F1EEE9;
+	padding: 35px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	margin-top: 80px;
+	flex-flow: row;
+	align-items: center;
+}
+
+.ttl-skillAndMethod {
+	font-size: 20px;
+	font-weight: bold;
+	width: 180px;
+}
+
+.txt-skillAndMethod {
+	width: calc(100% - 180px);
+	line-height: 1.6;
+}

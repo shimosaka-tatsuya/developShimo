@@ -1,0 +1,44 @@
+.list-sectionResult {
+	text-align: center;
+	margin-top: 56px;
+	transition-property: margin;
+	transition-duration: .5s;
+}
+
+.txt-sectionResult {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 8px;
+	transition-property: font-size;
+	transition: .5s;
+}
+
+.txt-sectionResultInr {
+	background:linear-gradient(transparent 81%, #F8DDAA 0%) ;
+	padding-bottom: 1px;
+}
+
+@media screen and (max-width:960px) {
+	.txt-sectionResult {
+		font-size: 17px;
+	}	
+}
+
+@media screen and (max-width:480px) {
+	.list-sectionResult {
+		margin-top: 21px;
+	}
+	
+	.txt-sectionResult {
+		font-size: 15px;
+		text-align: justify;
+		text-indent: -.5em;
+		margin-left: 1em;
+		
+		&::before {
+			content: "・";
+			display: inline-block;
+		}
+	}
+}

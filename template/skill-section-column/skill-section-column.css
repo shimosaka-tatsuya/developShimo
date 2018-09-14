@@ -5,15 +5,30 @@
 
 .box-sectionColumn {
 	width: 100%;
-	margin-bottom: 56px;
 	
 	&--half {
 		width: calc((100% - 18px) / 2);
 		
 		& + & {
 			margin-left: 18px;
+			margin-top: 0!important;
 		}
 	}
+}
+
+.wp-SectionColumnHalf + .box-sectionColumn,
+.box-sectionColumn + .box-sectionColumn,
+.box-sectionColumn + .wp-SectionColumnHalf {
+	margin-top: 56px;
+}
+
+.box-sectionColumn--half + .box-sectionColumn--half {
+	margin-top: 0;
+}
+
+.box-sectionAgendaSymbol + .box-sectionColumn,
+.box-sectionAgendaSymbol + .wp-SectionColumnHalf {
+	margin-top: 65px;
 }
 
 .ttl-sectionColumnThumbnail {
@@ -62,7 +77,7 @@
 			width: 100%;
 			
 			& + & {
-				margin: 30px 0 56px 0;
+				margin: 30px 0 0 0!important;
 			}
 		}
 	}

@@ -41,6 +41,27 @@ a {
 	}
 }
 
+.box-linkOtherSite {
+	text-align: right;
+	padding: 42px 0;
+}
+
+.txt-linkOtherSite {
+	display: inline-block;
+	text-indent: -22px;
+	text-decoration: underline;
+	
+	&::after {
+		content: "";
+		display: inline-block;
+		background: url("/common/img/ico-linkOtherSite.svg") 0 0 no-repeat;
+		background-size: 20px;
+		width: 20px;
+		height: 15px;
+		margin-left: 4px;
+	}
+}
+
 .txt-newLine {
 	display: none;
 }
