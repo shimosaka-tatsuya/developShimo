@@ -2,15 +2,15 @@
 @import "./../../template/base/base";
 @import "./../../template/base/header";
 @import "./../../template/base/base-skill";
-@import "./../../template/skill-outline/skill-outline";
-@import "./../../template/skill-title-section/skill-title-section";
-@import "./../../template/skill-section/skill-section";
-@import "./../../template/skill-subtitle-section/skill-subtitle-section";
-@import "./../../template/skill-section-column/skill-section-column";
-@import "./../../template/skill-section-underline/skill-section-underline";
-@import "./../../template/skill-and-method/skill-and-method";
-@import "./../../template/link-to-other-site/link-to-other-site";
-@import "./../../template/skill-pager/skill-pager";
+@import "./../../template/skill/outline/outline";
+@import "./../../template/title-section/title-section";
+@import "./../../template/skill/section/section";
+@import "./../../template/skill/subtitle-section/subtitle-section";
+@import "./../../template/skill/section-column/section-column";
+@import "./../../template/skill/section-underline/section-underline";
+@import "./../../template/skill/skill-and-method/skill-and-method";
+@import "./../../template/skill/link-to-other-site/link-to-other-site";
+@import "./../../template/skill/pager/pager";
 @import "./../../template/base/footer";
 
 .txt-skillOUtline {
