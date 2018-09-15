@@ -7,6 +7,10 @@
 @import "./../../template/skill-section/skill-section";
 @import "./../../template/skill-subtitle-section/skill-subtitle-section";
 @import "./../../template/skill-section-column/skill-section-column";
+@import "./../../template/skill-section-underline/skill-section-underline";
+@import "./../../template/skill-and-method/skill-and-method";
+@import "./../../template/link-to-other-site/link-to-other-site";
+@import "./../../template/skill-pager/skill-pager";
 @import "./../../template/base/footer";
 
 .txt-skillOUtline {
@@ -15,14 +19,6 @@
 
 .box-sectionTop {
 	margin-bottom: 45px;
-}
-
-.box-sectionAgendaSymbol {
-	margin-bottom: 98px;
-}
-
-.box-sectionAgendaSymbol + .box-sectionAgendaSymbol {
-	margin-bottom: 63px;
 }
 
 @media screen and (max-width:1280px) {
@@ -43,9 +39,5 @@
 		.txt-imageEstablishmentLine01 {
 			text-indent: 0;
 		}
-	}
-	
-	.box-sectionAgendaSymbol {
-		margin-bottom: 60px;
 	}
 }

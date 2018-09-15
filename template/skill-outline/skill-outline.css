@@ -222,3 +222,19 @@
 		margin-top: 18px;
 	}
 }
+
+@media screen and (max-height:320px) {
+	.box-skillOUtlineName {
+		position: absolute;
+		transform: translateX(-286px) translateY(-80px);
+	}
+	
+	.txt-skillOUtlineNameSub {
+		font-size: 31px;
+	}
+	
+	.ttl-skillOUtlineOtr {
+		position: absolute;
+		transform: translateX(-286px) translateY(-80px);
+	}	
+}

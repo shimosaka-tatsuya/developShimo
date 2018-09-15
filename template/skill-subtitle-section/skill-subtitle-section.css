@@ -1,5 +1,14 @@
 .box-sectionAgendaSymbol {
 	position: relative;
+	
+	& + & {
+		margin-top: 80px;
+	}
+}
+
+.box-sectionColumn + .box-sectionAgendaSymbol,
+.wp-SectionColumnHalf + .box-sectionAgendaSymbol {
+	margin-top: 80px;
 }
 
 .txt-sectionAgendaSymbol {
