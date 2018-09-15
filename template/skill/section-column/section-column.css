@@ -26,9 +26,9 @@
 	margin-top: 0;
 }
 
-.box-sectionAgendaSymbol + .box-sectionColumn,
-.box-sectionAgendaSymbol + .wp-SectionColumnHalf {
-	margin-top: 65px;
+.box-sectionAgenda + .box-sectionColumn,
+.box-sectionAgenda + .wp-SectionColumnHalf {
+	margin-top: 50px;
 }
 
 .ttl-sectionColumnThumbnail {
@@ -106,8 +106,8 @@
 		margin-top: 11px;
 	}
 	
-	.box-sectionAgendaSymbol + .box-sectionColumn,
-	.box-sectionAgendaSymbol + .wp-SectionColumnHalf {
+	.box-sectionAgenda + .box-sectionColumn,
+	.box-sectionAgenda + .wp-SectionColumnHalf {
 		margin-top: 34px;
 	}
 }
