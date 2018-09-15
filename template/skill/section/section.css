@@ -1,20 +1,24 @@
-.img-skillSection {
+.img-section {
 	margin-bottom: 14px;
 }
 
-.box-skillSection .img-skillSection:last-of-type {
+.box-section .img-section:last-of-type {
 	margin-bottom: 0;
 }
 
-.txt-skillSection {
+.ttl-section + .box-section {
+	margin-top: 45px;
+}
+
+.txt-section {
 	line-height: 1.8;
-	margin: 10px 0 98px;
+	margin-top: 10px;
 	transition-property: margin;
 	transition-duration: .5s;
 }
 
 @media screen and (max-width:480px) {
-	.txt-skillSection {
+	.txt-section {
 		margin-bottom: 60px;
 	}	
 }

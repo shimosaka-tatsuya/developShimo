@@ -1,4 +1,4 @@
-.box-sectionTop {
+.ttl-section {
 	text-align: center;
 	position: relative;
 	width: 100%;
@@ -14,7 +14,7 @@
 	transition-duration: .5s;
 }
 
-.txt-sectionSymbolSub {
+.txt-sectionSymbolScript {
 	font-size: 42px;
 	line-height: 1;
 	color: #EDE3D5;
@@ -30,7 +30,7 @@
 	transition-duration: .5s;
 }
 
-.ttl-sectionTop {
+.txt-sectionMain {
 	margin-top: 25px;
 	font-weight: bold;
 	font-size: 30px;
@@ -40,7 +40,7 @@
 	transition-duration: .5s;
 }
 
-.txt-sectionTop {
+.txt-deliverables {
 	text-align: center;
 	line-height: 1;
 	font-size: 14px;
@@ -52,16 +52,16 @@
 		font-size: 30px;
 	}
 	
-	.txt-sectionSymbolSub {
+	.txt-sectionSymbolScript {
 		font-size: 36px;
 	}
 	
-	.ttl-sectionTop {
+	.txt-sectionMain {
 		margin-top: 16px;
 		font-size: 24px;
 	}
 	
-	.txt-sectionTop {
+	.txt-deliverables {
 		font-size: 12px;
 		margin-top: 14px;
 	}
@@ -72,16 +72,16 @@
 		font-size: 36px;
 	}
 	
-	.txt-sectionSymbolSub {
+	.txt-sectionSymbolScript {
 		font-size: 42px;
 	}
 	
-	.ttl-sectionTop {
+	.txt-sectionMain {
 		margin-top: 25px;
 		font-size: 30px;
 	}
 	
-	.txt-sectionTop {
+	.txt-deliverables {
 		font-size: 14px;
 		margin-top: 18px;
 	}
@@ -92,16 +92,16 @@
 		font-size: 30px;
 	}
 	
-	.txt-sectionSymbolSub {
+	.txt-sectionSymbolScript {
 		font-size: 36px;
 	}
 	
-	.ttl-sectionTop {
+	.txt-sectionMain {
 		margin-top: 16px;
 		font-size: 24px;
 	}
 	
-	.txt-sectionTop {
+	.txt-deliverables {
 		font-size: 12px;
 		margin-top: 14px;
 	}
