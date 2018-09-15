@@ -96,11 +96,14 @@ var pageId = "skill-gd";
 			"txtSectionResult": ["WEB・サインボードをはじめTVCMなどのあらゆるツールが洗練された。","利用者にパシフィック不動産らしさを印象付けることができた。"]
 		}) %>
 		
-		<%- include(setLayered + "skill-and-method/skill-and-method") %>
+		<%- include(setLayered + "skill-and-method/skill-and-method", {
+			"txtSkillAndMethod": "html5・css3・gulp・ejs・scss・postcss・webpack・vue.js・jQueryなど"
+		}) %>
 		
-		<div class="box-linkOtherSite">
-			<a class="txt-linkOtherSite" href="#" target="_blank">パシフィック不動産 オフィシャルサイト</a>
-		</div>
+		<%- include(setLayered + "link-to-other-site/link-to-other-site", {
+			"txtLinkOtherSite": "パシフィック不動産 オフィシャルサイト",
+			"LinkOtherSite": "#"
+		}) %>
 	</div><!-- /.area-content-skillInr -->
 </div><!-- /.area-content-skill -->
 

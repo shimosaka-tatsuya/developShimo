@@ -105,4 +105,9 @@
 	.txt-sectionColumn {
 		margin-top: 11px;
 	}
+	
+	.box-sectionAgendaSymbol + .box-sectionColumn,
+	.box-sectionAgendaSymbol + .wp-SectionColumnHalf {
+		margin-top: 34px;
+	}
 }
