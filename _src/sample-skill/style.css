@@ -10,6 +10,7 @@
 @import "./../../template/skill-section-underline/skill-section-underline";
 @import "./../../template/skill-and-method/skill-and-method";
 @import "./../../template/link-to-other-site/link-to-other-site";
+@import "./../../template/skill-pager/skill-pager";
 @import "./../../template/base/footer";
 
 .txt-skillOUtline {
