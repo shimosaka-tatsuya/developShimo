@@ -1,4 +1,4 @@
-<li class="box-linkToSkill">
+<li class="box-linkToSkill box-ScrollAnimaton">
 	<div class="ttl-linkToSkill">
 		<p class="wp-skillName txt-fontAlphabet">
 			<span class="txt-skillName"><%= txtSkillName %></span>
@@ -6,10 +6,10 @@
 		</p><!-- /.txt-skillName -->
 		<span class="txt-skillNameSub txt-fontAlphabet"><%= txtSkillNameSub %></span>
 		<h4 class="txt-skillCatchCopy txt-fontJapanese"><%- txtSkillOutline %></h4>
-		<a class="btn-linkToSkill txt-fontAlphabet" href="/<%- pageId %>/"><span class="btn-linkToSkillInr"><span class="ico-linkToSkill">View Ditail</span></span></a>
-</div><!-- /.ttl-linkToSkill -->
-
-<div class="img-skillThumbnail">
-	<img src="/top/img/<%= imgSkillThumbnail %>" width="100%" height="">
-</div><!-- /.img-skillThumbnail" -->
+		<a class="btn-linkToSkill txt-fontAlphabet" href="<%- pageUrl %>"><span class="btn-linkToSkillInr"><span class="ico-linkToSkill">View Ditail</span></span></a>
+	</div><!-- /.ttl-linkToSkill -->
+	
+	<div class="wp-skillThumbnail">
+		<img class="img-skillThumbnail" src="/top/img/<%= imgSkillThumbnail %>" width="100%" height="">
+	</div><!-- /.wp-skillThumbnail" -->
 </li><!-- /.box-linkToSkill -->
