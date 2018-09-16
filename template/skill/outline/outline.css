@@ -2,8 +2,12 @@
 	position: fixed;
 	top: 80px;
 	transform: translateX(-316px);
-	transition-property: transform;
+	transition-property: transform, opacity;
 	transition-duration: .5s;
+	
+	&--inactive {
+		opacity: 0;
+	}
 }
 
 .txt-skillOUtlineName {
@@ -39,8 +43,12 @@
 	position: fixed;
 	top: 160px;
 	transform: translateX(-316px);
-	transition-property: top, left, width, padding, transform;
+	transition-property: top, left, width, padding, transform, opacity;
 	transition-duration: .5s;
+	
+	&--inactive {
+		opacity: 0;
+	}
 }
 
 .ttl-skillOUtlineSub {
@@ -221,20 +229,4 @@
 	.txt-skillOUtline {
 		margin-top: 18px;
 	}
-}
-
-@media screen and (max-height:320px) {
-	.box-skillOUtlineName {
-		position: absolute;
-		transform: translateX(-286px) translateY(-80px);
-	}
-	
-	.txt-skillOUtlineNameSub {
-		font-size: 31px;
-	}
-	
-	.ttl-skillOUtlineOtr {
-		position: absolute;
-		transform: translateX(-286px) translateY(-80px);
-	}	
 }

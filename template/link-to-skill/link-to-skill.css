@@ -16,8 +16,13 @@
 	width: 534px;
 	padding: 0 0 0 40px;
 	box-sizing: border-box;
-	transition-property: padding, width;
+	opacity: 0;
+	transition-property: padding, width, opacity, transform;
 	transition-duration: .5s;
+}
+
+.box-ScrollAnimaton-active .ttl-linkToSkill {
+	opacity: 1;
 }
 
 .wp-skillName {
@@ -192,10 +197,73 @@
 	}
 }
 
-.img-skillThumbnail {
+.wp-skillThumbnail {
 	width: calc(100% - 534px);
+	height: auto;
+	position: relative;
 	transition-property: width;
 	transition-duration: .5s;
+}
+
+@keyframes slideInBackground {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+.box-ScrollAnimaton-active .wp-skillThumbnail::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #e5e5e5;
+	z-index: -1;
+	animation-name: slideInBackground;
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease;
+	transform-origin: top right;
+}
+
+.box-linkToSkill:nth-child(2n) .wp-skillThumbnail::before {
+	transform-origin: top left;
+}
+
+.img-skillThumbnail {
+	mask-image: url(/top/img/img_skillThumbnailFe.jpg);
+	mask-mode: alpha;
+	mask-repeat: no-repeat;
+	mask-size: 0 100%;
+	mask-position: 0 0;
+}
+
+.box-linkToSkill:nth-child(2n) .img-skillThumbnail {
+	mask-position: 100% 100%;
+}
+
+@keyframes slideInThumbnail {
+	0% {
+		mask-size: 0 100%;
+	}
+	100% {
+		mask-size: 100% 100%;
+	}
+}
+
+.box-ScrollAnimaton-active .img-skillThumbnail {
+	width: 100%;
+	animation-name: slideInThumbnail;
+	animation-delay: .5s;
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease;
+	transform-origin: top left;
 }
 
 .box-linkToSkill:nth-child(2n-1) {
@@ -255,7 +323,7 @@
 		font-size: 19px;
 	}
 	
-	.img-skillThumbnail {
+	.wp-skillThumbnail {
 		width: calc(100% - 440px);
 	}
 	
@@ -302,7 +370,7 @@
 		font-size: 16px;
 	}
 	
-	.img-skillThumbnail {
+	.wp-skillThumbnail {
 		width: calc(100% - 380px);
 	}
 	
@@ -359,7 +427,7 @@
 		padding: 0 14px 0;
 	}
 	
-	.img-skillThumbnail {
+	.wp-skillThumbnail {
 		position: absolute;
 		top: 0;
 		width: calc(100vw - 147px);
@@ -378,7 +446,7 @@
 			text-align: right;
 		}
 		
-		.img-skillThumbnail {
+		.wp-skillThumbnail {
 			right: 0;
 		}
 	}
@@ -396,7 +464,7 @@
 			text-align: left;
 		}
 		
-		.img-skillThumbnail {
+		.wp-skillThumbnail {
 			left: 0;
 		}
 	}
@@ -432,7 +500,7 @@
 		font-size: 22px;
 	}
 	
-	.img-skillThumbnail {
+	.wp-skillThumbnail {
 		position: absolute;
 		top: 0;
 		width: calc(100vw - 78px);
@@ -451,7 +519,7 @@
 			text-align: right;
 		}
 		
-		.img-skillThumbnail {
+		.wp-skillThumbnail {
 			right: 0;
 		}
 	}
@@ -469,7 +537,7 @@
 			text-align: left;
 		}
 		
-		.img-skillThumbnail {
+		.wp-skillThumbnail {
 			left: 0;
 		}
 	}

@@ -11,6 +11,8 @@ var pageId = "skill-gd";
 <body>
 <%- include(setLayered + "base/header", { pageId: pageId }) %>
 
+<span class="bx-scrollGauge"></span>
+
 <div class="area-content area-content-skill">
 	<div class="area-content-skillInr">
 		<%- include(setLayered + "skill/outline/outline", {
@@ -104,9 +106,9 @@ var pageId = "skill-gd";
 			"txtLinkOtherSite": "パシフィック不動産 オフィシャルサイト",
 			"LinkOtherSite": "#"
 		}) %>
-		
-		<%- include(setLayered + "skill/pager/pager") %>
 	</div><!-- /.area-content-skillInr -->
+	
+	<%- include(setLayered + "skill/pager/pager") %>
 </div><!-- /.area-content-skill -->
 
 <%- include(setLayered + "base/footer") %>

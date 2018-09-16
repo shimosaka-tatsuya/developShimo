@@ -3,6 +3,8 @@
 	flex-flow: row;
 	align-items: flex-start;
 	width: 100%;
+	padding: 70px 40px 0;
+	box-sizing: border-box;
 	transition-property: margin;
 	transition-duration: .5s;
 }
@@ -12,20 +14,20 @@
 	display: block;
 	position: relative;
 	text-align: center;
-	transition-property: opacity, box-shadow;
+	transition-property: opacity;
 	transition-duration: .5s;
 	
 	&::before {
 		content: "";
 		display: block;
 		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
-		width: 14px;
-		height: 20px;
-		background-size: 14px;
+		width: 15px;
+		height: 21px;
+		background-size: 15px;
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		left: 16px;
+		left: 18px;
 		margin: auto;
 		filter: drop-shadow(0 0 4px rgba(255,255,255,.9));
 		transition-property: transform;
@@ -37,14 +39,13 @@
 	}
 	
 	&:nth-child(2)::before {
-		right: 16px;
+		right: 18px;
 		left: auto;
 		transform: rotate(180deg);
 	}
 	
 	&:hover {
 		opacity: .9;
-		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 	}
 	
 	&:hover::before {
@@ -70,7 +71,7 @@
 }
 
 .txt-pagerSymbol {
-	font-size: 46px;
+	font-size: 48px;
 	position: relative;
 	z-index: 1;
 	text-shadow: 0 0 18px rgba(255, 255, 255, .6);
@@ -82,7 +83,7 @@
 .txt-pagerScript {
 	color: #EDE3D5;
 	line-height: 1;
-	font-size: 22px;
+	font-size: 24px;
 	transform: rotate(-7deg);
 	margin-top: -20px;
 	transition-property: font-size, margin;
@@ -97,22 +98,19 @@
 	transition-duration: .5s;
 }
 
-@media screen and (max-width:1280px) {
-	
-	.txt-pagerSymbol {
-		font-size: 36px;
-	}
-	
-	.txt-pagerScript {
-		font-size: 20px;
-	}
-	
-	.txt-pagerSub {
-		font-size: 18px;
-	}	
+.img-pager {
+	 transition-property: box-shadow;
+	 transition-duration: .3s;
+ }
+
+.box-pager:hover .img-pager {
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:780px) {
+	.wp-pager {
+		padding: 20px 14px;
+	}
 	
 	.txt-pagerSymbol {
 		font-size: 32px;
@@ -124,21 +122,6 @@
 	
 	.txt-pagerSub {
 		font-size: 16px;
-	}
-}
-
-@media screen and (max-width:780px) {
-
-	.txt-pagerSymbol {
-		font-size: 36px;
-	}
-	
-	.txt-pagerScript {
-		font-size: 20px;
-	}
-	
-	.txt-pagerSub {
-		font-size: 18px;
 	}
 }
 
