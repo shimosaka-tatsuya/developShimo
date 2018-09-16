@@ -15,12 +15,14 @@
 
 .ttl-sectionAgendaSub {
 	line-height: 1;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	vertical-align: middle;
 	position: relative;
 	text-indent: 1.4em;
 	margin: 63px 0 24px;
+	transition-property: font-size;
+	transition-duration: .5s;
 	
 	&::before {
 		content: "";
@@ -33,7 +35,6 @@
 		left: 0;
 		bottom: 0;
 		margin: auto;
-		
 	}
 }
 
@@ -55,5 +56,9 @@
 		.txt-imageEstablishmentLine01 {
 			text-indent: 0;
 		}
+	}
+
+	.ttl-sectionAgendaSub {
+		font-size: 15px;
 	}
 }
