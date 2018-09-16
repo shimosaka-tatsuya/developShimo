@@ -18,6 +18,15 @@ body {
 	}
 }
 
+.btn-socialMedia a img {
+	transition-property: opacity;
+	transition-duration: .3s;
+}
+
+.btn-socialMedia a:hover img {
+	opacity: .8;
+}
+
 .bx-scrollGauge {
 	display: block;
 	width: 0;

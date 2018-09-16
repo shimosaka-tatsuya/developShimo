@@ -108,7 +108,16 @@ var pageId = "skill-gd";
 		}) %>
 	</div><!-- /.area-content-skillInr -->
 	
-	<%- include(setLayered + "skill/pager/pager") %>
+	<%- include(setLayered + "skill/pager/pager",{
+		"txtPagerSymbol01": "GD",
+		"txtPagerSub01": "Graphic Design",
+		"imgPager01": "/skill/img/btn_toGd.jpg",
+		"pageUrl01": "/skill/gd/",
+		"txtPagerSymbol02": "GD",
+		"txtPagerSub02": "Graphic Design",
+		"imgPager02": "/skill/img/btn_toGd.jpg",
+		"pageUrl02": "/skill/gd/",
+	}) %>
 </div><!-- /.area-content-skill -->
 
 <%- include(setLayered + "base/footer") %>
