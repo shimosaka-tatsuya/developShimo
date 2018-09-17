@@ -3,7 +3,7 @@
 var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1)+"template/";
 
 /* ページID */
-var pageId = "skill-gd";
+var pageId = "skill-ui";
 %>
 <!DOCTYPE html>
 <html lang="ja">
@@ -16,53 +16,37 @@ var pageId = "skill-gd";
 <div class="area-content area-content-skill">
 	<div class="area-content-skillInr">
 		<%- include(setLayered + "skill/outline/outline", {
-			"txtSkillOUtlineName": "GD",
-			"txtSkillOUtlineNameSub": "Graphic Design",
-			"ttlSkillOUtline": "本質的な思いを<br>デザインで表現する",
-			"imgSkillOUtlineMain": "/skill/img/img_mainGd.jpg",
-			"txtSkillOUtline": "レコードのジャケットには、ミュージシャンが楽曲に込めた思いが1枚の絵となって表現されています。WEBデザイナーは、クライアントが抱いている本質的な思いをデザインで表現する必要があると思います。"
+			"txtSkillOUtlineName": "UI",
+			"txtSkillOUtlineNameSub": "User Interface",
+			"ttlSkillOUtline": "デザインは、使われて<br>はじめて完成する",
+			"imgSkillOUtlineMain": "/skill/img/img_mainUi.jpg",
+			"txtSkillOUtline": "袖を通して初めてその良さが分かるジャケットのように、WEBサイトもユーザーとのタッチポイントを経て初めてその真価が問われます。優れたUI設計は、ユーザー体験を向上してくれます。"
 		}) %>
 		
 		<%- include(setLayered + "skill/title-section/title-section", {
 			txtSectionSymbol: 'Works',
 			txtSectionSymbolSub: 'Performance',
-			ttlSectionTop: 'パシフィック不動産',
-			txtSectionTop: 'WEBサイト / サインボード'
+			ttlSectionTop: 'DMM.com',
+			txtSectionTop: 'ソーシャルメディアフォローページ'
 		}) %>
 		
 		<%- include(setLayered + "skill/section/section", {
-			"imgSection": ["/skill/img/img_pacific01.jpg","/skill/img/img_pacific02.jpg"],
-			"txtSection": "金沢で不動産業を展開する『パシフィック不動産』のプロモーションの事例です。"
+			"imgSection": ["/skill/img/img_dmmSocial.jpg"],
+			"txtSection": "DMMが運営する各種サービスのSNSアカウントを掲載するページを制作しました。"
 		}) %>
 		
 		<%- include(setLayered + "skill/agenda/agenda",{
 			"txtSectionAgendaSymbol": "課題",
 			"txtSectionAgendaSymbolSub": "Problem",
-			"ttlSectionAgenda": "競合他社との差別化を図りたい",
-			"txtSectionAgenda": "不動産業を営む企業が多数ある金沢において、他社と同じようにサービスを展開しているだけでは厳しい競争に勝つことはできません。そこで、イメージを一新して競合他社との差別化を図りたいと依頼を受けました。"
+			"ttlSectionAgenda": '<span class="txt-imageEstablishment"><span class="txt-imageEstablishmentLine01">ユーザビリティを向上し、</span><br class="txt-newLine">新規フォロワーを獲得したい</span>',
+			"txtSectionAgenda": "「デザインを一新し、イメージ改善とユーザビリティの向上も行いたい」と要望がありました。また、DMMが展開する多様なサービスを認識させ、各サービスのフォロワー数を増加させる必要もありました。"
 		}) %>
 		
 		<%- include(setLayered + "skill/agenda/agenda",{
 			"txtSectionAgendaSymbol": "解決策",
 			"txtSectionAgendaSymbolSub": "Approach",
-			"ttlSectionAgenda": '<span class="txt-imageEstablishment"><span class="txt-imageEstablishmentLine01">固有のイメージを確立し、</span><br class="txt-newLine">より強固なブランドへとアップデート</span>',
-			"txtSectionAgenda": "『不動産を提供するのではなく、ライフスタイルを提供する』という固有のブランドコンセプトを確立しました。あらゆる施策にコンセプトのテイストを落とし込み、より強固で洗練されたブランドへとアップデートすることができました。"
-		}) %>
-		
-		<%- include(setLayered + "skill/section-column/section-column", {
-			"ttlSectionColumn01": "WEBサイト",
-			"sectionColumnThumbnail01": "/skill/img/img_pacific_web.jpg",
-			"ttlSectionColumn02": "TVCM",
-			"sectionColumnThumbnail02": "/skill/img/img_pacific_tvcm.jpg",
-			"txtSectionColumn": "本件では、イメージビジュアル・WEB・サインボードの制作を担当しました。"
-		}) %>
-		
-		<%- include(setLayered + "skill/section-column/section-column", {
-			"ttlSectionColumn01": "1つのソースから、複数のファイルを生成",
-			"sectionColumnThumbnail01": "/skill/img/img_dmmDensyoGulp.jpg",
-			"ttlSectionColumn02": "",
-			"sectionColumnThumbnail02": "",
-			"txtSectionColumn": "本件では、イメージビジュアル・WEB・サインボードの制作を担当しました。"
+			"ttlSectionAgenda": '<span class="txt-imageEstablishment"><span class="txt-imageEstablishmentLine01">ビジネス要件とユーザー要件の</span><br class="txt-newLine">マッチングを図る</span>',
+			"txtSectionAgenda": "対象ユーザー像・流入経路などの利用シーン、独自の価値などを洗い出し、ビジネス要件とユーザー要件のマッチングを図り、その上で情報設計・UI設計を行いました。"
 		}) %>
 		
 		<div class="wp-SectionColumnHalf">
@@ -95,28 +79,28 @@ var pageId = "skill-gd";
 		}) %>
 		
 		<%- include(setLayered + "skill/section-underline/section-underline", {
-			"txtSectionResult": ["WEB・サインボードをはじめTVCMなどのあらゆるツールが洗練された。","利用者にパシフィック不動産らしさを印象付けることができた。"]
+			"txtSectionResult": ["各アカウントのフォロワー数の増加", "運用システム構築により更新コストが改善", "情報設計、セマンティックなコーディングにより、SEOが改善"]
 		}) %>
 		
 		<%- include(setLayered + "skill/skill-and-method/skill-and-method", {
-			"txtSkillAndMethod": "html5・css3・gulp・ejs・scss・postcss・webpack・vue.js・jQueryなど"
+			"txtSkillAndMethod": "要件定義・アトミックデザイン・gulp・ejs・postcss・html5・css3・adobe photoshop・adobe XD"
 		}) %>
 		
 		<%- include(setLayered + "skill/link-to-other-site/link-to-other-site", {
-			"txtLinkOtherSite": "パシフィック不動産 オフィシャルサイト",
-			"LinkOtherSite": "#"
+			"txtLinkOtherSite": "DMM.com ソーシャルメディアフォローページ",
+			"LinkOtherSite": "https://www.dmm.com/top/special/sns/index_html/=/ch_navi=none/"
 		}) %>
 	</div><!-- /.area-content-skillInr -->
 	
 	<%- include(setLayered + "skill/pager/pager",{
-		"txtPagerSymbol01": "GD",
-		"txtPagerSub01": "Graphic Design",
-		"imgPager01": "/skill/img/btn_toGd.jpg",
-		"pageUrl01": "/skill/gd/",
-		"txtPagerSymbol02": "GD",
-		"txtPagerSub02": "Graphic Design",
-		"imgPager02": "/skill/img/btn_toGd.jpg",
-		"pageUrl02": "/skill/gd/",
+		"txtPagerSymbol01": "UX",
+		"txtPagerSub01": "User Experience",
+		"imgPager01": "/skill/img/btn_toUX.jpg",
+		"pageUrl01": "/skill/ux/",
+		"txtPagerSymbol02": "FE",
+		"txtPagerSub02": "Front End",
+		"imgPager02": "/skill/img/btn_toFe.jpg",
+		"pageUrl02": "/skill/fe/",
 	}) %>
 </div><!-- /.area-content-skill -->
 
