@@ -5,8 +5,8 @@
     <title>SHIMO | <%= meta.title %></title>
     <meta name="description" content="<%= meta.description %>">
 
-    <%# EJS ogタグ %>
-    <meta property="og:url" content="<%= meta.ogUrl %>" />
+    <%# ogタグ %>
+    <meta property="og:url" content="https://www.shimo.com<%= meta.ogUrl %>" />
     <meta property="og:title" content="<%= meta.ogTitle %>" />
 
     <% if( pageId !== "top" ) { %>
@@ -21,11 +21,11 @@
     <meta property="fb:app_id" content="ダミーのfacebook IDダミーのfacebook ID">
     <meta property="og:locale" content="ja_JP" />
 
-    <%# EJS Twitterカード %>
+    <%# Twitterカード %>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="ダミーのTwitter IDダミーのTwitter ID" />
 
-    <%# EJS サイトアイコン %>
+    <%# サイトアイコン %>
     <link rel="icon" href="ダミーの画像URLダミーの画像URLダミーの画像URL" sizes="16x16" type="image/png">
     
     <%# CSS ※個別のCSSはstyle.min.css内でインポートする %>

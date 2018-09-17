@@ -236,7 +236,7 @@
 }
 
 .img-skillThumbnail {
-	mask-image: url(/top/img/img_skillThumbnailFe.jpg);
+	mask-image: url(/img/img_skillThumbnailFe.jpg);
 	mask-mode: alpha;
 	mask-repeat: no-repeat;
 	mask-size: 0 100%;

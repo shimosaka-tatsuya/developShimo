@@ -160,7 +160,7 @@
 }
 
 .img-profileThumbnailInr {
-	mask-image: url(/top/img/img-profile.jpg);
+	mask-image: url(/img/img-profile.jpg);
 	mask-mode: alpha;
 	mask-repeat: no-repeat;
 	mask-size: 0 100%;

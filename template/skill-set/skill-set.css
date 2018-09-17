@@ -36,7 +36,7 @@
 		display: block;
 		width: 100%;
 		height: 84px;
-		background: url("/top/img/img-skillset-allow.svg") left top no-repeat;
+		background: url("/img/img-skillset-allow.svg") left top no-repeat;
 		background-size: 100%;
 		position: absolute;
 		top: 36px;
@@ -239,7 +239,7 @@
 		&::before {
 			width: 90px;
 			height: 100%;
-			background: url("/top/img/img-skillset-allow-sp.svg") 0 0 no-repeat;
+			background: url("/img/img-skillset-allow-sp.svg") 0 0 no-repeat;
 			background-size: 90px;
 			top: 0;
 			left: -170px;
