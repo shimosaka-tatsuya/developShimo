@@ -15,29 +15,11 @@
 	letter-spacing: -.06em;
 }
 
-@media screen and (max-width:1280px) {
-	.txt-imageEstablishment {
+@media screen and (max-width:420px) {
+	.txt-agenda-task,
+	.txt-agenda-solution {
 		.txt-newLine {
 			display: block;
-		}
-		
-		.txt-imageEstablishmentLine01 {
-			text-indent: .9em;
-			display: inline-block;
-		}
-	}
-}
-
-@media screen and (max-width:780px) {
-	.ttl-skillOUtline {
-		letter-spacing: 0;
-	}
-}
-
-@media screen and (max-width:420px) {
-	.txt-imageEstablishment {
-		.txt-imageEstablishmentLine01 {
-			text-indent: 0;
 		}
 	}
 }

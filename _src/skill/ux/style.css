@@ -37,12 +37,12 @@
 }
 
 @media screen and (max-width:1280px) {
-	.txt-imageEstablishment {
+	.txt-agenda-solutionUx {
 		.txt-newLine {
 			display: block;
 		}
 		
-		.txt-imageEstablishmentLine01 {
+		.txt-agenda-solutionUx-line01 {
 			text-indent: .9em;
 			display: inline-block;
 		}
@@ -50,13 +50,9 @@
 }
 
 @media screen and (max-width:420px) {
-	.txt-imageEstablishment {
-		.txt-imageEstablishmentLine01 {
+	.txt-agenda-solutionUx {
+		.txt-agenda-solutionUx-line01 {
 			text-indent: 0;
 		}
-	}
-
-	.ttl-sectionAgendaSub {
-		font-size: 15px;
 	}
 }

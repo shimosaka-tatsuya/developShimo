@@ -38,14 +38,14 @@ var pageId = "skill-fe";
 		<%- include(setLayered + "skill/agenda/agenda",{
 			"txtSectionAgendaSymbol": "課題",
 			"txtSectionAgendaSymbolSub": "Problem",
-			"ttlSectionAgenda": "運用効率が悪く、品質も担保できていない",
+			"ttlSectionAgenda": '<span class="txt-agenda-task">運用効率が悪く、<br class="txt-newLine">品質も担保できていない</span>',
 			"txtSectionAgenda": "都合により動的な仕組みを導入することができないため、更新頻度が高いのに手動で更新を行う必要がありました。また、開発・ステージング・本番環境、それぞれでファイルの形式が違うため、コードの品質も担保できていない状況でした。"
 		}) %>
 		
 		<%- include(setLayered + "skill/agenda/agenda",{
 			"txtSectionAgendaSymbol": "解決策",
 			"txtSectionAgendaSymbolSub": "Approach",
-			"ttlSectionAgenda": 'コーディングを自動化し、工数削減・品質改善',
+			"ttlSectionAgenda": '<span class="txt-agenda-solution">コーディングを自動化し、<br class="txt-newLine">工数削減・品質改善</span>',
 			"txtSectionAgenda": "スプレッドシートに記入した情報からhtmlを生成する仕組みを構築。さらに、開発・ステージング・本番、それぞれのファイルを一括で管理できるようにしました。"
 		}) %>
 		

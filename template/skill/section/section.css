@@ -52,8 +52,8 @@
 	margin-top: 0;
 }
 
-.box-sectionAgenda + .box-sectionColumn,
-.box-sectionAgenda + .wp-SectionColumnHalf {
+.ttl-agenda + .box-sectionColumn,
+.ttl-agenda + .wp-SectionColumnHalf {
 	margin-top: 50px;
 }
 
@@ -107,14 +107,10 @@
 	
 	.box-sectionColumn--half {
 		width: 100%;
-		
-		&--half {
-			width: 100%;
-			
-			& + & {
-				margin: 30px 0 0 0!important;
-			}
-		}
+	}
+	
+	.box-sectionColumn--half + .box-sectionColumn--half {
+		margin: 30px 0 0 0!important;
 	}
 	
 	.wp-sectionColumnThumbnail {
