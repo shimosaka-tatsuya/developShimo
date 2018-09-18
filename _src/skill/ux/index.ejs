@@ -1,0 +1,120 @@
+<%
+/* 相対パスを取得 */
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1)+"template/";
+
+/* ページID */
+var pageId = "skill-ux";
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(setLayered + "base/head", { pageId: pageId }) %>
+<body>
+<%- include(setLayered + "base/header", { pageId: pageId }) %>
+
+<span class="bx-scrollGauge"></span>
+
+<div class="area-content area-content-skill">
+	<div class="area-content-skillInr">
+		<%- include(setLayered + "skill/outline/outline", {
+			"txtSkillOUtlineName": "UX",
+			"txtSkillOUtlineNameSub": "User Experience",
+			"ttlSkillOUtline": "百年後も愛される<br>コンテンツを科学する",
+			"imgSkillOUtlineMain": "/skill/img/img_mainUx.jpg",
+			"txtSkillOUtline": "ナイキのエアフォース1に、New Eraのベースボールキャップ…。人々に長く愛され続けるものには、どんな秘密が隠されているのでしょうか？UXデザインは、人々に愛されるコンテンツを創り上げるために最適な手法です。"
+		}) %>
+		
+		<%- include(setLayered + "skill/title-section/title-section", {
+			txtSectionSymbol: 'Works',
+			txtSectionSymbolSub: 'Performance',
+			ttlSectionTop: 'DMM電子書籍',
+			txtSectionTop: '女性向けフロア'
+		}) %>
+		
+		<%- include(setLayered + "skill/section/section", {
+			"imgSection": ["/skill/img/img_pacific01.jpg"],
+			"txtSection": "電子書籍販売サービス『DMM電子書籍』におけるUX改善の事例です。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "課題",
+			"txtSectionAgendaSymbolSub": "Problem",
+			"ttlSectionAgenda": "女性向け作品の売り上げを伸ばしたい",
+			"txtSectionAgenda": "DMM電子書籍では、女性向け作品の売り上げが伸びないという課題を抱えていました。そこで、女性に刺さるコンテンツを展開して売り上げ増加を狙いたいと考えました。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "解決策",
+			"txtSectionAgendaSymbolSub": "Approach",
+			"ttlSectionAgenda": '<span class="txt-imageEstablishment"><span class="txt-imageEstablishmentLine01">本質的な欲求や課題を洗い出し、</span><br class="txt-newLine">それに対して提案を行う</span>',
+			"txtSectionAgenda": "対象となるユーザーを集め座談会を実施。ユーザーが抱える課題や本質的な欲求を洗い出し、デザインテイストの改善や、新規キャンペーンの提案を行いました。"
+		}) %>
+		
+		<p class="ttl-sectionAgendaSub txt-fontJapanese">分析</p>
+		
+		<div class="wp-SectionColumnHalf">
+			<%- include(setLayered + "skill/section-column/section-column-half", {
+				"ttlSectionColumn": "上位下位関係分析",
+				"sectionColumnThumbnail": "/skill/img/img_dmmSocial_fv.jpg",
+				"txtSectionColumn": "座談会で収集した事象をもとに分析を行いました。ユーザー自身も気づいていない本質的な欲求を導き出すことができました。"
+			}) %>
+			
+			<%- include(setLayered + "skill/section-column/section-column-half", {
+				"ttlSectionColumn": "ペルソナ設計",
+				"sectionColumnThumbnail": "/skill/img/img_dmmSocial_scroll.jpg",
+				"txtSectionColumn": "ペルソナとは、対象ユーザーが抱える課題や価値観を可視化し、具体的な人物像として描いたものです。製作者間の合意形成を促し、論理的に提案しやすくなりました。"
+			}) %>
+		</div><!-- /.wp-SectionColumnHalf -->
+		
+		<p class="ttl-sectionAgendaSub txt-fontJapanese">施策</p>
+		
+		<div class="wp-SectionColumnHalf">
+			<%- include(setLayered + "skill/section-column/section-column-half", {
+				"ttlSectionColumn": "ローテーションバナー",
+				"sectionColumnThumbnail": "/skill/img/img_dmmSocial_fv.jpg",
+				"txtSectionColumn": "価格を推したデザインから、キャンペーン名が際立つデザインに変更しました。"
+			}) %>
+			
+			<%- include(setLayered + "skill/section-column/section-column-half", {
+				"ttlSectionColumn": "効果的なキャンペーン",
+				"sectionColumnThumbnail": "/skill/img/img_dmmSocial_scroll.jpg",
+				"txtSectionColumn": "ユーザーの欲求や課題に沿ったキャンペーンを展開しました。"
+			}) %>
+		</div><!-- /.wp-SectionColumnHalf -->
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "得られた結果",
+			"txtSectionAgendaSymbolSub": "Result",
+			"ttlSectionAgenda": "",
+			"txtSectionAgenda": ""
+		}) %>
+		
+		<%- include(setLayered + "skill/section-underline/section-underline", {
+			"txtSectionResult": ["効果的なキャンペーン施策の提案がしやすくなった","デザインテイストを変更したことにより、バナークリック率が増加した"]
+		}) %>
+		
+		<%- include(setLayered + "skill/skill-and-method/skill-and-method", {
+			"txtSkillAndMethod": "インタビュー設計・インタビュー・上位下位関係分析・ペルソナ設計"
+		}) %>
+	</div><!-- /.area-content-skillInr -->
+	
+	<%- include(setLayered + "skill/pager/pager",{
+		"txtPagerSymbol01": "GD",
+		"txtPagerSub01": "Graphic Design",
+		"imgPager01": "/skill/img/btn_toGd.jpg",
+		"pageUrl01": "/skill/gd/",
+		"txtPagerSymbol02": "UI",
+		"txtPagerSub02": "User Interface",
+		"imgPager02": "/skill/img/btn_toUi.jpg",
+		"pageUrl02": "/skill/ui/",
+	}) %>
+</div><!-- /.area-content-skill -->
+
+<%- include(setLayered + "base/footer") %>
+
+</div><!-- /.area-content -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/common/js/base.min.js"></script>
+<script src="/skill/js/skill.min.js"></script>
+</body>
+</html>

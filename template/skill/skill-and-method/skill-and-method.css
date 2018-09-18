@@ -1,0 +1,58 @@
+.box-skillAndMethod {
+	background-color: #F1EEE9;
+	padding: 35px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	margin-top: 80px;
+	flex-flow: row;
+	align-items: center;
+}
+
+.ttl-skillAndMethod {
+	font-size: 20px;
+	font-weight: bold;
+	width: 190px;
+	letter-spacing: .05em;
+	line-height: 1;
+}
+
+.txt-skillAndMethod {
+	width: calc(100% - 190px);
+	line-height: 1.6;
+	text-align: justify;
+}
+
+@media screen and (max-width:960px) {
+	.ttl-skillAndMethod {
+		font-size: 18px;
+		font-weight: bold;
+		width: 136x;
+	}
+	
+	.txt-skillAndMethod {
+		width: calc(100% - 136px);
+		line-height: 1.6;
+	}	
+}
+
+@media screen and (max-width:480px) {
+	.box-skillAndMethod {
+		padding: 24px 14px 14px;
+		width: calc(100% + 28px);
+		margin: 40px 0 0 -14px;
+		flex-flow: column;
+		align-items: center;
+	}
+	
+	.ttl-skillAndMethod {
+		font-size: 22px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.txt-skillAndMethod {
+		width: 100%;
+	}	
+}

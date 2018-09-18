@@ -1,0 +1,115 @@
+<%
+/* 相対パスを取得 */
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1)+"template/";
+
+/* ページID */
+var pageId = "skill-ui";
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(setLayered + "base/head", { pageId: pageId }) %>
+<body>
+<%- include(setLayered + "base/header", { pageId: pageId }) %>
+
+<span class="bx-scrollGauge"></span>
+
+<div class="area-content area-content-skill">
+	<div class="area-content-skillInr">
+		<%- include(setLayered + "skill/outline/outline", {
+			"txtSkillOUtlineName": "UI",
+			"txtSkillOUtlineNameSub": "User Interface",
+			"ttlSkillOUtline": "デザインは、使われて<br>はじめて完成する",
+			"imgSkillOUtlineMain": "/skill/img/img_mainUi.jpg",
+			"txtSkillOUtline": "袖を通して初めてその良さが分かるジャケットのように、WEBサイトもユーザーとのタッチポイントを経て初めてその真価が問われます。優れたUI設計は、ユーザー体験を向上してくれます。"
+		}) %>
+		
+		<%- include(setLayered + "skill/title-section/title-section", {
+			txtSectionSymbol: 'Works',
+			txtSectionSymbolSub: 'Performance',
+			ttlSectionTop: 'DMM.com',
+			txtSectionTop: 'ソーシャルメディアフォローページ'
+		}) %>
+		
+		<%- include(setLayered + "skill/section/section", {
+			"imgSection": ["/skill/img/img_dmmSocial.jpg"],
+			"txtSection": "DMMが運営する各種サービスのSNSアカウントを掲載するページを制作しました。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "課題",
+			"txtSectionAgendaSymbolSub": "Problem",
+			"ttlSectionAgenda": '<span class="txt-imageEstablishment"><span class="txt-imageEstablishmentLine01">ユーザビリティを向上し、</span><br class="txt-newLine">新規フォロワーを獲得したい</span>',
+			"txtSectionAgenda": "「デザインを一新し、イメージ改善とユーザビリティの向上も行いたい」と要望がありました。また、DMMが展開する多様なサービスを認識させ、各サービスのフォロワー数を増加させる必要もありました。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "解決策",
+			"txtSectionAgendaSymbolSub": "Approach",
+			"ttlSectionAgenda": '<span class="txt-imageEstablishment"><span class="txt-imageEstablishmentLine01">ビジネス要件とユーザー要件の</span><br class="txt-newLine">マッチングを図る</span>',
+			"txtSectionAgenda": "対象ユーザー像・流入経路などの利用シーン、独自の価値などを洗い出し、ビジネス要件とユーザー要件のマッチングを図り、その上で情報設計・UI設計を行いました。"
+		}) %>
+		
+		<div class="wp-SectionColumnHalf">
+			<%- include(setLayered + "skill/section-column/section-column-half", {
+				"ttlSectionColumn": "ファーストビューで趣旨を伝える",
+				"sectionColumnThumbnail": "/skill/img/img_dmmSocial_fv.jpg",
+				"txtSectionColumn": "以前は『SNS一覧』と掲載され、facebookやtwitterアイコンを押下した際の挙動がイメージできず、離脱率増加の一因になっていました。そこで、ページの趣旨を簡潔に伝えることで、ユーザーの不安を払拭し、離脱率を解消しました。"
+			}) %>
+			
+			<%- include(setLayered + "skill/section-column/section-column-half", {
+				"ttlSectionColumn": "スクロールアニメーションで視線を誘導",
+				"sectionColumnThumbnail": "/skill/img/img_dmmSocial_scroll.jpg",
+				"txtSectionColumn": "スクロールすると、ヘッダー部分にブラーがかかり、ユーザーの視線を自然とコンテンツへ誘導するように設計しました。"
+			}) %>
+		</div><!-- /.wp-SectionColumnHalf -->
+		
+		<%- include(setLayered + "skill/section-column/section-column", {
+			"ttlSectionColumn01": "マテリアルデザインで操作性を示唆",
+			"sectionColumnThumbnail01": "/skill/img/img_dmmSocial_material.jpg",
+			"ttlSectionColumn02": "",
+			"sectionColumnThumbnail02": "/skill/img/img_dmmSocial_materialButton.jpg",
+			"txtSectionColumn": "ボタンなどのUIパーツには、マテリアルデザインを取り入れることで、操作性を向上しています。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "得られた結果",
+			"txtSectionAgendaSymbolSub": "Result",
+			"ttlSectionAgenda": "",
+			"txtSectionAgenda": ""
+		}) %>
+		
+		<%- include(setLayered + "skill/section-underline/section-underline", {
+			"txtSectionResult": ["各アカウントのフォロワー数の増加", "運用システム構築により更新コストが改善", "情報設計、セマンティックなコーディングにより、SEOが改善"]
+		}) %>
+		
+		<%- include(setLayered + "skill/skill-and-method/skill-and-method", {
+			"txtSkillAndMethod": "要件定義・アトミックデザイン・gulp・ejs・postcss・html5・css3・adobe photoshop・adobe XD"
+		}) %>
+		
+		<%- include(setLayered + "skill/link-to-other-site/link-to-other-site", {
+			"txtLinkOtherSite": "DMM.com ソーシャルメディアフォローページ",
+			"LinkOtherSite": "https://www.dmm.com/top/special/sns/index_html/=/ch_navi=none/"
+		}) %>
+	</div><!-- /.area-content-skillInr -->
+	
+	<%- include(setLayered + "skill/pager/pager",{
+		"txtPagerSymbol01": "UX",
+		"txtPagerSub01": "User Experience",
+		"imgPager01": "/skill/img/btn_toUX.jpg",
+		"pageUrl01": "/skill/ux/",
+		"txtPagerSymbol02": "FE",
+		"txtPagerSub02": "Front End",
+		"imgPager02": "/skill/img/btn_toFe.jpg",
+		"pageUrl02": "/skill/fe/",
+	}) %>
+</div><!-- /.area-content-skill -->
+
+<%- include(setLayered + "base/footer") %>
+
+</div><!-- /.area-content -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/common/js/base.min.js"></script>
+<script src="/skill/js/skill.min.js"></script>
+</body>
+</html>

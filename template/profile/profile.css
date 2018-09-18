@@ -19,8 +19,13 @@
 	box-sizing: border-box;
 	position: relative;
 	z-index: 1;
-	transition-property: width, padding, display;
+	opacity: 0;
+	transition-property: width, padding, display, opacity;
 	transition-duration: .5s;
+}
+
+.box-ScrollAnimaton-active.box-profileInr {
+	opacity: 1;
 }
 
 .ttl-profile {
@@ -124,13 +129,49 @@
 	display: table-cell;
 	width: calc(100% - 534px);
 	z-index: -3;
+	position: relative;
+	z-index: 0;
 	transition-property: width, display;
 	transition-duration: .5s;
+}
+
+.wp-profileThumbnail .img-profileThumbnail::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: calc(100vw - 534px);
+	background-color: #e5e5e5;
+	transform: scaleX(0);
+	transform-origin: top right;
+	transition-property: transform;
+	transition-duration: .5s;
+}
+
+.box-ScrollAnimaton-active .img-profileThumbnail::before {
+	transform: scaleX(1);
 }
 
 .img-profileThumbnail {
 	position: sticky;
     top: 0;
+}
+
+.img-profileThumbnailInr {
+	mask-image: url(/img/img-profile.jpg);
+	mask-mode: alpha;
+	mask-repeat: no-repeat;
+	mask-size: 0 100%;
+	mask-position: 0 0;
+	transition-property: mask-size;
+	transition-duration: .5s;
+	transition-delay: .5s;
+}
+
+.box-ScrollAnimaton-active .img-profileThumbnailInr {
+	mask-size: 100% 100%;
 }
 
 @media screen and (max-width:1280px) {
@@ -174,6 +215,10 @@
 	.wp-profileThumbnail {
 		width: calc(100% - 440px);
 	}
+
+	.wp-profileThumbnail .img-profileThumbnail::before {
+		height: calc(100vw - 440px);
+	}
 }
 
 @media screen and (max-width:960px) {
@@ -211,6 +256,10 @@
 
 	.wp-profileThumbnail {
 		width: calc(100% - 380px);
+	}
+	
+	.wp-profileThumbnail .img-profileThumbnail::before {
+		height: calc(100vw - 380px);
 	}
 }
 
@@ -304,6 +353,10 @@
 		position: absolute;
 		right: 0;
 		top: 284px;
+	}
+	
+	.wp-profileThumbnail .img-profileThumbnail::before {
+		height: calc(100vw - 21px);
 	}
 
 	.img-profileThumbnail {

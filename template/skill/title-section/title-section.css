@@ -1,0 +1,112 @@
+.ttl-section {
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+.txt-skillOUtline + .ttl-section {
+	margin-top: 60px;	
+}
+
+.txt-sectionSymbol {
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: normal;
+	letter-spacing: .04em;
+	display: block;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.txt-sectionSymbolScript {
+	font-size: 42px;
+	line-height: 1;
+	color: #EDE3D5;
+	position: absolute;
+	top: 16px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: -1;
+	transform: rotate(-7deg);
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.txt-sectionMain {
+	margin-top: 25px;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: .04em;
+	line-height: 1.5;
+	transition-property: font-size, margin;
+	transition-duration: .5s;
+}
+
+.txt-deliverables {
+	text-align: center;
+	line-height: 1;
+	font-size: 14px;
+	margin-top: 18px;
+}
+
+@media screen and (max-width:960px) {
+	.txt-sectionSymbol {
+		font-size: 30px;
+	}
+	
+	.txt-sectionSymbolScript {
+		font-size: 36px;
+	}
+	
+	.txt-sectionMain {
+		margin-top: 16px;
+		font-size: 24px;
+	}
+	
+	.txt-deliverables {
+		font-size: 12px;
+		margin-top: 14px;
+	}
+}
+
+@media screen and (max-width:780px) {
+	.txt-sectionSymbol {
+		font-size: 36px;
+	}
+	
+	.txt-sectionSymbolScript {
+		font-size: 42px;
+	}
+	
+	.txt-sectionMain {
+		margin-top: 25px;
+		font-size: 30px;
+	}
+	
+	.txt-deliverables {
+		font-size: 14px;
+		margin-top: 18px;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.txt-sectionSymbol {
+		font-size: 30px;
+	}
+	
+	.txt-sectionSymbolScript {
+		font-size: 36px;
+	}
+	
+	.txt-sectionMain {
+		margin-top: 16px;
+		font-size: 24px;
+	}
+	
+	.txt-deliverables {
+		font-size: 12px;
+		margin-top: 14px;
+	}
+}

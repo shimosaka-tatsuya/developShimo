@@ -1,0 +1,104 @@
+<%
+/* 相対パスを取得 */
+var setLayered = ("../").repeat(filename.slice(filename.indexOf("_src")).split("/").length - 1)+"template/";
+
+/* ページID */
+var pageId = "skill-fe";
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(setLayered + "base/head", { pageId: pageId }) %>
+<body>
+<%- include(setLayered + "base/header", { pageId: pageId }) %>
+
+<span class="bx-scrollGauge"></span>
+
+<div class="area-content area-content-skill">
+	<div class="area-content-skillInr">
+		<%- include(setLayered + "skill/outline/outline", {
+			"txtSkillOUtlineName": "FE",
+			"txtSkillOUtlineNameSub": "Front End",
+			"ttlSkillOUtline": "精密な設計が<br>デザインの品質を高める",
+			"imgSkillOUtlineMain": "/skill/img/img_mainFe.jpg",
+			"txtSkillOUtline": "どんなに心を揺さぶるデザインが仕上がっても、コードを書かずしてWEBサイトは成り立ちません。ソースコードは、サイトの品質を担保する重要な要素の一つです。"
+		}) %>
+		
+		<%- include(setLayered + "skill/title-section/title-section", {
+			txtSectionSymbol: 'Works',
+			txtSectionSymbolSub: 'Performance',
+			ttlSectionTop: 'DMM電子書籍',
+			txtSectionTop: 'キャンペーンページ各種'
+		}) %>
+		
+		<%- include(setLayered + "skill/section/section", {
+			"imgSection": ["/skill/img/img_dmmDensyoTokusetsu.jpg"],
+			"txtSection": "『DMM電子書籍』のキャンペーン特設ページにて、デザインシステムを設計した事例です。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "課題",
+			"txtSectionAgendaSymbolSub": "Problem",
+			"ttlSectionAgenda": "運用効率が悪く、品質も担保できていない",
+			"txtSectionAgenda": "都合により動的な仕組みを導入することができないため、更新頻度が高いのに手動で更新を行う必要がありました。また、開発・ステージング・本番環境、それぞれでファイルの形式が違うため、コードの品質も担保できていない状況でした。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "解決策",
+			"txtSectionAgendaSymbolSub": "Approach",
+			"ttlSectionAgenda": 'コーディングを自動化し、工数削減・品質改善',
+			"txtSectionAgenda": "スプレッドシートに記入した情報からhtmlを生成する仕組みを構築。さらに、開発・ステージング・本番、それぞれのファイルを一括で管理できるようにしました。"
+		}) %>
+		
+		<%- include(setLayered + "skill/section-column/section-column", {
+			"ttlSectionColumn01": "スプレッドシートからhtmlを生成",
+			"sectionColumnThumbnail01": "/skill/img/img_dmmDensyoList.jpg",
+			"ttlSectionColumn02": "",
+			"sectionColumnThumbnail02": "",
+			"txtSectionColumn": "ディレクターが作品選定し、スプレッドシートに記載。そこから自動的にhtmlを生成します。"
+		}) %>
+		
+		<%- include(setLayered + "skill/section-column/section-column", {
+			"ttlSectionColumn01": "1つのソースから、複数のファイルを生成",
+			"sectionColumnThumbnail01": "/skill/img/img_dmmDensyoGulp.jpg",
+			"ttlSectionColumn02": "",
+			"sectionColumnThumbnail02": "",
+			"txtSectionColumn": "srcディレクトリ配下のファイルを編集すると、自動的にステージング用・本番用のフォーマットのファイルを生成します。"
+		}) %>
+		
+		<%- include(setLayered + "skill/agenda/agenda",{
+			"txtSectionAgendaSymbol": "得られた結果",
+			"txtSectionAgendaSymbolSub": "Result",
+			"ttlSectionAgenda": "",
+			"txtSectionAgenda": ""
+		}) %>
+		
+		<%- include(setLayered + "skill/section-underline/section-underline", {
+			"txtSectionResult": ["コーディングの自動化によるコストカットができた", "ソースコードの品質管理ができるようになった", "コーディングの時間を短縮した分、他のタスクに時間を割けるようになった"]
+		}) %>
+		
+		<%- include(setLayered + "skill/skill-and-method/skill-and-method", {
+			"txtSkillAndMethod": "html5・css3・gulp・ejs・scss・postcss・webpack・vue.js・jQueryなど"
+		}) %>
+	</div><!-- /.area-content-skillInr -->
+	
+	<%- include(setLayered + "skill/pager/pager",{
+		"txtPagerSymbol01": "UI",
+		"txtPagerSub01": "User Interface",
+		"imgPager01": "/skill/img/btn_toUi.jpg",
+		"pageUrl01": "/skill/ui/",
+		"txtPagerSymbol02": "GD",
+		"txtPagerSub02": "Graphic Design",
+		"imgPager02": "/skill/img/btn_toGd.jpg",
+		"pageUrl02": "/skill/gd/",
+	}) %>
+</div><!-- /.area-content-skill -->
+
+<%- include(setLayered + "base/footer") %>
+
+</div><!-- /.area-content -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/common/js/base.min.js"></script>
+<script src="/skill/js/skill.min.js"></script>
+</body>
+</html>

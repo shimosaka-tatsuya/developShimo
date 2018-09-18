@@ -1,0 +1,45 @@
+@import "./../../../template/base/reset";
+@import "./../../../template/base/base";
+@import "./../../../template/base/header";
+@import "./../../../template/base/base-skill";
+@import "./../../../template/skill/outline/outline";
+@import "./../../../template/skill/title-section/title-section";
+@import "./../../../template/skill/section/section";
+@import "./../../../template/skill/agenda/agenda";
+@import "./../../../template/skill/section-column/section-column";
+@import "./../../../template/skill/section-underline/section-underline";
+@import "./../../../template/skill/skill-and-method/skill-and-method";
+@import "./../../../template/skill/link-to-other-site/link-to-other-site";
+@import "./../../../template/skill/pager/pager";
+@import "./../../../template/base/footer";
+
+.ttl-skillOUtline {
+	letter-spacing: -.06em;
+}
+
+@media screen and (max-width:1280px) {
+	.txt-imageEstablishment {
+		.txt-newLine {
+			display: block;
+		}
+		
+		.txt-imageEstablishmentLine01 {
+			text-indent: .9em;
+			display: inline-block;
+		}
+	}
+}
+
+@media screen and (max-width:780px) {
+	.ttl-skillOUtline {
+		letter-spacing: 0;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.txt-imageEstablishment {
+		.txt-imageEstablishmentLine01 {
+			text-indent: 0;
+		}
+	}
+}

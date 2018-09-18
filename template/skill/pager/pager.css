@@ -1,0 +1,165 @@
+.wp-pager {
+	display: flex;
+	flex-flow: row;
+	align-items: flex-start;
+	width: 100%;
+	padding: 70px 40px 0;
+	box-sizing: border-box;
+	transition-property: margin;
+	transition-duration: .5s;
+}
+
+.box-pager {
+	width: 100%;
+	display: block;
+	position: relative;
+	text-align: center;
+	transition-property: opacity;
+	transition-duration: .5s;
+	
+	&::before {
+		content: "";
+		display: block;
+		background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
+		width: 15px;
+		height: 21px;
+		background-size: 15px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 18px;
+		margin: auto;
+		filter: drop-shadow(0 0 4px rgba(255,255,255,.9));
+		transition-property: transform;
+		transition-duration: .3s;
+	}
+	
+	&:nth-child(2) {
+		margin-left: 18px;
+	}
+	
+	&:nth-child(2)::before {
+		right: 18px;
+		left: auto;
+		transform: rotate(180deg);
+	}
+	
+	&:hover {
+		opacity: .9;
+	}
+	
+	&:hover::before {
+		transform: translateX(5px);
+	}
+	
+	&:nth-child(2):hover::before {
+		transform: rotate(180deg) translateX(5px);
+	}
+}
+
+.box-pagerInr {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.txt-pagerSymbol {
+	font-size: 48px;
+	position: relative;
+	z-index: 1;
+	text-shadow: 0 0 18px rgba(255, 255, 255, .6);
+	letter-spacing: .06em;
+	transition-property: font-size;
+	transition-duration: .5s;
+}
+
+.txt-pagerScript {
+	color: #EDE3D5;
+	line-height: 1;
+	font-size: 24px;
+	transform: rotate(-7deg);
+	margin-top: -20px;
+	transition-property: font-size, margin;
+	transition-duration: .5s;
+}
+
+.txt-pagerSub {
+	margin-top: 8px;
+	font-size: 20px;
+	text-shadow: 0 0 5px rgba(255, 255, 255, .8);
+	transition-property: font-size, margin;
+	transition-duration: .5s;
+}
+
+.img-pager {
+	 transition-property: box-shadow;
+	 transition-duration: .3s;
+ }
+
+.box-pager:hover .img-pager {
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+@media screen and (max-width:780px) {
+	.wp-pager {
+		padding: 20px 14px;
+	}
+	
+	.txt-pagerSymbol {
+		font-size: 32px;
+	}
+	
+	.txt-pagerScript {
+		font-size: 18px;
+	}
+	
+	.txt-pagerSub {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.wp-pager {
+		margin-top: 24px;
+	}
+
+	.box-pager {
+		&::before {
+			background: url("/common/img/ico-arrow.svg") 0 0 no-repeat;
+			width: 7px;
+			height: 10px;
+			background-size: 7px;
+			left: 6px;
+		}
+		
+		&:nth-child(2) {
+			margin-left: 9px;
+		}
+		
+		&:nth-child(2)::before {
+			right: 6px;
+			left: auto;
+			transform: rotate(180deg);
+		}
+	}
+	.txt-pagerSymbol {
+		font-size: 24px;
+	}
+	
+	.txt-pagerScript {
+		font-size: 14px;
+		margin-top: -14px;
+	}
+	
+	.txt-pagerSub {
+		font-size: 12px;
+		margin-top: 5px;
+	}
+}

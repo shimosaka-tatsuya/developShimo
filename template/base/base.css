@@ -18,6 +18,32 @@ body {
 	}
 }
 
+.btn-socialMedia a img {
+	transition-property: opacity;
+	transition-duration: .3s;
+}
+
+.btn-socialMedia a:hover img {
+	opacity: .8;
+}
+
+.bx-scrollGauge {
+	display: block;
+	width: 0;
+	height: 5px;
+	background-color: #CCC2B4;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+@media screen and (max-width:780px) {
+	.bx-scrollGauge {
+		height: 3px;
+	}
+}
+
 .contentScroll-inactive {
 	height: 100vh;
 	overflow-y: hidden;

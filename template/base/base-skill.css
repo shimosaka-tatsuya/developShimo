@@ -53,3 +53,9 @@
 		}
 	}
 }
+
+@media screen and (max-width:420px) {
+	.area-content-skill {
+		margin-bottom: 40px;
+	}
+}
