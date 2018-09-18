@@ -2,7 +2,7 @@
 	padding-top: 98px;
 	width: 100%;
 	max-width: 1560px;
-	margin: 0 auto;
+	margin: 0 auto 140px;
 }
 
 .box-profile {
@@ -365,10 +365,13 @@
 }
 
 @media screen and (max-width:480px) {
-	#wp-profile .txt-newLine {
-		display: block;
+	#wp-profile {
+		margin-bottom: 90px;
+		
+		.txt-newLine {
+			display: block;
+		}
 	}
-	
 	.txt-profileCategory {
 		font-size: 30px;
 		

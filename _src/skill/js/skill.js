@@ -13,10 +13,10 @@ $(window).load(function() {
 		
 		if (scrollTop > contentInrHeight-164) {
 			$('.box-skillOUtlineName').addClass("box-skillOUtlineName--inactive");
-			$('.ttl-skillOUtlineOtr').addClass("ttl-skillOUtlineOtr--inactive");
+			$('.ttl-skillOUtline').addClass("ttl-skillOUtline--inactive");
 		} else {
 			$('.box-skillOUtlineName').removeClass("box-skillOUtlineName--inactive");
-			$('.ttl-skillOUtlineOtr').removeClass("ttl-skillOUtlineOtr--inactive");
+			$('.ttl-skillOUtline').removeClass("ttl-skillOUtline--inactive");
 		}
 	}
 	
@@ -36,10 +36,10 @@ $(window).load(function() {
 			
 			if (scrollTop > contentInrHeight-164) {
 				$('.box-skillOUtlineName').addClass("box-skillOUtlineName--inactive");
-				$('.ttl-skillOUtlineOtr').addClass("ttl-skillOUtlineOtr--inactive");
+				$('.ttl-skillOUtline').addClass("ttl-skillOUtline--inactive");
 			} else {
 				$('.box-skillOUtlineName').removeClass("box-skillOUtlineName--inactive");
-				$('.ttl-skillOUtlineOtr').removeClass("ttl-skillOUtlineOtr--inactive");
+				$('.ttl-skillOUtline').removeClass("ttl-skillOUtline--inactive");
 			}
 		}	
 	});

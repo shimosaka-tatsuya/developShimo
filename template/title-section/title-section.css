@@ -1,4 +1,4 @@
-.box-sectionTop {
+.ttl-section {
 	text-align: center;
 	position: relative;
 	width: 840px;
@@ -15,7 +15,7 @@
 	transition-duration: .5s;
 }
 
-.txt-sectionSymbolSub {
+.txt-sectionSymbolScript {
 	font-size: 70px;
 	line-height: 1;
 	color: #EDE3D5;
@@ -35,7 +35,7 @@
 	}
 }
 
-.ttl-sectionTop {
+.txt-section {
 	margin-top: 48px;
 	font-weight: bold;
 	font-size: 38px;
@@ -50,7 +50,7 @@
 		font-size: 40px;
 	}
 	
-	.txt-sectionSymbolSub {
+	.txt-sectionSymbolScript {
 		font-size: 60px;
 		top: 10px;
 		
@@ -59,14 +59,14 @@
 		}
 	}
 	
-	.ttl-sectionTop {
+	.txt-section {
 		margin-top: 38px;
 		font-size: 28px;
 	}
 }
 
 @media screen and (max-width:780px) {
-	.box-sectionTop {
+	.ttl-section {
 		width: 90%;
 	}
 	
@@ -74,7 +74,7 @@
 		font-size: 30px;
 	}
 	
-	.txt-sectionSymbolSub {
+	.txt-sectionSymbolScript {
 		font-size: 39px;
 		
 		.txt-space + .txt-space {
@@ -82,14 +82,14 @@
 		}
 	}
 	
-	.ttl-sectionTop {
+	.txt-section {
 		margin-top: 25px;
 		font-size: 24px;
 	}
 }
 
 @media screen and (max-width:420px) {
-	.ttl-sectionTop {
+	.txt-section {
 		margin-top: 15px;
 		
 		.txt-newLine {
