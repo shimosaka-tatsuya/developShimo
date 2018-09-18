@@ -10,7 +10,7 @@
 	margin-top: 45px;
 }
 
-.txt-section {
+.txt-sectionCaption {
 	line-height: 1.8;
 	margin-top: 10px;
 	transition-property: margin;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width:480px) {
-	.txt-section {
+	.txt-sectionCaption {
 		margin-bottom: 60px;
 	}	
 }

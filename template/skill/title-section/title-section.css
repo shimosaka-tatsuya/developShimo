@@ -4,8 +4,8 @@
 	width: 100%;
 }
 
-.txt-skillOUtline + .ttl-section {
-	margin-top: 60px;	
+.txt-skillOUtlineCaptin + .ttl-section {
+	margin-top: 60px;
 }
 
 .txt-sectionSymbol {
@@ -34,7 +34,7 @@
 	transition-duration: .5s;
 }
 
-.txt-sectionMain {
+.txt-section {
 	margin-top: 25px;
 	font-weight: bold;
 	font-size: 30px;
@@ -60,7 +60,7 @@
 		font-size: 36px;
 	}
 	
-	.txt-sectionMain {
+	.txt-section {
 		margin-top: 16px;
 		font-size: 24px;
 	}
@@ -80,7 +80,7 @@
 		font-size: 42px;
 	}
 	
-	.txt-sectionMain {
+	.txt-section {
 		margin-top: 25px;
 		font-size: 30px;
 	}
@@ -100,7 +100,7 @@
 		font-size: 36px;
 	}
 	
-	.txt-sectionMain {
+	.txt-section {
 		margin-top: 16px;
 		font-size: 24px;
 	}
