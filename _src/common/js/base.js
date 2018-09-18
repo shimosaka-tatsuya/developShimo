@@ -5,7 +5,7 @@ $(window).load(function() {
 	var maxScrollVlue = documentHeight - windowHeight; //最大のスクロール値
 	var valueScrollGauge = scroll / (maxScrollVlue) * 100; //スクロール値の百分率
 	
-	$(".bx-scrollGauge").css({width: valueScrollGauge + "%"});
+	$(".box-scrollGauge").css({width: valueScrollGauge + "%"});
 	
 	$(window).scroll(function (){
 		var scroll = $(window).scrollTop(); //スクロールの位置を取得
@@ -14,7 +14,7 @@ $(window).load(function() {
 		var maxScrollVlue = documentHeight - windowHeight; //最大のスクロール値
 		var valueScrollGauge = scroll / (maxScrollVlue) * 102; //スクロール値の百分率
 		
-		$(".bx-scrollGauge").css({width: valueScrollGauge + "%"});
+		$(".box-scrollGauge").css({width: valueScrollGauge + "%"});
 	});
 	
 	// スクロール
