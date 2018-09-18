@@ -54,6 +54,14 @@
 	}
 }
 
+.ttl-sectionColumnThumbnail {
+	line-height: 1;
+	font-size: 16px;
+	margin-bottom: 14px;
+	transition-property: margin;
+	transition-duration: .5s;
+}
+
 .txt-sectionColumn {
 	line-height: 1.8;
 	margin-top: 10px;
@@ -71,7 +79,8 @@
 		}
 	}
 	
-	.box-sectionColumn {
+	.box-sectionColumn--half {
+		width: 100%;
 		
 		&--half {
 			width: 100%;

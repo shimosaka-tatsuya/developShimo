@@ -55,7 +55,7 @@ gulp.task('build-js', function() {
 
 // htmlに関するタスク
 gulp.task('build-html', function(){
-	var buildView = gulp.src('./_src/**/*.ejs')
+	var buildView = gulp.src(['./_src/**/*.ejs', '!./_src/_**/*.ejs'])
 	.pipe(data(file => {
 	return {
 		filename: file.path,
@@ -89,7 +89,7 @@ gulp.task('build-css', function () {
 		cssnano
 	];
 	
-	return gulp.src(['./_src/**/*.css'])
+	return gulp.src(['./_src/**/*.css', '!./_src/_**/*.css'])
 		.pipe(postcss(preprocessors))
 		.pipe(postcss(postprocessors))
 		.pipe(rename({extname: '.min.css'}))
@@ -114,6 +114,6 @@ gulp.task('watch', function () {
   gulp.watch(['./_src/**/*.css', './template/**/*.css'], ['build-css']);
   gulp.watch(['./_src/**/*.+(jpg|jpeg|png|gif)', './_src/**/*.+(svg)'], ['imagemin', 'svgmin']);
   gulp.watch(['./_src/**/*.js'], ['build-js']);
-  gulp.watch(['./_view/**/*'], ['bs-reload']);
+  gulp.watch(['./_src/**/*.ejs', './template/**/*.ejs', './_src/**/*.css', './template/**/*.css'], ['bs-reload']);
 });
 gulp.task('default', ['browser-sync', 'bs-reload', 'watch', 'build-html', 'build-css', 'imagemin', 'svgmin', 'build-js']);
