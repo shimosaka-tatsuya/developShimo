@@ -9,7 +9,7 @@
 
 .txt-caseStudyOutline {
 	text-align: center;
-	margin: 49px 0 84px;
+	margin: 49px 0 0;
 	
 	@media screen and (max-width:480px) {
 		text-align: justify;
@@ -23,7 +23,7 @@
 	width: 100%;
 	max-width: 1560px;
 	margin: 0 auto 0;
-	padding-bottom: 70px;
+	padding: 84px 0 70px;
 	overflow-x: hidden;
 }
 
