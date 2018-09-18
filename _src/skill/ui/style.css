@@ -12,12 +12,14 @@
 @import "./../../../template/base/footer";
 
 @media screen and (max-width:1280px) {
-	.txt-imageEstablishment {
+	.txt-agenda-task,
+	.txt-agenda-solution {
 		.txt-newLine {
 			display: block;
 		}
 		
-		.txt-imageEstablishmentLine01 {
+		.txt-agenda-task-line01,
+		.txt-agenda-solution-line01 {
 			text-indent: .9em;
 			display: inline-block;
 		}
@@ -25,8 +27,10 @@
 }
 
 @media screen and (max-width:420px) {
-	.txt-imageEstablishment {
-		.txt-imageEstablishmentLine01 {
+	.txt-agenda-task,
+	.txt-agenda-solution {
+		.txt-agenda-task-line01,
+		.txt-agenda-solution-line01 {
 			text-indent: 0;
 		}
 	}
