@@ -39,7 +39,7 @@
 	left: -23px;
 }
 
-.ttl-skillOUtlineOtr {
+.ttl-skillOUtline {
 	position: fixed;
 	top: 160px;
 	transform: translateX(-316px);
@@ -51,7 +51,7 @@
 	}
 }
 
-.ttl-skillOUtlineSub {
+.txt-skillOUtlineSub {
 	line-height: 1;
 	font-size: 16px;
 	margin-bottom: 14px;
@@ -60,7 +60,7 @@
 	transition-duration: .5s;
 }
 
-.ttl-skillOUtline {
+.txt-skillOUtline {
 	line-height: 1.7;
 	font-size: 24px;
 	font-weight: bold;
@@ -68,7 +68,7 @@
 	transition-duration: .5s;
 }
 
-.txt-skillOUtline {
+.txt-skillOUtlineCaptin {
 	line-height: 1.8;
 	margin: 10px 0 0;
 	text-align: justify;
@@ -94,17 +94,17 @@
 		font-size: 31px;
 	}
 	
-	.ttl-skillOUtlineOtr {
+	.ttl-skillOUtline {
 		top: 154px;
 		transform: translateX(-286px);
 	}
 	
-	.ttl-skillOUtlineSub {
+	.txt-skillOUtlineSub {
 		font-size: 15px;
 		margin-bottom: 12px;
 	}
 	
-	.ttl-skillOUtline {
+	.txt-skillOUtline {
 		font-size: 21px;
 	}
 }
@@ -127,17 +127,17 @@
 		font-size: 27px;
 	}
 	
-	.ttl-skillOUtlineOtr {
+	.ttl-skillOUtline {
 		top: 144px;
 		transform: translateX(-254px);
 	}
 	
-	.ttl-skillOUtlineSub {
+	.txt-skillOUtlineSub {
 		font-size: 14px;
 		margin-bottom: 10px;
 	}
 	
-	.ttl-skillOUtline {
+	.txt-skillOUtline {
 		font-size: 19px;
 	}
 }
@@ -168,7 +168,7 @@
 		left: -8px;
 	}
 	
-	.ttl-skillOUtlineOtr {
+	.ttl-skillOUtline {
 		position: relative;
 		text-align: right;
 		width: 100%;
@@ -178,16 +178,16 @@
 		margin-top: calc(37% - 38px + 42px);
 	}
 	
-	.ttl-skillOUtlineSub {
+	.txt-skillOUtlineSub {
 		font-size: 17px;
 		margin-bottom: 10px;
 	}
 	
-	.ttl-skillOUtline {
+	.txt-skillOUtline {
 		font-size: 26px;
 	}
 	
-	.txt-skillOUtline {
+	.txt-skillOUtlineCaptin {
 		margin-top: 24px;
 	}
 }
@@ -213,20 +213,20 @@
 		left: -8px;
 	}
 	
-	.ttl-skillOUtlineOtr {
+	.ttl-skillOUtline {
 		margin-top: calc(37% - 25px + 38px);
 	}
 	
-	.ttl-skillOUtlineSub {
+	.txt-skillOUtlineSub {
 		font-size: 15px;
 		margin-bottom: 6px;
 	}
 	
-	.ttl-skillOUtline {
+	.txt-skillOUtline {
 		font-size: 22px;
 	}
 	
-	.txt-skillOUtline {
+	.txt-skillOUtlineCaptin {
 		margin-top: 18px;
 	}
 }
