@@ -14,7 +14,33 @@ var pageId = "top";
 
 <div class="area-content">
 <%- include(setLayered + "main-visual/main-visual") %>
-<%- include(setLayered + "profile/profile") %>
+
+<div id="wp-profile">
+	<div class="box-profile">
+		<div class="box-profileInr box-ScrollAnimaton">
+			<div class="ttl-profile txt-fontAlphabet">
+				<p class="txt-profileCategory">Profile</p>
+				<h2 class="txt-profileMain">
+					<span class="txt-profileLast">Shimosaka</span><br>
+					<span class="txt-profileFirst">Tatsuya</span>
+	
+				</h2>
+				<p class="txt-profileProfession">WEB Designer</p>
+			</div><!-- /.ttl-profile -->
+			<dl class="data-profileOutline">
+				<dt class="ttl-profileOutline txt-fontJapanese"><span class="txt-profileOutlineFirstLine">いちクリエイターとして、</span><br class="txt-newLine">世界を良くしたい</dt>
+				<dd class="txt-profileOutline">私が目指すのは、技術を提供するだけの作業者ではなく、人々が抱える課題に対してWEBデザイナーならではのスキルとメソッドでアプローチきる人材です。コンセプトメイキングなどの上流工程から、UI設計・グラフィック作成などの下流工程にいたるまで、フルスタックに力を発揮できるようなクリエイターになりたいのです。</dd>
+			</dl><!-- /.txt-profileOutline -->
+		</div><!-- /.box-profileInr -->
+		
+		<div class="wp-profileThumbnail box-ScrollAnimaton">
+			<div class="img-profileThumbnail">
+				<img class="img-profileThumbnailInr" src="/img/img-profile.jpg" alt="サムネイル Shimosaka Tatsuya" width="100%" height="" />
+			</div>
+		</div><!-- /.img-profile -->
+	</div><!-- /.box-profile -->
+</div><!-- /#profile -->
+
 <%- include(setLayered + "title-section/title-section", {
 	txtSectionSymbol: 'Skill Set',
 	txtSectionSymbolScript: '<span class="txt-space">Grouth</span><span class="txt-space">Hack</span>',
