@@ -74,7 +74,7 @@
 	font-size: 48px;
 	position: relative;
 	z-index: 1;
-	text-shadow: 0 0 18px rgba(255, 255, 255, .6);
+	text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 	letter-spacing: .06em;
 	transition-property: font-size;
 	transition-duration: .5s;
