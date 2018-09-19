@@ -36,6 +36,7 @@ $(window).load(function() {
 			$(".btn-toProfile").addClass("btn-toProfileFadeIn");
 		},5300);
 	});
+	
 	//スクロールした際の挙動
 	$(window).scroll(function () {
 		var scrollTop =  Math.floor($(window).scrollTop());
