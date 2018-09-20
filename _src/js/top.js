@@ -10,7 +10,7 @@ $(window).load(function() {
 
 		if (scroll > position - minusValue){ //スクロール位置が要素の位置を過ぎたとき
 			$(this).addClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を与える
-		} else if (position - windowHeight/2 > scroll) {
+		} else if (position - windowHeight > scroll) {
 			$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
 		} else if(scroll == 0) {
 			$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
@@ -63,7 +63,7 @@ $(window).load(function() {
 	
 			if (scroll > position - minusValue){ //スクロール位置が要素の位置を過ぎたとき
 				$(this).addClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を与える
-			} else if (position - minusValue*4.5 > scroll) {
+			} else if (position - windowHeight > scroll) {
 				$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
 			} else if(scroll == 0) {
 				$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
