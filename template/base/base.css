@@ -39,7 +39,7 @@ body {
 }
 
 @media screen and (max-width:780px) {
-	.bx-scrollGauge {
+	.box-scrollGauge {
 		height: 3px;
 	}
 }
