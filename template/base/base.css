@@ -18,6 +18,17 @@ body {
 	}
 }
 
+.area-content {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.area-contentFadeIn {
+	opacity: 1;
+}
+
 .btn-socialMedia a img {
 	transition-property: opacity;
 	transition-duration: .3s;
@@ -39,7 +50,7 @@ body {
 }
 
 @media screen and (max-width:780px) {
-	.bx-scrollGauge {
+	.box-scrollGauge {
 		height: 3px;
 	}
 }

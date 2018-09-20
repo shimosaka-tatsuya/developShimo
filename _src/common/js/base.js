@@ -5,7 +5,15 @@ $(window).load(function() {
 	var maxScrollVlue = documentHeight - windowHeight; //最大のスクロール値
 	var valueScrollGauge = scroll / (maxScrollVlue) * 100; //スクロール値の百分率
 	
+	// ヘッダーのスクロールゲージの初期値
 	$(".box-scrollGauge").css({width: valueScrollGauge + "%"});
+	
+	// ブラウザの戻るボタンを押してページ遷移してきた際の処理
+	if($("#hamburgerMenuInput:checked").val()) {
+		$('#hamburgerMenuInput').prop("checked",false);
+	}
+	
+	$(".area-content").addClass("area-contentFadeIn");
 	
 	$(window).scroll(function (){
 		var scroll = $(window).scrollTop(); //スクロールの位置を取得
@@ -46,5 +54,4 @@ $(window).load(function() {
 			}
 		});
 	});
-
 });
