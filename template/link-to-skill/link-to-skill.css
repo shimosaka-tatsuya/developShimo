@@ -17,6 +17,8 @@
 	padding: 0 0 0 40px;
 	box-sizing: border-box;
 	opacity: 0;
+	position: relative;
+	z-index: 1;
 	transition-property: padding, width, opacity, transform;
 	transition-duration: .5s;
 }
