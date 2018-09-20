@@ -156,7 +156,7 @@
 	transition-duration: .5s;
 }
 
-.img-profileThumbnail::before {
+.img-profileThumbnail::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -167,12 +167,25 @@
 	background-color: #e5e5e5;
 	transform: scaleX(0);
 	transform-origin: top right;
-	transition-property: transform;
-	transition-duration: .5s;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: ease;
 }
 
-.box-ScrollAnimaton-active .img-profileThumbnail::before {
-	transform: scaleX(1);
+@keyframes slideInprofileThumbnail {
+	0% {
+		transform: scaleX(0);
+	}
+	50% {
+		transform: scaleX(1);
+	}
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.box-ScrollAnimaton-active .img-profileThumbnail::after {
+	animation-name: slideInprofileThumbnail;
 }
 
 .img-profileThumbnail {
@@ -181,28 +194,23 @@
 }
 
 .img-profileThumbnailInr {
-	mask-image: url(/img/img-profile.jpg);
-	mask-mode: alpha;
-	mask-repeat: no-repeat;
-	mask-size: 0 100%;
-	mask-position: 0 0;
+	opacity: 0;
 }
 
-@keyframes slideInprofileThumbnail {
+@keyframes fadeInprofileThumbnail {
 	0% {
-		mask-size: 0 100%;
+		opacity: 0
 	}
 	100% {
-		mask-size: 100% 100%;
+		opacity: 1;
 	}
 }
 
 .box-ScrollAnimaton-active .img-profileThumbnailInr {
-	animation-name: slideInprofileThumbnail;
+	animation-name: fadeInprofileThumbnail;
 	animation-delay: .5s;
-	animation-duration: .5s;
+	animation-duration: .2s;
 	animation-fill-mode: both;
-	animation-timing-function: ease;
 }
 
 @media screen and (max-width:1280px) {
@@ -247,7 +255,7 @@
 		width: calc(100% - 440px);
 	}
 
-	.wp-profileThumbnail .img-profileThumbnail::before {
+	.wp-profileThumbnail .img-profileThumbnail::after {
 		height: calc(100vw - 440px);
 	}
 }
@@ -289,7 +297,7 @@
 		width: calc(100% - 380px);
 	}
 	
-	.wp-profileThumbnail .img-profileThumbnail::before {
+	.wp-profileThumbnail .img-profileThumbnail::after {
 		height: calc(100vw - 380px);
 	}
 }
@@ -386,7 +394,7 @@
 		top: 284px;
 	}
 	
-	.wp-profileThumbnail .img-profileThumbnail::before {
+	.wp-profileThumbnail .img-profileThumbnail::after {
 		height: calc(100vw - 21px);
 	}
 
@@ -484,7 +492,7 @@
 
 .box-ScrollAnimaton-active .list-skliisetChart::before {
 	animation-name: slideInListChartAllow;
-	animation-duration: .6s;
+	animation-duration: 1.2s;
 	animation-fill-mode: both;
 	animation-timing-function: ease-out;
 }
@@ -522,19 +530,19 @@
 }
 
 .box-skliisetChart:nth-child(1) .img-skliisetChart {
-	animation-delay: .2s;
-}
-
-.box-skliisetChart:nth-child(2) .img-skliisetChart {
-	animation-delay: .3s;
-}
-
-.box-skliisetChart:nth-child(3) .img-skliisetChart {
 	animation-delay: .4s;
 }
 
+.box-skliisetChart:nth-child(2) .img-skliisetChart {
+	animation-delay: .6s;
+}
+
+.box-skliisetChart:nth-child(3) .img-skliisetChart {
+	animation-delay: .8s;
+}
+
 .box-skliisetChart:nth-child(4) .img-skliisetChart {
-	animation-delay: .5s;
+	animation-delay: 1s;
 }
 
 @keyframes fadeInSkillsetChartTxt {
