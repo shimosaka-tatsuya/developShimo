@@ -13,6 +13,8 @@ $(window).load(function() {
 		$('#hamburgerMenuInput').prop("checked",false);
 	}
 	
+	$(".area-content").addClass("area-contentFadeIn");
+	
 	$(window).scroll(function (){
 		var scroll = $(window).scrollTop(); //スクロールの位置を取得
 		var windowHeight = $(window).height(); //ウィンドウの高さを取得
