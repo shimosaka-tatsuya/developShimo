@@ -6,6 +6,11 @@
 @import "./../template/link-to-skill/link-to-skill";
 @import "./../template/base/footer";
 
+.area-content {
+	max-width: 1560px;
+	margin: auto;
+}
+
 .txt-caseStudyOutline {
 	text-align: center;
 	margin: 49px 0 0;
@@ -22,7 +27,6 @@
 #wp-profile {
 	padding-top: 98px;
 	width: 100%;
-	max-width: 1560px;
 	margin: 0 auto 140px;
 }
 
@@ -425,7 +429,6 @@
 	text-align: center;
 	line-height: 2.4;
 	margin: 36px auto 26px;
-	max-width: 1560px;
 	transition-property: margin, padding, font-size;
 	transition-duration: .5s;
 	
@@ -935,7 +938,6 @@
 /* ------------------------------------------------------------list-linkToSkill */
 .list-linkToSkill {
 	width: 100%;
-	max-width: 1560px;
 	margin: 0 auto 0;
 	padding: 84px 0 70px;
 	overflow-x: hidden;
