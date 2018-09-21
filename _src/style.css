@@ -495,7 +495,7 @@
 
 .box-ScrollAnimaton-active .list-skliisetChart::before {
 	animation-name: slideInListChartAllow;
-	animation-duration: 1.2s;
+	animation-duration: .6s;
 	animation-fill-mode: both;
 	animation-timing-function: ease-out;
 }
@@ -511,7 +511,7 @@
 .img-skliisetChart {
 	opacity: 0;
 	transition-property: width;
-	transition-duration: .6s;
+	transition-duration: .4s;
 }
 
 @keyframes rotateInChartIcon {
@@ -533,19 +533,19 @@
 }
 
 .box-skliisetChart:nth-child(1) .img-skliisetChart {
-	animation-delay: .4s;
+	animation-delay: .1s;
 }
 
 .box-skliisetChart:nth-child(2) .img-skliisetChart {
-	animation-delay: .6s;
+	animation-delay: .2s;
 }
 
 .box-skliisetChart:nth-child(3) .img-skliisetChart {
-	animation-delay: .8s;
+	animation-delay: .3s;
 }
 
 .box-skliisetChart:nth-child(4) .img-skliisetChart {
-	animation-delay: 1s;
+	animation-delay: .4s;
 }
 
 @keyframes fadeInSkillsetChartTxt {
@@ -568,7 +568,7 @@
 	animation-duration: .2s;
 	animation-fill-mode: both;
 	animation-timing-function: ease-out;
-	animation-delay: .6s;
+	animation-delay: .5s;
 }
 
 .ttl-skliisetChart {
@@ -687,7 +687,7 @@
 	animation-duration: .3s;
 	animation-fill-mode: both;
 	animation-timing-function: ease-out;
-	animation-delay: .5s;
+	animation-delay: .4s;
 }
 
 .txt-serviceChart {
@@ -801,7 +801,23 @@
 	
 	.box-ScrollAnimaton-active .list-skliisetChart::before {
 		animation-name: slideInListChartAllowSp;
-		animation-duration: .6s;
+		animation-duration: 1.2s;
+	}
+	
+	.box-skliisetChart:nth-child(1) .img-skliisetChart {
+		animation-delay: .4s;
+	}
+	
+	.box-skliisetChart:nth-child(2) .img-skliisetChart {
+		animation-delay: .6s;
+	}
+	
+	.box-skliisetChart:nth-child(3) .img-skliisetChart {
+		animation-delay: .8s;
+	}
+	
+	.box-skliisetChart:nth-child(4) .img-skliisetChart {
+		animation-delay: 1s;
 	}
 
 	.box-skliisetChart {
