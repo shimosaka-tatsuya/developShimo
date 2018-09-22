@@ -4,6 +4,8 @@ $(window).load(function() {
 	var documentHeight = $(document).height(); //ページの高さを取得
 	var maxScrollVlue = documentHeight - windowHeight; //最大のスクロール値
 	
+	$(".box-mainVisual").addClass("box-mainVisualFadeIn");
+	
 	$(".box-ScrollAnimaton").each(function(){
 		var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
 		var minusValue = windowHeight - 96 ;

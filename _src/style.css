@@ -6,6 +6,17 @@
 @import "./../template/link-to-skill/link-to-skill";
 @import "./../template/base/footer";
 
+.box-mainVisual {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.box-mainVisualFadeIn {
+	opacity: 1;
+}
+
 .area-content {
 	max-width: 1560px;
 	margin: auto;
