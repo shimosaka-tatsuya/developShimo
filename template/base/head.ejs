@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SHIMO | <%= meta.title %></title>
     <meta name="description" content="<%= meta.description %>">
+    
+    <%# インターネットに公開しない。今後も基本的には削除しない。 %>
+    <meta name="robots" content="noindex,nofollow">
 
     <%# ogタグ %>
     <meta property="og:url" content="https://www.shimo.com<%= meta.ogUrl %>" />
