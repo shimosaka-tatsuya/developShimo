@@ -11,15 +11,22 @@
 	margin: auto;
 }
 
-.txt-caseStudyOutline {
+.txt-caseStudyOutline,
+.txt-skillsetOutline {
 	text-align: center;
-	margin: 49px 0 0;
+	margin: 30px 0 30px;
+	line-height: 2.4;
+	transition-property: margin, padding, font-size;
+	transition-duration: .5s;
+	
+	@media screen and (max-width:780px) {
+		margin: 20px 0 20px;
+	}
 	
 	@media screen and (max-width:480px) {
 		text-align: justify;
 		margin: 10px 0 0;
 		padding: 0 14px;
-		line-height: 2.4;
 	}
 }
 
@@ -434,14 +441,22 @@
 
 /* ------------------------------------------------------------スキルセット */
 .txt-skillsetOutline {
-	text-align: center;
-	line-height: 2.4;
-	margin: 36px auto 26px;
-	transition-property: margin, padding, font-size;
-	transition-duration: .5s;
 	
 	.txt-newLine {
 		display: block;
+	}
+}
+
+.list-linkToSkill {
+	width: 100%;
+	margin: 0 auto 0;
+	padding: 34px 0 70px;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width:780px) {
+	.list-linkToSkill {
+		padding-top: 24px;	
 	}
 }
 
@@ -728,10 +743,6 @@
 		width: 795px;
 	}
 	
-	.txt-skillsetOutline {
-		margin-top: 20px;
-	}
-	
 	.list-skliisetChart {
 		width: 600px;
 		padding-left: 21px;
@@ -754,14 +765,6 @@
 }
 
 @media screen and (max-width:780px) {
-	.txt-skillsetOutline {
-		text-align: center;
-		font-size: 14px;
-		padding: 0 14px;
-		box-sizing: border-box;
-		margin: 10px auto 40px;
-	}
-	
 	.wp-skliisetChart {
 		overflow: unset;
 		width: 100%;
@@ -901,9 +904,6 @@
 	}
 	
 	.txt-skillsetOutline {
-		text-align: justify;
-		margin-bottom: 20px;
-				
 		.txt-newLine {
 			display: none;
 		}	
@@ -960,19 +960,5 @@
 		&::before {
 			font-size: 10px;
 		}
-	}
-}
-
-/* ------------------------------------------------------------list-linkToSkill */
-.list-linkToSkill {
-	width: 100%;
-	margin: 0 auto 0;
-	padding: 84px 0 70px;
-	overflow-x: hidden;
-}
-
-@media screen and (max-width:420px) {
-	.list-linkToSkill {
-		padding-top: 24px;	
 	}
 }
