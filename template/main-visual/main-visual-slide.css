@@ -49,3 +49,34 @@
         animation-delay: 30s;
     }
 }
+
+@media screen and (max-width:420px) {
+	.box-mainVisualSlide {
+	    background: url("/common/img/bg-spMainVisual01.jpg") center center no-repeat;
+	    background-size: cover;
+	}
+	
+	.img-mainVisual:nth-child(1) {
+	    
+	    .img-mainVisualInr {
+	        background: url("/common/img/bg-spMainVisual01.jpg") center center no-repeat;
+	        background-size: cover;
+	    }
+	}
+	
+	.img-mainVisual:nth-child(2) {
+	    
+	    .img-mainVisualInr {
+	        background: url("/common/img/bg-spMainVisual02.jpg") center center no-repeat;
+	        background-size: cover;
+	    }
+	}
+	
+	.img-mainVisual:nth-child(3) {
+	    
+	    .img-mainVisualInr {
+	        background: url("/common/img/bg-spMainVisual03.jpg") center center no-repeat;
+	        background-size: cover;
+	    }
+	}
+}
