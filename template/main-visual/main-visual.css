@@ -263,7 +263,7 @@
 	position: relative;
 }
 
-.btn-toProfileFadeIn {
+.box-mainVisualFadeIn .btn-toProfileFadeIn {
 	opacity: 1;
 }
 
