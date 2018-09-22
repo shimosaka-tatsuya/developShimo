@@ -17,7 +17,7 @@
 	
 	@media screen and (max-width:480px) {
 		text-align: justify;
-		margin: 10px 0 40px;
+		margin: 10px 0 0;
 		padding: 0 14px;
 		line-height: 2.4;
 	}
@@ -793,6 +793,10 @@
 			background-position-y: -806px;
 			opacity: 0;
 		}
+		50% {
+			background-position-y: -403px;
+			opacity: 0;
+		}
 		100% {
 			background-position-y: 0;
 			opacity: 1;
@@ -967,8 +971,8 @@
 	overflow-x: hidden;
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:420px) {
 	.list-linkToSkill {
-		padding-top: 0;	
+		padding-top: 24px;	
 	}
 }
