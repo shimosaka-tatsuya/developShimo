@@ -793,6 +793,10 @@
 			background-position-y: -806px;
 			opacity: 0;
 		}
+		50% {
+			background-position-y: -403px;
+			opacity: 0;
+		}
 		100% {
 			background-position-y: 0;
 			opacity: 1;
