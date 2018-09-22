@@ -38,7 +38,7 @@
 
 @media screen and (max-width:480px) {
 	.box-skillAndMethod {
-		padding: 24px 14px 14px;
+		padding: 24px 14px 18px;
 		width: calc(100% + 28px);
 		margin: 40px 0 0 -14px;
 		flex-flow: column;

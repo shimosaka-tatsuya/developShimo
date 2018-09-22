@@ -4,9 +4,15 @@
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	transition-property: height;
-	transition-duration: .5s;
 	overflow-x: hidden;
+	opacity: 0;
+	transition-property: height, opacity;
+	transition-duration: .5s;
+	transition-timing-function: ease;
+}
+
+.box-mainVisualFadeIn {
+	opacity: 1;
 }
 
 .ttl-siteName {
@@ -20,12 +26,12 @@
 	z-index: 5;
 	text-align: center;
 	color: #fff;
-	text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	text-shadow: 3px 3px 10px rgba(0,0,0,.8)
 }
 
 .txt-sitenameSub,
 .txt-sitenameMain,
-txt-myName {
+.txt-myName {
 	display: block;
 	line-height: 1;
 }
@@ -33,7 +39,7 @@ txt-myName {
 @keyframes fadeInSiteNameSub {
 	0% {
 		opacity: 0;
-		transform: translateY(12px) translateX(2px);
+		transform: translateY(4px) translateX(2px);
 	}
 	100% {
 		opacity: 1;
@@ -43,7 +49,7 @@ txt-myName {
 
 .txt-siteNameSub {
 	font-size: 14px;
-	letter-spacing: .29em;
+	letter-spacing: .26em;
 	margin-bottom: 21px;
 	padding-left: 1px;
 	animation-name: fadeInSiteNameSub;
@@ -352,7 +358,7 @@ txt-myName {
 	.txt-siteNameSub {
 		font-size: 11px;
 		margin-bottom: 16px;
-		letter-spacing: .25em;
+		letter-spacing: .23em;
 		animation-name: fadeInSiteNameSub--sp;
 	}
 	
