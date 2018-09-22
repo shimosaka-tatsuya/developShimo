@@ -36,7 +36,7 @@ $(window).load(function() {
 	$(function(){
 		setTimeout(function(){
 			$(".btn-toProfile").addClass("btn-toProfileFadeIn");
-		},5300);
+		},4000);
 	});
 	
 	//スクロールした際の挙動
