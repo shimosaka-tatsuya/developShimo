@@ -47,7 +47,7 @@
 	}
 }
 
-.txt-siteNameSub {
+.box-mainVisualFadeIn .txt-siteNameSub {
 	font-size: 14px;
 	letter-spacing: .26em;
 	margin-bottom: 21px;
@@ -139,29 +139,29 @@
 	width: 1em;
 }
 
-.txt-siteNameCharacter-s {
+.box-mainVisualFadeIn .txt-siteNameCharacter-s {
 	z-index: 5;
 	animation-name: fadeInCharacter-s;
 	animation-duration: 1s;
 	animation-delay: 2.5s;
 }
 
-.txt-siteNameCharacter-h {
+.box-mainVisualFadeIn .txt-siteNameCharacter-h {
 	z-index: 4;
 	animation-name: slideCharacter-h;
 }
 
-.txt-siteNameCharacter-i {
+.box-mainVisualFadeIn .txt-siteNameCharacter-i {
 	z-index: 3;
 	animation-name: slideCharacter-i;
 }
 
-.txt-siteNameCharacter-m {
+.box-mainVisualFadeIn .txt-siteNameCharacter-m {
 	z-index: 2;
 	animation-name: slideCharacter-m;
 }
 
-.txt-siteNameCharacter-o {
+.box-mainVisualFadeIn .txt-siteNameCharacter-o {
 	z-index: 1;
 	animation-name: slideCharacter-o;
 }
@@ -183,7 +183,7 @@
 	}
 }
 
-.txt-myName {
+.box-mainVisualFadeIn .txt-myName {
 	font-size: 17px;
 	transform: rotate(-6deg);
 	letter-spacing: .12em;
@@ -208,7 +208,7 @@
 	}
 }
 
-.btn-toProfile {
+.box-mainVisualFadeIn .btn-toProfile {
 	display: block;
 	width: 78px;
 	height: 54px;
@@ -317,7 +317,7 @@
 	}
 }
 
-.box-mainVisualSlideActive .img-mainVisual {
+.box-mainVisualFadeIn .box-mainVisualSlideActive .img-mainVisual {
 	.img-mainVisualInr {
 		animation-name: fadeInSlide;
 	}
@@ -355,7 +355,7 @@
 		}
 	}
 	
-	.txt-siteNameSub {
+	.box-mainVisualFadeIn .txt-siteNameSub {
 		font-size: 11px;
 		margin-bottom: 16px;
 		letter-spacing: .23em;
@@ -426,23 +426,23 @@
 		}
 	}
 	
-	.txt-siteNameCharacter-s {
+	.box-mainVisualFadeIn .txt-siteNameCharacter-s {
 		animation-name: fadeInCharacter-s--sp;
 	}
 	
-	.txt-siteNameCharacter-h {
+	.box-mainVisualFadeIn .txt-siteNameCharacter-h {
 		animation-name: slideCharacter-h--sp;
 	}
 	
-	.txt-siteNameCharacter-i {
+	.box-mainVisualFadeIn .txt-siteNameCharacter-i {
 		animation-name: slideCharacter-i--sp;
 	}
 	
-	.txt-siteNameCharacter-m {
+	.box-mainVisualFadeIn .txt-siteNameCharacter-m {
 		animation-name: slideCharacter-m--sp;
 	}
 	
-	.txt-siteNameCharacter-o {
+	.box-mainVisualFadeIn .txt-siteNameCharacter-o {
 		animation-name: slideCharacter-o--sp;
 	}
 	
@@ -455,7 +455,7 @@
 		}
 	}
 	
-	.txt-myName {
+	.box-mainVisualFadeIn .txt-myName {
 		animation-name: fadeInMyName--sp;
 		font-size: 14px;
 	}
