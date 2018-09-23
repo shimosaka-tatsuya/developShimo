@@ -30,6 +30,7 @@
 		left: 18px;
 		margin: auto;
 		filter: drop-shadow(0 0 4px rgba(255,255,255,.9));
+		z-index: 1;
 		transition-property: transform;
 		transition-duration: .3s;
 	}
