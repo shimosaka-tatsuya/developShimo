@@ -6,19 +6,6 @@ $(window).load(function() {
 	
 	$(".box-mainVisual").addClass("box-mainVisualFadeIn");
 	
-	$(".box-ScrollAnimaton").each(function(){
-		var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
-		var minusValue = windowHeight - 96 ;
-
-		if (scroll > position - minusValue){ //スクロール位置が要素の位置を過ぎたとき
-			$(this).addClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を与える
-		} else if (position - windowHeight > scroll) {
-			$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
-		} else if(scroll == 0) {
-			$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
-		}
-	});
-
 	// スライドショーの挙動を制御するためのjs
 	$(".box-mainVisualSlide").addClass("box-mainVisualSlideActive");
 	$(function(){
@@ -51,25 +38,5 @@ $(window).load(function() {
 			$('.btn-hamburgerMenu').addClass("btn-hamburgerMenu--white");
 			$('.txt-siteName').addClass("txt-siteName--through");
 		}
-	});
-
-	$(window).scroll(function (){
-		var scroll = $(window).scrollTop(); //スクロールの位置を取得
-		var windowHeight = $(window).height(); //ウィンドウの高さを取得
-		var documentHeight = $(document).height(); //ページの高さを取得
-		var maxScrollVlue = documentHeight - windowHeight; //最大のスクロール値
-		
-		$(".box-ScrollAnimaton").each(function(){
-			var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
-			var minusValue = windowHeight - 96 ;
-	
-			if (scroll > position - minusValue){ //スクロール位置が要素の位置を過ぎたとき
-				$(this).addClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を与える
-			} else if (position - windowHeight > scroll) {
-				$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
-			} else if(scroll == 0) {
-				$(this).removeClass('box-ScrollAnimaton-active'); //クラス「animationSlideInThumbnail-active」を削除
-			}
-		});
 	});
 });

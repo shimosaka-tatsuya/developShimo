@@ -2,6 +2,18 @@
 	margin-bottom: 14px;
 }
 
+.img-section .box-ScrollAnimaton {
+	filter: grayscale(100%);
+	opacity: .7;
+	transition-property: filter, opacity;
+	transition-duration: 2.4s;
+}
+
+.img-section .box-ScrollAnimaton-active {
+	filter: grayscale(0);
+	opacity: 1;
+}
+
 .box-section .img-section:last-of-type {
 	margin-bottom: 0;
 }
@@ -78,6 +90,19 @@
 	& + & {
 		margin-left: 18px;
 	}
+}
+
+.box-sectionColumnThumbnail .box-ScrollAnimaton {
+	filter: grayscale(100%);
+	opacity: .7;
+	transition-property: filter, opacity;
+	transition-duration: 2.4s;
+	
+}
+
+.box-sectionColumnThumbnail .box-ScrollAnimaton-active {
+	filter: grayscale(0);
+	opacity: 1;
 }
 
 .ttl-sectionColumnThumbnail {
