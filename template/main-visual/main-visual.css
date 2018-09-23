@@ -15,39 +15,6 @@
 	opacity: 1;
 }
 
-.btn-audio {
-	color: #fff;
-	position: absolute;
-	right: 25px;
-	bottom: 21px;
-	z-index: 4;
-	font-size: 16px;
-	letter-spacing: .09em;
-	cursor: pointer;
-	transition-property: opacity, letter-spacing;
-	transition-duration: .3s;
-	
-	&::before {
-		content: "";
-		display: inline-block;
-		width: 22px;
-		height: 23px;
-		background: url("/img/ico-audioPlay.svg") 0 0 no-repeat;
-		background-size: 22px;
-		margin: -5px 8px 0 0;
-		vertical-align: middle;
-	}
-	
-	&:hover {
-		opacity: .5;
-		letter-spacing: .13em;
-	}
-}
-
-.btn-audio-on {
-	display: none;
-}
-
 .ttl-siteName {
 	position: absolute;
 	top: 0;
@@ -86,7 +53,7 @@
 	margin-bottom: 21px;
 	padding-left: 1px;
 	animation-name: fadeInSiteNameSub;
-	animation-delay: 3s;
+	animation-delay: 2s;
 	animation-duration: .3s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
@@ -176,7 +143,7 @@
 	z-index: 5;
 	animation-name: fadeInCharacter-s;
 	animation-duration: 1s;
-	animation-delay: 1.6s;
+	animation-delay: .8s;
 }
 
 .box-mainVisualFadeIn .txt-siteNameCharacter-h {
@@ -203,7 +170,7 @@
 .txt-siteNameCharacter-i,
 .txt-siteNameCharacter-m,
 .txt-siteNameCharacter-o {
-	animation-delay: 2.3s;
+	animation-delay: 1.5s;
 	animation-duration: .3s;
 }
 
@@ -223,7 +190,7 @@
 	margin-left: 1px;
 	opacity: .8;
 	animation-name: fadeInMyName;
-	animation-delay: 3.6s;
+	animation-delay: 2.7s;
 	animation-duration: .3s;
 	animation-timing-function: ease;
 	animation-fill-mode: both;
@@ -372,25 +339,6 @@
 	.box-mainVisual {
 		height: calc(100vh - 80px);
 		min-width: auto;
-	}
-	
-	.btn-audio {
-		bottom: 11px;
-		right: 10px;
-		background-color: rgba(0,0,0,.2);
-		border: 1px solid rgba(255, 255, 255, .5);
-		font-size: 13px;
-		line-height: 28px;
-		padding: 3px 0 0;
-		width: 112px;
-		text-align: center;
-		
-		&::before {
-			background-size: 16px;
-			height: 17px;
-			width: 16px;
-			margin-top: -4px;
-		}
 	}
 	
 	.ttl-siteName {
