@@ -15,7 +15,7 @@ var svgmin = require('gulp-svgmin');
 
 // jpg,png,gif画像の圧縮タスク
 gulp.task('imagemin', function(){
-    var srcGlob = './_src/**/*.+(jpg|jpeg|png|gif)';
+    var srcGlob = './_src/**/*.+(jpg|jpeg|png|gif|ico)';
     var dstGlob = './_view/';
     gulp.src( srcGlob )
 /*
