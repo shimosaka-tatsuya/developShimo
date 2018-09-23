@@ -1,7 +1,7 @@
 .ttl-section {
 	text-align: center;
 	position: relative;
-	width: 840px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -27,6 +27,7 @@
 	margin: auto;
 	z-index: -1;
 	transform: rotate(-7deg);
+	width: 95%;
 	transition-property: font-size;
 	transition-duration: .5s;
 	
