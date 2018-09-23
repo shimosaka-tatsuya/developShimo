@@ -381,7 +381,9 @@
 		border: 1px solid rgba(255, 255, 255, .5);
 		font-size: 13px;
 		line-height: 28px;
-		padding: 3px 9px 0;
+		padding: 3px 0 0;
+		width: 112px;
+		text-align: center;
 		
 		&::before {
 			background-size: 16px;
