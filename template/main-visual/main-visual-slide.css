@@ -9,7 +9,7 @@
 }
 
 .img-mainVisual:nth-child(1) {
-    z-index: 3;
+    z-index: 4;
     
     .img-mainVisualInr {
         background: url("/common/img/bg-mainVisual01.jpg") center center no-repeat;
@@ -23,7 +23,7 @@
 }
 
 .img-mainVisual:nth-child(2) {
-    z-index: 2;
+    z-index: 3;
     
     .img-mainVisualInr {
         background: url("/common/img/bg-mainVisual02.jpg") center center no-repeat;
@@ -37,7 +37,7 @@
 }
 
 .img-mainVisual:nth-child(3) {
-    z-index: 1;
+    z-index: 2;
     
     .img-mainVisualInr {
         background: url("/common/img/bg-mainVisual03.jpg") center center no-repeat;

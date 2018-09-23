@@ -359,6 +359,15 @@
 }
 
 @media screen and (max-width:480px) {
+	
+	.wp-hamburgerMenuInr {
+		
+		&:before {
+			background: url("/common/img/bg-spMainVisual01.jpg") center center no-repeat;
+			background-size: cover;
+		}
+	}
+
     .txt-siteName {
 		font-size: 21px;
 		margin-top: 3px;
