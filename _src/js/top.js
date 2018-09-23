@@ -40,47 +40,4 @@ $(window).load(function() {
 			$('.txt-siteName').addClass("txt-siteName--through");
 		}
 	});
-	
-	var audioObj = document.getElementById("myMusic");
-
-	// オーディオのonとoffを設定
-	$(".btn-audio-off").on('click', function(){
-		audioObj.pause();
-		$(".btn-audio-on").css({display: "block"});
-		$(".btn-audio-off").css({display: "none"});
-	});
-	
-	$(".btn-audio-on").on('click', function(){
-		audioObj.play();
-		$(".btn-audio-off").css({display: "block"});
-		$(".btn-audio-on").css({display: "none"});
-	});
-	
-	//スクロールした際の、ousdioの音量を計算
-	$(window).scroll(function () {
-		var scrollTopAudio =  Math.floor($(window).scrollTop());
-		var mainVisualHeight = $(".box-mainVisual").height();
-		var x = Math.round(10*scrollTopAudio/mainVisualHeight);
-		var audioVolume = Math.floor( (10 - x)*0.1 * Math.pow( 10, 2 ) ) / Math.pow( 10, 2 );
-		
-		if(0 <= audioVolume) {
-			audioObj.volume = audioVolume;
-		} else if(audioVolume < 0) {
-			audioObj.volume = 0;
-		}
-	});
-	
-	// オーディオの音量の初期値
-	$(function(){
-		var scrollTopAudio =  Math.floor($(window).scrollTop());
-		var mainVisualHeight = $(".box-mainVisual").height();
-		var x = Math.round(10*scrollTopAudio/mainVisualHeight);
-		var audioVolume = Math.floor( (10 - x)*0.1 * Math.pow( 10, 2 ) ) / Math.pow( 10, 2 );
-		
-		if(0 <= audioVolume) {
-			audioObj.volume = audioVolume;
-		} else if(audioVolume < 0) {
-			audioObj.volume = 0;
-		}
-	});
 });
