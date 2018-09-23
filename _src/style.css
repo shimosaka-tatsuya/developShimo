@@ -798,7 +798,7 @@
 		}
 		50% {
 			background-position-y: -403px;
-			opacity: 0;
+			opacity: .25;
 		}
 		100% {
 			background-position-y: 0;
@@ -809,6 +809,21 @@
 	.box-ScrollAnimaton-active .list-skliisetChart::before {
 		animation-name: slideInListChartAllowSp;
 		animation-duration: 1.2s;
+	}
+	
+	@keyframes rotateInChartIconSp {
+		0% {
+			opacity: 0;
+			transform: rotate(-10deg) translateY(-20px);
+		}
+		100% {
+			opacity: 1;
+			transform: rotate(0) translateY(0);
+		}
+	}
+	
+	.box-ScrollAnimaton-active .box-skliisetChart .img-skliisetChart {
+		animation-name: rotateInChartIconSp;
 	}
 	
 	.box-skliisetChart:nth-child(1) .img-skliisetChart {
@@ -867,11 +882,12 @@
 		width: 100%;
 	}
 	
-	.img-serviceChart {
-		width: 240px;
+	.box-ScrollAnimaton-active .img-serviceChart {
+		width: 166px;
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0 -37px 0 0;
+		animation-delay: 1s;
 	}
 	
 	.txt-serviceChart {
