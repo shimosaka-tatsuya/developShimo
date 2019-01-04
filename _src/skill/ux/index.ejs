@@ -31,7 +31,7 @@ var pageId = "skill-ux";
 		}) %>
 		
 		<%- include(setLayered + "skill/section/section", {
-			"imgSection": ["https://placehold.jp/594x325.png"],
+			"imgSection": ["/skill/img/img_dmmDensho.jpg"],
 			"txtSection": "電子書籍販売サービス『DMM電子書籍』におけるUX改善の事例です。"
 		}) %>
 		
@@ -54,41 +54,35 @@ var pageId = "skill-ux";
 		<div class="wp-SectionColumnHalf">
 			<%- include(setLayered + "skill/section/section-column-half", {
 				"ttlSectionColumn": "アンケートの実施",
-				"sectionColumnThumbnail": "https://placehold.jp/594x325.png",
+				"sectionColumnThumbnail": "/skill/img/img_dmmDensho_question.jpg",
 				"txtSectionColumn": "100名の女性ユーザーに対してアンケートを実施。制作メンバーや事業部が、疑問に思っていることを質問しました。"
 			}) %>
 			
 			<%- include(setLayered + "skill/section/section-column-half", {
 				"ttlSectionColumn": "座談会の実施",
-				"sectionColumnThumbnail": "https://placehold.jp/594x325.png",
+				"sectionColumnThumbnail": "/skill/img/img_dmmDensho_zadankai.jpg",
 				"txtSectionColumn": "アンケート回答者のうち、特に熱量の高い人を集め座談会を実施。アンケート結果を深掘り、ユーザーの気持ちや事象を収集しました。"
 			}) %>
 		</div><!-- /.wp-SectionColumnHalf -->
 		
 		<p class="ttl-agendaSub txt-fontJapanese">分析</p>
 		
-		<div class="wp-SectionColumnHalf">
-			<%- include(setLayered + "skill/section/section-column-half", {
-				"ttlSectionColumn": "ユーザー事象を行為目的ごとに分類",
-				"sectionColumnThumbnail": "https://placehold.jp/594x325.png",
-				"txtSectionColumn": "アンケート・座談会で収集した、ユーザーの事象を『〜だから〜したい』というような行為目的ごとに分類。ユーザーの課題を洗い出しました。"
-			}) %>
-			
-			<%- include(setLayered + "skill/section/section-column-half", {
-				"ttlSectionColumn": "本質的な欲求を導き出す",
-				"sectionColumnThumbnail": "https://placehold.jp/594x325.png",
-				"txtSectionColumn": "行為目的を、『〜（ように）なりたい』というような本質的な欲求ごとに束ねていきました。"
-			}) %>
-		</div><!-- /.wp-SectionColumnHalf -->
+		<%- include(setLayered + "skill/section/section-column", {
+			"ttlSectionColumn01": "アンケート・座談会で得られた事象を元にユーザーの本質的な欲求を導き出す",
+			"sectionColumnThumbnail01": "/skill/img/img_dmmDensho_analysis.jpg",
+			"ttlSectionColumn02": "",
+			"sectionColumnThumbnail02": "",
+			"txtSectionColumn": "上位会関係分析と呼ばれるユーザー分析の手法を用いて、ユーザー自身も気づいていない本質的な欲求を導き出しました。ユーザーの『事象（いつ・どこで何をしたか・思ったか）』を同様の『行為目的（〜だから〜したい）』ごとにまとめ、最終的に『本質的欲求（〜のようになりたい）』に束ねて行く手法です。"
+		}) %>
 		
 		<p class="ttl-agendaSub txt-fontJapanese">分析結果</p>
 		
 		<%- include(setLayered + "skill/section/section-column", {
-			"ttlSectionColumn01": "ユーザーの欲求や課題を言語化",
-			"sectionColumnThumbnail01": "https://placehold.jp/1225x325.png",
+			"ttlSectionColumn01": "ユーザーの思いや課題を言語化",
+			"sectionColumnThumbnail01": "/skill/img/img_dmmDensho_persona.jpg",
 			"ttlSectionColumn02": "",
 			"sectionColumnThumbnail02": "",
-			"txtSectionColumn": "ユーザーの誰もが抱える、サービスに対する思いや課題をまとめ、言語化しました。これらをもとに、よりユーザーに刺さる施策や、効果的な改善の提案を行って行きました。"
+			"txtSectionColumn": "本質的欲求や行為目的をもとに、ペルソナを設計しました。分析の過程で見えてきたユーザーが抱いている思いや課題を言語化することで、サービスの改善点を洗い出すことができました。現在、この改善点をもとに新たな施策を提案中です。"
 		}) %>
 		
 		<%- include(setLayered + "skill/agenda/agenda",{
