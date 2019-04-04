@@ -1,3 +1,4 @@
+// スクロールイベントの関数
 function scrollAnimataion(data) {
 	function scrollAnimataionBase(data) {
 		var scroll = $(window).scrollTop();
@@ -25,6 +26,7 @@ function scrollAnimataion(data) {
 	});	
 }
 
+// ページ上部のスクロールバーの関数
 function scrollGauge() {
 	function scrollGaugeBase() {
 		var scroll = $(window).scrollTop();
@@ -43,6 +45,7 @@ function scrollGauge() {
 	});	
 }
 
+// スムーススクロールの関数
 function smoothScroll(speed) {
 	$('a[href^=#]').click(function() {
 		var href= $(this).attr("href");
@@ -53,7 +56,7 @@ function smoothScroll(speed) {
 	});
 }
 
-// ハンバーガーメニューが開いたときにページのスクロールを禁止に
+// ハンバーガーメニューが開いたときにページのスクロールを禁止にする関数
 function notScroll() {
 	var state = false;
 	var scrollpos;
@@ -71,6 +74,7 @@ function notScroll() {
 	});
 }
 
+// ページが読み込まれたら以下を実行
 $(window).load(function() {
 	$(".area-content").addClass("area-contentFadeIn");
 	
